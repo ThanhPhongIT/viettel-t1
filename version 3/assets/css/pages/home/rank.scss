@@ -8,7 +8,7 @@
     .left {
         position: absolute;
         left: 0;
-        top: 0
+        top: 0;
     }
     .right {
         position: absolute;
@@ -16,7 +16,7 @@
         top: 0;
     }
     .heading {
-        font-family: Sarabun;
+        font-family: "BeauSansPro";
         font-style: normal;
         font-weight: 300;
         font-size: 28px;
@@ -25,7 +25,7 @@
         text-align: center;
         letter-spacing: -1px;
         text-transform: uppercase;
-        color: #1A1A1A;
+        color: #1a1a1a;
         padding-top: 160px;
     }
     .title {
@@ -37,7 +37,7 @@
         /* identical to box height, or 133% */
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #1A1A1A;
+        color: #1a1a1a;
         mix-blend-mode: normal;
         opacity: 0.8;
         text-align: center;
@@ -67,7 +67,7 @@
                     text-align: center;
                     letter-spacing: -0.5px;
                     text-transform: uppercase;
-                    color: #ED2C34;
+                    color: #ed2c34;
                 }
                 p {
                     font-family: Sarabun;
@@ -81,7 +81,7 @@
                     text-align: center;
                     letter-spacing: 0.5px;
                     text-transform: uppercase;
-                    color: #1A1A1A;
+                    color: #1a1a1a;
                 }
             }
         }
@@ -95,7 +95,7 @@
             outline: none;
         }
         margin-top: 50px;
-        background: #ED2C34;
+        background: #ed2c34;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -104,6 +104,6 @@
         text-align: center;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 }

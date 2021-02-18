@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "BeauSansPro";
+  src: url("../font/PFBeauSansPro-Regular.ttf");
+}
 body {
   font-family: "Sarabun", sans-serif;
 }
@@ -167,7 +171,7 @@ p {
   justify-content: center;
 }
 .banner .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 48px;
@@ -178,20 +182,20 @@ p {
   color: #000000;
 }
 .banner .des {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  color: #010B12;
+  color: #010b12;
   margin: 40px 0 50px 0;
 }
 .banner button {
   border: none;
   width: 156px;
   height: 48px;
-  background: #ED2C34;
+  background: #ed2c34;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -199,7 +203,7 @@ p {
   /* identical to box height, or 16px */
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .banner button:focus {
   outline: none;
@@ -241,7 +245,7 @@ p {
 }
 .corporation .top .left .heading {
   padding-bottom: 100px;
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
@@ -338,7 +342,7 @@ p {
   background-color: #f2f3f3;
 }
 .history .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -376,7 +380,7 @@ p {
   width: 100%;
 }
 .mission .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -389,7 +393,7 @@ p {
   margin-bottom: 26px;
 }
 .mission .des {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -402,7 +406,7 @@ p {
 }
 
 .news .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -410,7 +414,7 @@ p {
   /* or 42px */
   letter-spacing: -0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
   padding-right: 20px;
 }
 .news .list-post {
@@ -465,7 +469,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  color: #1A1A1A;
+  color: #1a1a1a;
   mix-blend-mode: normal;
   opacity: 0.8;
   padding: 40px 0 150px 0;
@@ -490,7 +494,7 @@ p {
   top: 0;
 }
 .rank .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -499,7 +503,7 @@ p {
   text-align: center;
   letter-spacing: -1px;
   text-transform: uppercase;
-  color: #1A1A1A;
+  color: #1a1a1a;
   padding-top: 160px;
 }
 .rank .title {
@@ -511,7 +515,7 @@ p {
   /* identical to box height, or 133% */
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #1A1A1A;
+  color: #1a1a1a;
   mix-blend-mode: normal;
   opacity: 0.8;
   text-align: center;
@@ -544,7 +548,7 @@ p {
   text-align: center;
   letter-spacing: -0.5px;
   text-transform: uppercase;
-  color: #ED2C34;
+  color: #ed2c34;
 }
 .rank .rank-list .item .content p {
   font-family: Sarabun;
@@ -558,7 +562,7 @@ p {
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 .rank button {
   width: 150px;
@@ -566,7 +570,7 @@ p {
   border: none;
   margin-bottom: 140px;
   margin-top: 50px;
-  background: #ED2C34;
+  background: #ed2c34;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -575,7 +579,7 @@ p {
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .rank button:focus {
   outline: none;
@@ -591,7 +595,7 @@ p {
   }
 }
 .service .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -768,7 +772,7 @@ p {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .social .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -777,11 +781,11 @@ p {
   text-align: center;
   letter-spacing: -0.5px;
   text-transform: uppercase;
-  color: #1A1A1A;
+  color: #1a1a1a;
   width: 50%;
 }
 .social img {
-  margin: 100px 0 80px 0;
+  margin: 100px 90px 80px 15px;
 }
 .social .number {
   font-family: Sarabun;
@@ -791,7 +795,7 @@ p {
   line-height: 33px;
   /* or 82% */
   text-align: center;
-  color: #EC2C34;
+  color: #ec2c34;
   mix-blend-mode: normal;
 }
 .social .title {
@@ -808,7 +812,7 @@ p {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 .social .des {
   text-align: center;
@@ -820,7 +824,7 @@ p {
   line-height: 24px;
   /* or 171% */
   text-align: center;
-  color: #1A1A1A;
+  color: #1a1a1a;
   mix-blend-mode: normal;
   opacity: 0.8;
 }
@@ -829,7 +833,7 @@ p {
   padding: 143px 0 193px 0;
 }
 .tech .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;
@@ -842,7 +846,7 @@ p {
   margin-bottom: 35px;
 }
 .tech .des {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -911,7 +915,7 @@ p {
   background: #f2f3f3;
 }
 .telecom .heading {
-  font-family: Sarabun;
+  font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
   font-size: 28px;

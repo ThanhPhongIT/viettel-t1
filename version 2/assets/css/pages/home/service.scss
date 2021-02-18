@@ -1,26 +1,26 @@
-.service{
+.service {
     margin: 20px 0;
-    .heading{
+    .heading {
         font-style: normal;
         font-weight: 800;
         font-size: 42px;
         line-height: 150%;
         /* or 63px */
-
+        font-family: "BeauSansPro";
         text-transform: uppercase;
         margin: 100px 0;
         color: #222222;
         width: 80%;
-       }
-    .service__item{
+    }
+    .service__item {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        img{
+        img {
             margin-bottom: 30px;
         }
-        .title{
+        .title {
             font-style: normal;
             font-weight: 500;
             font-size: 24px;
@@ -32,14 +32,14 @@
             letter-spacing: -0.005em;
             text-transform: uppercase;
 
-            color: #010B12;
+            color: #010b12;
         }
-        .description{
+        .description {
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
             line-height: 24px;
-            color: #010B12;
+            color: #010b12;
             mix-blend-mode: normal;
             opacity: 0.8;
             width: 60%;
