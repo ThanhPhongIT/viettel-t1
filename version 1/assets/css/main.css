@@ -501,10 +501,12 @@ div {
 }
 .history .heading-top {
   padding-top: 550px;
+  font-family: PF BeauSans Pro;
   font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
+  font-weight: normal;
+  font-size: 38px;
   line-height: 150%;
+  /* identical to box height, or 57px */
   text-transform: uppercase;
   color: #222222;
 }
@@ -520,7 +522,7 @@ div {
   width: 40%;
 }
 .history .carousel {
-  height: 50vh;
+  height: 70vh;
 }
 .history .carousel .item1 {
   width: 86px;
@@ -533,6 +535,21 @@ div {
   height: 346px;
   background: #E70031;
   border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.history .carousel .item2 p {
+  font-family: PF BeauSans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 150%;
+  /* identical to box height, or 63px */
+  text-transform: uppercase;
+  color: #F8F6F6;
+  margin-top: 20px;
 }
 .history .carousel .item3 {
   width: 230px;
@@ -552,10 +569,21 @@ div {
   height: 52px;
   background: #E4E4E4;
 }
-.history .his__develop {
-  padding-bottom: 150px;
+
+.his__develop {
+  padding-top: 150px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.history .his__develop .heading {
+.his__develop .bb {
+  margin-top: 150px;
+  width: 70%;
+  height: 2px;
+  background-color: #E4E4E4;
+}
+.his__develop .heading {
   margin-bottom: 50px;
   font-family: PF BeauSans Pro;
   font-style: normal;
@@ -566,17 +594,17 @@ div {
   text-transform: uppercase;
   color: #222222;
 }
-.history .his__develop img {
+.his__develop img {
   width: 80%;
 }
-.history .his__develop .right {
+.his__develop .right {
   width: 90%;
   margin: 50px 0;
 }
-.history .his__develop .pl {
+.his__develop .pl {
   padding-left: 100px;
 }
-.history .his__develop .content .number {
+.his__develop .content .number {
   font-family: Sarabun;
   font-style: normal;
   font-weight: bold;
@@ -586,7 +614,7 @@ div {
   mix-blend-mode: normal;
   margin-top: 70px;
 }
-.history .his__develop .content .sub-1 {
+.his__develop .content .sub-1 {
   width: 400px;
   font-family: Sarabun;
   font-style: normal;
@@ -597,7 +625,7 @@ div {
   color: #222222;
   padding-top: 10px;
 }
-.history .his__develop .subtitle {
+.his__develop .subtitle {
   font-family: Sarabun;
   font-style: normal;
   font-weight: normal;

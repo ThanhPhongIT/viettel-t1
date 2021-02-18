@@ -13,10 +13,12 @@
     }
     .heading-top {
         padding-top: 550px;
+        font-family: PF BeauSans Pro;
         font-style: normal;
-        font-weight: 700;
-        font-size: 42px;
+        font-weight: normal;
+        font-size: 38px;
         line-height: 150%;
+        /* identical to box height, or 57px */
         text-transform: uppercase;
         color: #222222;
     }
@@ -32,7 +34,7 @@
         width: 40%;
     }
     .carousel {
-        height: 50vh;
+        height: 70vh;
         .item1 {
             width: 86px;
             height: 86px;
@@ -44,6 +46,21 @@
             height: 346px;
             background: #E70031;
             border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p {
+                font-family: PF BeauSans Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 42px;
+                line-height: 150%;
+                /* identical to box height, or 63px */
+                text-transform: uppercase;
+                color: #F8F6F6;
+                margin-top: 20px;
+            }
         }
         .item3 {
             width: 230px;
@@ -64,61 +81,72 @@
             background: #E4E4E4;
         }
     }
-    .his__develop {
-        padding-bottom: 150px;
-        .heading {
-            margin-bottom: 50px;
-            font-family: PF BeauSans Pro;
+}
+
+.his__develop {
+    padding-top: 150px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .bb {
+        margin-top: 150px;
+        width: 70%;
+        height: 2px;
+        background-color: #E4E4E4;
+    }
+    .heading {
+        margin-bottom: 50px;
+        font-family: PF BeauSans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 150%;
+        /* or 57px */
+        text-transform: uppercase;
+        color: #222222;
+    }
+    img {
+        width: 80%;
+    }
+    .right {
+        width: 90%;
+        margin: 50px 0;
+    }
+    .pl {
+        padding-left: 100px;
+    }
+    .content {
+        .number {
+            font-family: Sarabun;
             font-style: normal;
-            font-weight: normal;
-            font-size: 38px;
-            line-height: 150%;
-            /* or 57px */
-            text-transform: uppercase;
-            color: #222222;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 37px;
+            color: #EC2C34;
+            mix-blend-mode: normal;
+            margin-top: 70px;
         }
-        img {
-            width: 80%;
-        }
-        .right {
-            width: 90%;
-            margin: 50px 0;
-        }
-        .pl {
-            padding-left: 100px;
-        }
-        .content {
-            .number {
-                font-family: Sarabun;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 60px;
-                line-height: 37px;
-                color: #EC2C34;
-                mix-blend-mode: normal;
-                margin-top: 70px;
-            }
-            .sub-1 {
-                width: 400px;
-                font-family: Sarabun;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 37px;
-                /* or 156% */
-                color: #222222;
-                padding-top: 10px;
-            }
-        }
-        .subtitle {
+        .sub-1 {
+            width: 400px;
             font-family: Sarabun;
             font-style: normal;
             font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            color: #1A1A1A;
-            mix-blend-mode: normal;
-            width: 70%;
+            font-size: 24px;
+            line-height: 37px;
+            /* or 156% */
+            color: #222222;
+            padding-top: 10px;
         }
+    }
+    .subtitle {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1A1A1A;
+        mix-blend-mode: normal;
+        width: 70%;
     }
 }
