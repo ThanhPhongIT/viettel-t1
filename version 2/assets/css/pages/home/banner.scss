@@ -1,7 +1,7 @@
 .banner {
     height: 90vh;
-    background-color: #e70031;
-    background-image: url("../images/bg-banner.svg");
+    background: #e9e9e9;
+    // background-image: url("../images/bg-banner.svg");
     background-size: cover;
     position: relative;
     .banner-left {
@@ -10,20 +10,21 @@
         img {
             position: absolute;
             top: -30vh;
+            left: 30vh;
         }
     }
     .banner__right {
         position: relative;
         .slogan {
             position: absolute;
-            top: -100px;
+            top: -25px;
             font-family: "BeauSansPro";
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
             line-height: 24px;
             /* identical to box height, or 171% */
-            color: #f8f6f6;
+            color: #a6a6a6;
             mix-blend-mode: normal;
         }
         z-index: 2;
@@ -35,7 +36,7 @@
                 margin: 0;
                 letter-spacing: -0.035em;
                 text-transform: uppercase;
-                color: #f8f6f6;
+                color: #0c0c0c;
                 font-family: "BeauSansPro";
             }
         }
@@ -45,7 +46,7 @@
             font-size: 18px;
             line-height: 30px;
             /* or 133% */
-            color: #f8f6f6;
+            color: #0c0c0c;
             mix-blend-mode: normal;
             width: 70%;
             padding-bottom: 50px;
@@ -55,14 +56,15 @@
             align-items: center;
             button {
                 margin-right: 50px;
-                width: 150px;
+                width: 103px;
                 height: 41px;
-                border: 1px solid #f8f6f6;
-                border-radius: 60px;
                 display: flex;
+                background: #e9e9e9;
+                color: #ee0033;
+                border: none;
                 justify-content: center;
                 align-items: center;
-                background: #ee0033;
+                border-bottom: 3px solid #ee0033;
                 &:focus {
                     outline: none;
                 }
@@ -72,7 +74,6 @@
                 line-height: 116.3%;
                 /* identical to box height, or 16px */
                 text-transform: uppercase;
-                color: #f8f6f6;
             }
             .play {
                 cursor: pointer;

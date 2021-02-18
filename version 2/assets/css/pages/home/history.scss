@@ -21,4 +21,38 @@
         mix-blend-mode: normal;
         opacity: 0.8;
     }
+    .history-left {
+        margin-top: 150px;
+    }
+    .history-img {
+        margin-top: 70px;
+    }
+    .history-text {
+        font-size: 36px;
+        color: #ec2c34;
+    }
+    .history-sub {
+        font-size: 12px;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+    .history-icon {
+        margin-right: 20px;
+        width: 17%;
+        justify-content: space-between;
+    }
+    .history-time {
+        width: 70%;
+        .history-time-red {
+            font-size: 18px;
+            color: #ec2c34;
+            font-weight: 500;
+        }
+    }
+    .history-des {
+        width: 70%;
+    }
+    .history-item {
+        width: 70%;
+    }
 }

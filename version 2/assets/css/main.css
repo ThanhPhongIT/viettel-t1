@@ -142,8 +142,7 @@ div {
 
 .banner {
   height: 90vh;
-  background-color: #e70031;
-  background-image: url("../images/bg-banner.svg");
+  background: #e9e9e9;
   background-size: cover;
   position: relative;
 }
@@ -154,6 +153,7 @@ div {
 .banner .banner-left img {
   position: absolute;
   top: -30vh;
+  left: 30vh;
 }
 .banner .banner__right {
   position: relative;
@@ -161,14 +161,14 @@ div {
 }
 .banner .banner__right .slogan {
   position: absolute;
-  top: -100px;
+  top: -25px;
   font-family: "BeauSansPro";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   /* identical to box height, or 171% */
-  color: #f8f6f6;
+  color: #a6a6a6;
   mix-blend-mode: normal;
 }
 .banner .banner__right .heading p {
@@ -178,7 +178,7 @@ div {
   margin: 0;
   letter-spacing: -0.035em;
   text-transform: uppercase;
-  color: #f8f6f6;
+  color: #0c0c0c;
   font-family: "BeauSansPro";
 }
 .banner .banner__right .subheading {
@@ -187,7 +187,7 @@ div {
   font-size: 18px;
   line-height: 30px;
   /* or 133% */
-  color: #f8f6f6;
+  color: #0c0c0c;
   mix-blend-mode: normal;
   width: 70%;
   padding-bottom: 50px;
@@ -198,21 +198,21 @@ div {
 }
 .banner .banner__right .button-seemore button {
   margin-right: 50px;
-  width: 150px;
+  width: 103px;
   height: 41px;
-  border: 1px solid #f8f6f6;
-  border-radius: 60px;
   display: flex;
+  background: #e9e9e9;
+  color: #ee0033;
+  border: none;
   justify-content: center;
   align-items: center;
-  background: #ee0033;
+  border-bottom: 3px solid #ee0033;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 116.3%;
   /* identical to box height, or 16px */
   text-transform: uppercase;
-  color: #f8f6f6;
 }
 .banner .banner__right .button-seemore button:focus {
   outline: none;
@@ -434,6 +434,40 @@ div {
   color: #1a1a1a;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+.history .history-left {
+  margin-top: 150px;
+}
+.history .history-img {
+  margin-top: 70px;
+}
+.history .history-text {
+  font-size: 36px;
+  color: #ec2c34;
+}
+.history .history-sub {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.history .history-icon {
+  margin-right: 20px;
+  width: 17%;
+  justify-content: space-between;
+}
+.history .history-time {
+  width: 70%;
+}
+.history .history-time .history-time-red {
+  font-size: 18px;
+  color: #ec2c34;
+  font-weight: 500;
+}
+.history .history-des {
+  width: 70%;
+}
+.history .history-item {
+  width: 70%;
 }
 
 .telecom {
