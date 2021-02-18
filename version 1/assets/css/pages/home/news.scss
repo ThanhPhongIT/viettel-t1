@@ -40,6 +40,7 @@
         background-color: #FFFFFF;
     }
     .item {
+        margin-right: 50px;
         img {
             width: 100%;
         }
@@ -97,6 +98,7 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+            padding: 0;
             .post {
                 margin-bottom: 20px;
                 margin-top: 20px;

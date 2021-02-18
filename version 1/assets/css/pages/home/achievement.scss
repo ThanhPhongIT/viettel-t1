@@ -1,74 +1,60 @@
-.achievement{
-	padding: 120px 0;
-	background-size: cover;
+.achievement {
+    padding: 120px 0;
+    background-size: cover;
     background: url(../images/bg_achievement.svg) no-repeat top;
-	.heading{
-		font-family: Sarabun;
-		font-style: normal;
-		font-weight: 800;
-		font-size: 42px;
-		line-height: 150%;
-		/* identical to box height, or 63px */
-
-		text-align: center;
-		text-transform: uppercase;
-
-		color: #222222;
-		padding-bottom:10px;
-	}
-	.sub-heading{
-		font-family: Sarabun;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 18px;
-		line-height: 24px;
-		/* identical to box height, or 133% */
-
-		text-align: center;
-		text-transform: uppercase;
-
-		color: #1A1A1A;
-
-		mix-blend-mode: normal;
-		opacity: 0.8;
-	}
-	.item{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin-top: 100px;
-		img{
-			position: relative;
-		}
-		.total{
-			position: absolute;
-			top: 35%;
-			left: 50%;
-			font-style: normal;
-			font-weight: 600;
-			font-size: 60px;
-			line-height: 150%;
-			text-transform: uppercase;
-
-			color: #ED2C34;
-			transform: translate(-50%, -50%);
-		}
-		.title{
-			font-style: normal;
-			font-weight: 700;
-			font-size: 16px;
-			line-height: 157.3%;
-			margin-top: 20px;
-			display: flex;
-			align-items: flex-end;
-			text-align: center;
-			text-transform: uppercase;
-			color: #1A1A1A;
-
-		}
-		
-
-	}
-	
+    .heading {
+        font-family: PF BeauSans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #222222;
+        padding-bottom: 10px;
+    }
+    .sub-heading {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 155.5%;
+        /* identical to box height, or 28px */
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #808080;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        position: relative;
+        .total {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: #ED2C34;
+            transform: translate(-50%, -50%);
+        }
+        .title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 157.3%;
+            margin-top: 20px;
+            display: flex;
+            align-items: flex-end;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1A1A1A;
+        }
+    }
 }

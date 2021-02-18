@@ -1,28 +1,28 @@
-.business{
-	padding: 130px 0;
-	background-color: #E70031;
-	.heading{
-		font-style: normal;
-		font-weight: 700;
-		font-size: 42px;
-		line-height: 122.5%;
-		/* or 51px */
-
-		text-transform: uppercase;
-		padding: 100px 0;
-		color: #F8F6F6;
-	}
-	img{
-		margin-bottom: 50px;
-	}
-	.content{
-		font-style: normal;
-		font-weight: bold;
-		font-size: 22px;
-		line-height: 155.5%;
-		text-transform: uppercase;
-		width: 70%;
-		color: #F8F6F6;
-		padding-bottom: 150px;
-	}
+.business {
+    padding: 130px 0;
+    background-color: #E70031;
+    .heading {
+        font-family: PF BeauSans Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 150%;
+        /* or 57px */
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 100px 0;
+    }
+    img {
+        margin-bottom: 50px;
+    }
+    .content {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 155.5%;
+        text-transform: uppercase;
+        width: 70%;
+        color: #F8F6F6;
+        padding-bottom: 150px;
+    }
 }

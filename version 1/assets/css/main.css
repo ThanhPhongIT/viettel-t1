@@ -22,7 +22,7 @@ a {
 }
 
 @font-face {
-  font-family: "PF_BeauSans_Pro";
+  font-family: "PF BeauSans Pro";
   src: url("../font/PFBeauSansPro-Regular.ttf") format("truetype"), url("../font/PFBeauSansPro-Bbook.ttf"), url("../font/PFBeauSansPro-BbookItalic.ttf"), url("../font/PFBeauSansPro-Black.ttf"), url("../font/PFBeauSansPro-BlackItalic.ttf"), url("../font/PFBeauSansPro-Bold.ttf"), url("../font/PFBeauSansPro-BoldItalic.ttf"), url("../font/PFBeauSansPro-Italic.ttf"), url("../font/PFBeauSansPro-Light.ttf"), url("../font/PFBeauSansPro-LightItalic.ttf"), url("../font/PFBeauSansPro-SemiBold.ttf"), url("../font/PFBeauSansPro-SemiBoldItalic.ttf");
 }
 /**
@@ -243,7 +243,7 @@ div {
   z-index: 2;
 }
 .banner .banner__left .heading p {
-  font-family: PF_BeauSans_Pro;
+  font-family: PF BeauSans Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 54px;
@@ -345,19 +345,34 @@ div {
   right: 0;
   width: 100%;
 }
-.slogan p {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 42px;
-  line-height: 150%;
-  /* or 63px */
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #F8F6F6;
+.slogan .re {
+  position: relative;
+  height: 100%;
+}
+.slogan .re .con {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0%;
+}
+.slogan .re .con .ti {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 155.5%;
+  /* identical to box height, or 28px */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #E70031;
+}
+.slogan .re p {
+  font-family: PF BeauSans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 150%;
+  /* or 57px */
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .bg-black {
@@ -424,7 +439,7 @@ div {
   padding-bottom: 422px;
 }
 .bg-black .global p {
-  font-family: PF_BeauSans_Pro;
+  font-family: PF BeauSans Pro;
   font-style: normal;
   font-weight: normal;
   font-size: 38px;
@@ -446,14 +461,15 @@ div {
   background-color: #E70031;
 }
 .business .heading {
+  font-family: PF BeauSans Pro;
   font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 122.5%;
-  /* or 51px */
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 150%;
+  /* or 57px */
   text-transform: uppercase;
+  color: #FFFFFF;
   padding: 100px 0;
-  color: #F8F6F6;
 }
 .business img {
   margin-bottom: 50px;
@@ -479,6 +495,10 @@ div {
   left: 50%;
   transform: translate(-50%, -30%);
 }
+.history .his .mask {
+  position: absolute;
+  left: 0;
+}
 .history .heading-top {
   padding-top: 550px;
   font-style: normal;
@@ -502,16 +522,47 @@ div {
 .history .carousel {
   height: 50vh;
 }
+.history .carousel .item1 {
+  width: 86px;
+  height: 86px;
+  background: #E4E4E4;
+  border-radius: 50%;
+}
+.history .carousel .item2 {
+  width: 346px;
+  height: 346px;
+  background: #E70031;
+  border-radius: 50%;
+}
+.history .carousel .item3 {
+  width: 230px;
+  height: 230px;
+  background: #E4E4E4;
+  border-radius: 50%;
+}
+.history .carousel .item4 {
+  border-radius: 50%;
+  width: 86px;
+  height: 86px;
+  background: #E4E4E4;
+}
+.history .carousel .item5 {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background: #E4E4E4;
+}
 .history .his__develop {
   padding-bottom: 150px;
 }
 .history .his__develop .heading {
   margin-bottom: 50px;
-  font-family: Sarabun;
+  font-family: PF BeauSans Pro;
   font-style: normal;
-  font-weight: 800;
-  font-size: 42px;
+  font-weight: normal;
+  font-size: 38px;
   line-height: 150%;
+  /* or 57px */
   text-transform: uppercase;
   color: #222222;
 }
@@ -540,9 +591,10 @@ div {
   font-family: Sarabun;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  color: #1A1A1A;
-  mix-blend-mode: normal;
+  font-size: 24px;
+  line-height: 37px;
+  /* or 156% */
+  color: #222222;
   padding-top: 10px;
 }
 .history .his__develop .subtitle {
@@ -553,6 +605,7 @@ div {
   line-height: 24px;
   color: #1A1A1A;
   mix-blend-mode: normal;
+  width: 70%;
 }
 
 .achievement {
@@ -561,12 +614,11 @@ div {
   background: url(../images/bg_achievement.svg) no-repeat top;
 }
 .achievement .heading {
-  font-family: Sarabun;
+  font-family: PF BeauSans Pro;
   font-style: normal;
-  font-weight: 800;
-  font-size: 42px;
+  font-weight: normal;
+  font-size: 38px;
   line-height: 150%;
-  /* identical to box height, or 63px */
   text-align: center;
   text-transform: uppercase;
   color: #222222;
@@ -577,13 +629,12 @@ div {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 24px;
-  /* identical to box height, or 133% */
+  line-height: 155.5%;
+  /* identical to box height, or 28px */
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #1A1A1A;
-  mix-blend-mode: normal;
-  opacity: 0.8;
+  color: #808080;
 }
 .achievement .item {
   display: flex;
@@ -591,8 +642,6 @@ div {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-}
-.achievement .item img {
   position: relative;
 }
 .achievement .item .total {
@@ -662,6 +711,9 @@ div {
 .news .bgw {
   background-color: #FFFFFF;
 }
+.news .item {
+  margin-right: 50px;
+}
 .news .item img {
   width: 100%;
 }
@@ -719,6 +771,7 @@ div {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  padding: 0;
 }
 .news .most-view .list .post {
   margin-bottom: 20px;
