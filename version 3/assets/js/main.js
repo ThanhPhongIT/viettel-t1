@@ -1,4 +1,5 @@
-$(document).ready(function() {
+new WOW().init();
+$(document).ready(function () {
     $('.banner__carousel').owlCarousel({
         loop: true,
         items: 1,
@@ -8,11 +9,11 @@ $(document).ready(function() {
     })
     var selector = $('.banner__carousel');
 
-    $('.my-next-button').click(function() {
+    $('.my-next-button').click(function () {
         selector.trigger('next.owl.carousel');
     });
 
-    $('.my-prev-button').click(function() {
+    $('.my-prev-button').click(function () {
         selector.trigger('prev.owl.carousel');
     });
 })

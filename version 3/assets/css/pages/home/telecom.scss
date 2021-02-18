@@ -1,6 +1,6 @@
 .telecom {
     padding: 150px 0 0 0;
-    background: #F2F3F3;
+    background: #f2f3f3;
     .heading {
         font-family: Sarabun;
         font-style: normal;
@@ -10,7 +10,7 @@
         /* identical to box height, or 42px */
         letter-spacing: -0.5px;
         text-transform: uppercase;
-        color: #010B12;
+        color: #010b12;
     }
     .subheading {
         font-family: Sarabun;
@@ -19,7 +19,7 @@
         font-size: 14px;
         line-height: 24px;
         /* or 171% */
-        color: #010B12;
+        color: #010b12;
         mix-blend-mode: normal;
         opacity: 0.8;
         margin: 16px 0 70px 0;
@@ -43,19 +43,21 @@
                 align-items: flex-end;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
-                color: #010B12;
+                color: #010b12;
                 margin-left: 15px;
             }
         }
         .ab-img {
             position: absolute;
-            top: 35%;
+            top: 30%;
             width: 100%;
         }
     }
     .back-red {
         height: 50vh;
-        background-color: #EE0033;
+        margin-top: -201px;
+        background-color: #ee0033;
+        z-index: -1;
         .slide {
             background-color: white;
             width: 366px;
@@ -93,7 +95,7 @@
                         text-align: right;
                         letter-spacing: 0.5px;
                         text-transform: uppercase;
-                        color: #010B12;
+                        color: #010b12;
                     }
                 }
                 .bottom {
@@ -109,7 +111,7 @@
                     justify-content: flex-start;
                     letter-spacing: 0.5px;
                     text-transform: uppercase;
-                    color: #010B12;
+                    color: #010b12;
                     p {
                         font-family: Sarabun;
                         font-style: normal;
@@ -121,14 +123,19 @@
                         align-items: flex-end;
                         letter-spacing: 0.5px;
                         text-transform: uppercase;
-                        color: #010B12;
+                        color: #010b12;
                         margin: 0;
                         margin-right: 50px;
                     }
                     .under {
                         width: 55px;
                         height: 3px;
-                        background: #ED2C34;
+                        background: #ed2c34;
+                    }
+                    .under-grey {
+                        width: 55px;
+                        height: 3px;
+                        background: #dadada;
                     }
                 }
             }
