@@ -1,18 +1,29 @@
-$(document).ready(function() {
-    $('.banner__carousel').owlCarousel({
-        loop: true,
-        items: 1,
-        dots: true,
-        mouseDrag: false,
-        touchDrag: false,
-    })
-    var selector = $('.banner__carousel');
+new WOW().init();
+var animateHTML = function() {
+    var elems, windowHeight;
 
-    $('.my-next-button').click(function() {
-        selector.trigger('next.owl.carousel');
-    });
+    var init = function() {
+        elems = document.getElementsByClassName('hidden');
+        windowHeight = window.innerHeight;
+        _addEventHandlers();
+    };
 
-    $('.my-prev-button').click(function() {
-        selector.trigger('prev.owl.carousel');
-    });
-})
+    var _addEventHandlers = function() {
+        window.addEventListener('scroll', _checkPosition);
+        window.addEventListener('resize', init);
+    };
+    var _checkPosition = function() {
+        for (var i = 0; i < elems.length; i++) {
+            var posFromTop = elems[i].getBoundingClientRect().top;
+            if (posFromTop - windowHeight <= 0) {
+                elems[i].className = elems[i].className.replace('hidden', 'fade-in');
+            }
+        }
+    };
+
+    return {
+        init: init,
+    };
+};
+
+animateHTML().init();
