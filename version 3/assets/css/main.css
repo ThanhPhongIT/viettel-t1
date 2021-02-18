@@ -229,10 +229,15 @@ p {
   align-items: flex-end;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.5;
   padding: 100px 0 20px 0;
   padding-left: 375px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .corporation .top .left .about {
+    padding-left: 270px;
+  }
 }
 .corporation .top .left .heading {
   padding-bottom: 100px;
@@ -244,8 +249,13 @@ p {
   /* or 48px */
   letter-spacing: -1.5px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 375px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .corporation .top .left .heading {
+    padding-left: 270px;
+  }
 }
 .corporation .top .right {
   width: 20vw;
@@ -262,12 +272,18 @@ p {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .corporation .bottom .sticky {
+    width: 385px;
+    height: 340px;
+  }
 }
 .corporation .bottom .sticky .top {
   padding: 40px;
@@ -288,12 +304,12 @@ p {
   text-align: right;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
 }
 .corporation .bottom .sticky .top .under {
   width: 51px;
   height: 3px;
-  background: #ED2C34;
+  background: #ed2c34;
 }
 .corporation .bottom .sticky .bottom {
   width: 100%;
@@ -313,13 +329,13 @@ p {
   text-align: right;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
   padding-right: 40px;
 }
 
 .history {
-  padding: 120px;
-  background-color: #F2F3F3;
+  padding: 112px;
+  background-color: #f2f3f3;
 }
 .history .heading {
   font-family: Sarabun;
@@ -338,7 +354,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  color: #1A1A1A;
+  color: #1a1a1a;
   mix-blend-mode: normal;
   opacity: 0.8;
   padding-top: 12px;
@@ -346,15 +362,15 @@ p {
 }
 
 .mission {
-  background-color: #F2F3F3;
-  padding-top: 180px;
+  background-color: #f2f3f3;
+  padding-top: 175px;
 }
 .mission .bb {
-  padding-bottom: 180px;
+  padding-bottom: 193px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .mission .pl {
-  padding-left: 150px;
+  padding-left: 126px;
 }
 .mission img {
   width: 100%;
@@ -370,7 +386,7 @@ p {
   text-transform: uppercase;
   color: #000000;
   width: 80%;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .mission .des {
   font-family: Sarabun;
@@ -566,18 +582,24 @@ p {
 }
 
 .service {
-  padding-top: 240px;
+  padding-top: 120px;
+  height: 74vh;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service {
+    padding-top: 132px;
+  }
 }
 .service .heading {
   font-family: Sarabun;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 28px;
   line-height: 150%;
   /* or 42px */
   letter-spacing: -0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
 }
 .service .list-service {
   display: flex;
@@ -616,9 +638,14 @@ p {
   align-items: flex-end;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
   margin: 0;
   margin-left: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .list-service .list li p {
+    white-space: nowrap;
+  }
 }
 .service .des {
   font-family: Sarabun;
@@ -627,11 +654,16 @@ p {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  color: #010B12;
+  color: #010b12;
   mix-blend-mode: normal;
   opacity: 0.8;
   margin-bottom: 30px;
   width: 50%;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .des {
+    margin-top: -30px;
+  }
 }
 .service .seemore {
   display: flex;
@@ -647,11 +679,29 @@ p {
   /* identical to box height, or 16px */
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #ED2C34;
+  color: #ed2c34;
   margin-right: 10px;
 }
 .service .grid-layout {
   display: flex;
+  margin-left: 22%;
+  margin-top: 80px;
+  position: absolute;
+}
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .service .grid-layout {
+    margin-left: -20%;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1400px) {
+  .service .grid-layout {
+    margin-left: -27%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout {
+    margin-left: -18%;
+  }
 }
 .service .grid-layout .item1 {
   position: relative;
@@ -659,6 +709,14 @@ p {
 }
 .service .grid-layout .item1 .contain1 {
   margin-top: 270px;
+}
+.service .grid-layout .item1 .contain1 img {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item1 .contain1 img {
+    width: 125px;
+  }
 }
 .service .grid-layout .item2 {
   margin-left: 20px;
@@ -669,6 +727,11 @@ p {
 .service .grid-layout .item2 .contain2 img {
   margin-bottom: 20px;
 }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item2 .contain2 img {
+    width: 125px;
+  }
+}
 .service .grid-layout .item3 {
   margin-left: 20px;
   margin-right: 20px;
@@ -676,8 +739,21 @@ p {
 .service .grid-layout .item3 .contain3 img {
   margin-bottom: 20px;
 }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item3 .contain3 img {
+    width: 125px;
+  }
+}
 .service .grid-layout .item4 .contain4 {
   margin-top: 50px;
+}
+.service .grid-layout .item4 .contain4 img {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item4 .contain4 img {
+    width: 125px;
+  }
 }
 
 .social {
@@ -761,7 +837,7 @@ p {
   /* or 42px */
   letter-spacing: -0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
   width: 25%;
   margin-bottom: 35px;
 }
@@ -772,7 +848,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  color: #010B12;
+  color: #010b12;
   mix-blend-mode: normal;
   opacity: 0.8;
   margin-bottom: 142px;
@@ -794,7 +870,7 @@ p {
   text-align: right;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
 }
 .tech .bottom {
   display: flex;
@@ -805,7 +881,12 @@ p {
 .tech .bottom .under {
   width: 58px;
   height: 3px;
-  background: #ED2C34;
+  background: #ed2c34;
+}
+.tech .bottom .under-grey {
+  width: 35px;
+  height: 3px;
+  background: #dadada;
 }
 .tech .bottom .seemore {
   display: flex;
@@ -820,14 +901,14 @@ p {
   /* identical to box height, or 16px */
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #ED2C34;
+  color: #ed2c34;
   padding-right: 10px;
   cursor: pointer;
 }
 
 .telecom {
   padding: 150px 0 0 0;
-  background: #F2F3F3;
+  background: #f2f3f3;
 }
 .telecom .heading {
   font-family: Sarabun;
@@ -838,7 +919,7 @@ p {
   /* identical to box height, or 42px */
   letter-spacing: -0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
 }
 .telecom .subheading {
   font-family: Sarabun;
@@ -847,7 +928,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   /* or 171% */
-  color: #010B12;
+  color: #010b12;
   mix-blend-mode: normal;
   opacity: 0.8;
   margin: 16px 0 70px 0;
@@ -873,22 +954,38 @@ p {
   align-items: flex-end;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
   margin-left: 15px;
 }
 .telecom .list-service .ab-img {
   position: absolute;
-  top: 35%;
+  top: 30%;
   width: 100%;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .telecom .list-service .ab-img {
+    width: 90%;
+    margin-left: 50px;
+  }
 }
 .telecom .back-red {
   height: 50vh;
-  background-color: #EE0033;
+  margin-top: -201px;
+  background-color: #ee0033;
+  z-index: -1;
 }
 .telecom .back-red .slide {
   background-color: white;
   width: 366px;
   height: 366px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .telecom .back-red .slide {
+    background-color: white;
+    width: 235px;
+    height: 235px;
+    margin-left: 50px;
+  }
 }
 .telecom .back-red .po {
   position: relative;
@@ -925,7 +1022,7 @@ p {
   text-align: right;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
 }
 .telecom .back-red .po .slide .bottom {
   width: 100%;
@@ -940,7 +1037,7 @@ p {
   justify-content: flex-start;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
 }
 .telecom .back-red .po .slide .bottom p {
   font-family: Sarabun;
@@ -953,14 +1050,19 @@ p {
   align-items: flex-end;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #010B12;
+  color: #010b12;
   margin: 0;
   margin-right: 50px;
 }
 .telecom .back-red .po .slide .bottom .under {
   width: 55px;
   height: 3px;
-  background: #ED2C34;
+  background: #ed2c34;
+}
+.telecom .back-red .po .slide .bottom .under-grey {
+  width: 55px;
+  height: 3px;
+  background: #dadada;
 }
 .telecom .back-red .po .right {
   position: absolute;

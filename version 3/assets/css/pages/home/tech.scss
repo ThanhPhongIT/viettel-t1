@@ -9,7 +9,7 @@
         /* or 42px */
         letter-spacing: -0.5px;
         text-transform: uppercase;
-        color: #010B12;
+        color: #010b12;
         width: 25%;
         margin-bottom: 35px;
     }
@@ -20,7 +20,7 @@
         font-size: 14px;
         line-height: 24px;
         /* or 171% */
-        color: #010B12;
+        color: #010b12;
         mix-blend-mode: normal;
         opacity: 0.8;
         margin-bottom: 142px;
@@ -42,7 +42,7 @@
         text-align: right;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        color: #010B12;
+        color: #010b12;
     }
     .bottom {
         display: flex;
@@ -52,7 +52,12 @@
         .under {
             width: 58px;
             height: 3px;
-            background: #ED2C34;
+            background: #ed2c34;
+        }
+        .under-grey {
+            width: 35px;
+            height: 3px;
+            background: #dadada;
         }
         .seemore {
             display: flex;
@@ -66,7 +71,7 @@
                 /* identical to box height, or 16px */
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                color: #ED2C34;
+                color: #ed2c34;
                 padding-right: 10px;
                 cursor: pointer;
             }
