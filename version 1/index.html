@@ -107,7 +107,7 @@
             <img class="img animate__animated wow animate__fadeInUp" src="assets/images/Globe.svg" alt="">
         </div>
         <div class="bg-black">
-            <div class="map-animation">
+            <div class="map-animation" id="animation-container">
 
             </div>
             <div class="telecom ">
@@ -144,7 +144,6 @@
             </div>
             <div class="global">
                 <p class=" animate__animated wow animate__fadeInUp">Tập đoàn Công nghệ<br> kinh doanh toàn cầu</p>
-                <img class="animate__animated wow animate__fadeInUp" src="assets/images/global.svg" alt="">
             </div>
         </div>
         <div class="slogan">
@@ -386,7 +385,28 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+<script src="./assets/js/scrollAnimate.min.js"></script>
 <script src="./assets/js/main.js"></script>
+<script>
+    var $aContainer = document.getElementById("animation-container");
+    var aContainerRect = $aContainer.getBoundingClientRect();
+    var start = aContainerRect.top;
+    var length = aContainerRect.height + 100; //Height of the container plus a offset for better presentation
+    scrollAnimate({
+        frames: {
+            path: "assets/frames/",
+            prefix: "RENDER - Vienthong",
+            extension: "png",
+            amount: 60,
+            pad: "000"
+        },
+        parent: $aContainer,
+        scroll: {
+            start: start,
+            length: length
+        }
+    });
+</script>
 <script>
     function scrollToFunc(id) {
         $('html, body').animate({

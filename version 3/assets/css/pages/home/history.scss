@@ -1,6 +1,16 @@
 .history {
     padding: 112px;
     background-color: #f2f3f3;
+    .bottom {
+        display: flex;
+        margin-top: 150px;
+        .line-time {
+            display: flex;
+            i {
+                margin: 0 20px;
+            }
+        }
+    }
     .heading {
         font-family: "BeauSansPro";
         font-style: normal;
@@ -23,5 +33,35 @@
         opacity: 0.8;
         padding-top: 12px;
         width: 22%;
+    }
+    .slider {
+        .small {
+            position: absolute;
+            left: 500px;
+            bottom: -167px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            li {
+                display: flex;
+                align-items: flex-start;
+                img {
+                    margin-right: 20px;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 150%;
+                    /* or 22px */
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: #101810;
+                }
+            }
+        }
     }
 }

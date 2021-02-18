@@ -380,10 +380,6 @@ div {
 }
 .bg-black .map-animation {
   height: 80vh;
-  background-color: #141718;
-  background-image: url("../images/bg-map.svg");
-  background-size: cover;
-  background-blend-mode: hard-light;
 }
 .bg-black .telecom {
   padding: 100px 0;
