@@ -1,7 +1,7 @@
 .banner {
     height: 90vh;
-    background-color: #E70031;
-    background-image: url('../images/bg-banner.svg');
+    background-color: #e70031;
+    background-image: url("../images/bg-banner.svg");
     background-size: cover;
     position: relative;
     .banner-left {
@@ -17,13 +17,13 @@
         .slogan {
             position: absolute;
             top: -100px;
-            font-family: Sarabun;
+            font-family: "BeauSansPro";
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
             line-height: 24px;
             /* identical to box height, or 171% */
-            color: #F8F6F6;
+            color: #f8f6f6;
             mix-blend-mode: normal;
         }
         z-index: 2;
@@ -35,7 +35,8 @@
                 margin: 0;
                 letter-spacing: -0.035em;
                 text-transform: uppercase;
-                color: #F8F6F6;
+                color: #f8f6f6;
+                font-family: "BeauSansPro";
             }
         }
         .subheading {
@@ -44,7 +45,7 @@
             font-size: 18px;
             line-height: 30px;
             /* or 133% */
-            color: #F8F6F6;
+            color: #f8f6f6;
             mix-blend-mode: normal;
             width: 70%;
             padding-bottom: 50px;
@@ -56,12 +57,12 @@
                 margin-right: 50px;
                 width: 150px;
                 height: 41px;
-                border: 1px solid #F8F6F6;
+                border: 1px solid #f8f6f6;
                 border-radius: 60px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: #EE0033;
+                background: #ee0033;
                 &:focus {
                     outline: none;
                 }
@@ -71,14 +72,14 @@
                 line-height: 116.3%;
                 /* identical to box height, or 16px */
                 text-transform: uppercase;
-                color: #F8F6F6;
+                color: #f8f6f6;
             }
             .play {
                 cursor: pointer;
                 width: 42px;
                 height: 42px;
                 border-radius: 50%;
-                background: #F8F6F6;
+                background: #f8f6f6;
                 display: flex;
                 align-items: center;
                 justify-content: center;

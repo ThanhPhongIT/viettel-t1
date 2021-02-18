@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: "BeauSansPro";
+    src: url("../font/PFBeauSansPro-Regular.ttf");
+}
 body {
-    font-family: 'Sarabun', sans-serif;
+    font-family: "Sarabun", sans-serif;
 }
 
 ul,

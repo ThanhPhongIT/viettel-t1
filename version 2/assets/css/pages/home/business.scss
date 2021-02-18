@@ -9,14 +9,14 @@
     }
     .heading {
         padding-left: 150px;
-        font-family: Sarabun;
+        font-family: "BeauSansPro";
         font-style: normal;
         font-weight: 800;
         font-size: 28px;
         line-height: 150%;
         /* or 42px */
         text-transform: uppercase;
-        color: #1A1A1A;
+        color: #1a1a1a;
         padding-top: 50px;
     }
     .content {
@@ -27,7 +27,7 @@
             font-size: 36px;
             line-height: 35px;
             /* or 97% */
-            color: #EC2C34;
+            color: #ec2c34;
             mix-blend-mode: normal;
             margin-top: 64px;
             margin-bottom: 10px;
@@ -38,7 +38,7 @@
             font-size: 24px;
             line-height: 29px;
             /* or 121% */
-            color: #1A1A1A;
+            color: #1a1a1a;
             mix-blend-mode: normal;
             opacity: 0.8;
             margin-bottom: 11px;
@@ -49,7 +49,7 @@
             font-size: 14px;
             line-height: 24px;
             /* or 171% */
-            color: #1A1A1A;
+            color: #1a1a1a;
             mix-blend-mode: normal;
             opacity: 0.8;
             padding-bottom: 100px;
@@ -58,8 +58,8 @@
 }
 
 .thanhtuu {
-    background-color: #EE0033;
-    background-image: url('../images/bg-thanhtuu.svg');
+    background-color: #ee0033;
+    background-image: url("../images/bg-thanhtuu.svg");
     background-position: bottom;
     padding-top: 185px;
     background-size: contain;
@@ -71,13 +71,13 @@
         line-height: 30px;
         /* or 125% */
         text-transform: uppercase;
-        color: #F8F6F6;
+        color: #f8f6f6;
         mix-blend-mode: normal;
     }
     button {
         width: 162px;
         height: 48px;
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
         border-radius: 69px;
         font-style: normal;
         font-weight: bold;
@@ -86,8 +86,8 @@
         /* identical to box height, or 16px */
         text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
-        background-color: #EE0033;
+        color: #ffffff;
+        background-color: #ee0033;
         margin-top: 30px;
         &:focus {
             outline: none;
@@ -112,7 +112,7 @@
                 /* identical to box height, or 52px */
                 text-align: center;
                 text-transform: uppercase;
-                color: #F8F6F6;
+                color: #f8f6f6;
                 top: 10%;
             }
             .title {
@@ -125,7 +125,7 @@
                 align-items: flex-end;
                 text-align: center;
                 text-transform: uppercase;
-                color: #F8F6F6;
+                color: #f8f6f6;
                 margin-top: 20px;
             }
         }

@@ -1,7 +1,7 @@
 .news {
     padding-top: 100px;
     .heading {
-        font-family: Sarabun;
+        font-family: "BeauSansPro";
         font-style: normal;
         font-weight: bold;
         font-size: 28px;
@@ -9,7 +9,7 @@
         /* identical to box height, or 42px */
         text-align: center;
         text-transform: uppercase;
-        color: #010B12;
+        color: #010b12;
         margin-bottom: 30px;
     }
     ul {
@@ -35,7 +35,7 @@
                 line-height: 24px;
                 /* identical to box height, or 171% */
                 text-align: right;
-                color: #FFFFFF;
+                color: #ffffff;
             }
             .title {
                 z-index: 2;
@@ -50,7 +50,7 @@
                 display: flex;
                 align-items: flex-end;
                 text-transform: uppercase;
-                color: #FFFFFF;
+                color: #ffffff;
             }
         }
     }

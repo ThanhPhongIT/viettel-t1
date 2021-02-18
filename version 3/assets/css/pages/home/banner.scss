@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     .heading {
-        font-family: Sarabun;
+        font-family: "BeauSansPro";
         font-style: normal;
         font-weight: 300;
         font-size: 48px;
@@ -16,20 +16,20 @@
         color: #000000;
     }
     .des {
-        font-family: Sarabun;
+        font-family: "BeauSansPro";
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
         line-height: 24px;
         /* or 171% */
-        color: #010B12;
+        color: #010b12;
         margin: 40px 0 50px 0;
     }
     button {
         border: none;
         width: 156px;
         height: 48px;
-        background: #ED2C34;
+        background: #ed2c34;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -37,7 +37,7 @@
         /* identical to box height, or 16px */
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         &:focus {
             outline: none;
         }
