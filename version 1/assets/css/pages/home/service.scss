@@ -1,0 +1,46 @@
+.service {
+    padding: 160px 0;
+    position: relative;
+    img {
+        margin-top: 60px;
+    }
+    .img {
+        position: absolute;
+        top: 55%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .heading {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 150%;
+        /* or 57px */
+        text-transform: uppercase;
+        color: #222222;
+        width: 70%;
+    }
+    .title {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 157.3%;
+        /* identical to box height, or 28px */
+        display: flex;
+        align-items: flex-end;
+        text-transform: uppercase;
+        color: #010B12;
+    }
+    .des {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        color: #010B12;
+        mix-blend-mode: normal;
+        width: 70%;
+    }
+}

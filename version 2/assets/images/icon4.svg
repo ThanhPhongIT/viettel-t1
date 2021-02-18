@@ -1,0 +1,15 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M36 52H46" stroke="black" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M14 30H24" stroke="black" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M30 36V46" stroke="black" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M8 36C11.3137 36 14 33.3137 14 30C14 26.6863 11.3137 24 8 24C4.68629 24 2 26.6863 2 30C2 33.3137 4.68629 36 8 36Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M30 36C33.3137 36 36 33.3137 36 30C36 26.6863 33.3137 24 30 24C26.6863 24 24 26.6863 24 30C24 33.3137 26.6863 36 30 36Z" stroke="#E70031" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M30 58C33.3137 58 36 55.3137 36 52C36 48.6863 33.3137 46 30 46C26.6863 46 24 48.6863 24 52C24 55.3137 26.6863 58 30 58Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M52 58C55.3137 58 58 55.3137 58 52C58 48.6863 55.3137 46 52 46C48.6863 46 46 48.6863 46 52C46 55.3137 48.6863 58 52 58Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M8 14V24" stroke="black" stroke-width="3" stroke-miterlimit="10"/>
+<path d="M30 14C33.3137 14 36 11.3137 36 8C36 4.68629 33.3137 2 30 2C26.6863 2 24 4.68629 24 8C24 11.3137 26.6863 14 30 14Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M52 14C55.3137 14 58 11.3137 58 8C58 4.68629 55.3137 2 52 2C48.6863 2 46 4.68629 46 8C46 11.3137 48.6863 14 52 14Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M52 36C55.3137 36 58 33.3137 58 30C58 26.6863 55.3137 24 52 24C48.6863 24 46 26.6863 46 30C46 33.3137 48.6863 36 52 36Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+<path d="M8 58C11.3137 58 14 55.3137 14 52C14 48.6863 11.3137 46 8 46C4.68629 46 2 48.6863 2 52C2 55.3137 4.68629 58 8 58Z" stroke="black" stroke-width="3" stroke-miterlimit="10" stroke-linecap="square"/>
+</svg>

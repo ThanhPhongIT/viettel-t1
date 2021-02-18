@@ -1,0 +1,109 @@
+.rank {
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    .left {
+        position: absolute;
+        left: 0;
+        top: 0
+    }
+    .right {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .heading {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 150%;
+        /* identical to box height, or 42px */
+        text-align: center;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        color: #1A1A1A;
+        padding-top: 160px;
+    }
+    .title {
+        font-family: Sarabun;
+        font-style: italic;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1A1A1A;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        text-align: center;
+        padding: 10px 0 60px 0;
+    }
+    .rank-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .number {
+                    font-family: Sarabun;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 48px;
+                    line-height: 150%;
+                    /* identical to box height, or 72px */
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    text-transform: uppercase;
+                    color: #ED2C34;
+                }
+                p {
+                    font-family: Sarabun;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 157.3%;
+                    /* or 28px */
+                    display: flex;
+                    align-items: flex-end;
+                    text-align: center;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: #1A1A1A;
+                }
+            }
+        }
+    }
+    button {
+        width: 150px;
+        height: 48px;
+        border: none;
+        margin-bottom: 140px;
+        &:focus {
+            outline: none;
+        }
+        margin-top: 50px;
+        background: #ED2C34;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 116.3%;
+        /* identical to box height, or 16px */
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}

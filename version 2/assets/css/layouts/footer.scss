@@ -1,0 +1,70 @@
+.footer {
+    background-color: #353131;
+    padding: 50px 0;
+    .name {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 19px;
+        /* identical to box height, or 119% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .email {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 25px;
+        /* identical to box height, or 208% */
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        margin-top: 21px;
+    }
+    .address {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 167% */
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+    }
+    p {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 25px;
+        /* identical to box height, or 208% */
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        cursor: pointer;
+    }
+    .foot {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        p {
+            padding: 0 20px;
+        }
+        p:first-child {
+            border-right: 1px solid #F8F6F6;
+            padding-left: 0;
+        }
+    }
+}

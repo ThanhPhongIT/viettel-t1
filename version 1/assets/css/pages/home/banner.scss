@@ -1,0 +1,55 @@
+.banner {
+    height: 80vh;
+    background-color: #E70031;
+    position: relative;
+    .banner__left {
+        z-index: 2;
+        .heading {
+            p {
+                font-family: PF_BeauSans_Pro;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 54px;
+                line-height: 90%;
+                /* identical to box height, or 0px */
+                letter-spacing: -0.02em;
+                text-transform: uppercase;
+                color: #F8F6F6;
+            }
+        }
+        .subheading {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            /* or 24px */
+            color: #F8F6F6;
+            mix-blend-mode: normal;
+            margin: 84px 0 34px 0;
+        }
+        .button-seemore {
+            button {
+                width: 150px;
+                height: 48px;
+                background: #F8F6F6;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:focus {
+                    outline: none;
+                }
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 116.3%;
+                /* or 16px */
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                color: #E70031;
+            }
+        }
+    }
+}

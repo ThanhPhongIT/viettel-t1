@@ -1,0 +1,133 @@
+.social {
+    background: #fff;
+    padding-top: 200px;
+    .img-social {
+        position: relative;
+        img {
+            position: absolute;
+        }
+    }
+    .heading {
+        padding-left: 150px;
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 150%;
+        /* or 42px */
+        text-transform: uppercase;
+        color: #1A1A1A;
+        padding-top: 50px;
+    }
+    .content {
+        padding-left: 150px;
+        .number {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 35px;
+            /* or 97% */
+            color: #EC2C34;
+            mix-blend-mode: normal;
+            margin-top: 64px;
+            margin-bottom: 10px;
+        }
+        .des {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            /* or 121% */
+            color: #1A1A1A;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            margin-bottom: 11px;
+        }
+        .content-des {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+            color: #1A1A1A;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+.thanhtuu {
+    background-color: #EE0033;
+    background-image: url('../images/bg-thanhtuu.svg');
+    background-position: bottom;
+    padding-top: 185px;
+    background-size: contain;
+    height: 80vh;
+    .heading {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        /* or 125% */
+        text-transform: uppercase;
+        color: #F8F6F6;
+        mix-blend-mode: normal;
+    }
+    button {
+        width: 162px;
+        height: 48px;
+        border: 1px solid #FFFFFF;
+        border-radius: 69px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 116.3%;
+        /* identical to box height, or 16px */
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #EE0033;
+        margin-top: 30px;
+        &:focus {
+            outline: none;
+        }
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .number {
+                position: absolute;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 34.5734px;
+                line-height: 150%;
+                /* identical to box height, or 52px */
+                text-align: center;
+                text-transform: uppercase;
+                color: #F8F6F6;
+                top: 10%;
+            }
+            .title {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 157.3%;
+                /* identical to box height, or 22px */
+                display: flex;
+                align-items: flex-end;
+                text-align: center;
+                text-transform: uppercase;
+                color: #F8F6F6;
+                margin-top: 20px;
+            }
+        }
+    }
+}

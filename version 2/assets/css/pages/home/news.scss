@@ -1,0 +1,79 @@
+.news {
+    padding-top: 100px;
+    .heading {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 150%;
+        /* identical to box height, or 42px */
+        text-align: center;
+        text-transform: uppercase;
+        color: #010B12;
+        margin-bottom: 30px;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        li {
+            cursor: pointer;
+            position: relative;
+            margin-right: 20px;
+            img {
+                z-index: 11;
+            }
+            .num {
+                z-index: 22;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                /* identical to box height, or 171% */
+                text-align: right;
+                color: #FFFFFF;
+            }
+            .title {
+                z-index: 2;
+                bottom: 20px;
+                left: 20px;
+                position: absolute;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 157.3%;
+                /* or 25px */
+                display: flex;
+                align-items: flex-end;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .list-brand {
+        padding-top: 50px;
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            li {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 116.3%;
+                /* identical to box height, or 16px */
+                text-transform: uppercase;
+                color: #040404;
+                margin-bottom: 20px;
+                img {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

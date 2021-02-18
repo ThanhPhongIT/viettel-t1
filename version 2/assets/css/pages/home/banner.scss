@@ -1,0 +1,88 @@
+.banner {
+    height: 90vh;
+    background-color: #E70031;
+    background-image: url('../images/bg-banner.svg');
+    background-size: cover;
+    position: relative;
+    .banner-left {
+        position: relative;
+        width: 40vw;
+        img {
+            position: absolute;
+            top: -30vh;
+        }
+    }
+    .banner__right {
+        position: relative;
+        .slogan {
+            position: absolute;
+            top: -100px;
+            font-family: Sarabun;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+            color: #F8F6F6;
+            mix-blend-mode: normal;
+        }
+        z-index: 2;
+        .heading {
+            p {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 64px;
+                margin: 0;
+                letter-spacing: -0.035em;
+                text-transform: uppercase;
+                color: #F8F6F6;
+            }
+        }
+        .subheading {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+            /* or 133% */
+            color: #F8F6F6;
+            mix-blend-mode: normal;
+            width: 70%;
+            padding-bottom: 50px;
+        }
+        .button-seemore {
+            display: flex;
+            align-items: center;
+            button {
+                margin-right: 50px;
+                width: 150px;
+                height: 41px;
+                border: 1px solid #F8F6F6;
+                border-radius: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #EE0033;
+                &:focus {
+                    outline: none;
+                }
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 116.3%;
+                /* identical to box height, or 16px */
+                text-transform: uppercase;
+                color: #F8F6F6;
+            }
+            .play {
+                cursor: pointer;
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background: #F8F6F6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

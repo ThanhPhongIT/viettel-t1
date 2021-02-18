@@ -1,0 +1,153 @@
+.news {
+    background: #E9E9E9;
+    padding-top: 132px;
+    .title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 124.5%;
+        /* identical to box height, or 52px */
+        text-transform: uppercase;
+        color: #222222;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 30px 0;
+        li {
+            margin-right: 47px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                margin-right: 20px;
+            }
+            span {
+                font-family: Sarabun;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                /* identical to box height, or 121% */
+                text-transform: uppercase;
+                color: #1A1A1A;
+                mix-blend-mode: normal;
+            }
+        }
+    }
+    .bgw {
+        background-color: #FFFFFF;
+    }
+    .item {
+        img {
+            width: 100%;
+        }
+        .heading {
+            font-family: Sarabun;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            /* or 133% */
+            text-transform: uppercase;
+            color: #1A1A1A;
+            margin-top: 20px;
+            height: 200px;
+        }
+        .foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .date {
+                font-family: Sarabun;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 24px;
+                /* identical to box height, or 200% */
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                color: #787878;
+                mix-blend-mode: normal;
+            }
+            .more {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .most-view {
+        padding-left: 70px;
+        .title-most {
+            font-family: Sarabun;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 17px;
+            /* identical to box height, or 94% */
+            text-transform: uppercase;
+            color: #1A1A1A;
+            mix-blend-mode: normal;
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            .post {
+                margin-bottom: 20px;
+                margin-top: 20px;
+                img {
+                    float: left;
+                    margin-right: 20px;
+                }
+                .title-post {
+                    font-family: Sarabun;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 17px;
+                    /* or 142% */
+                    text-transform: uppercase;
+                    color: #1A1A1A;
+                    mix-blend-mode: normal;
+                }
+                .date-post {
+                    font-family: Sarabun;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 24px;
+                    /* identical to box height, or 200% */
+                    text-transform: uppercase;
+                    color: #787878;
+                    mix-blend-mode: normal;
+                }
+            }
+        }
+    }
+    .list-service {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        p {
+            font-family: Sarabun;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 33.5614px;
+            line-height: 133%;
+            /* identical to box height, or 45px */
+            letter-spacing: -0.035em;
+            color: #D6D6D6;
+            margin-left: 30px;
+            cursor: pointer;
+            &:hover {
+                color: #E70031;
+            }
+        }
+    }
+}

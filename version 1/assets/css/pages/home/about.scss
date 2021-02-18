@@ -1,0 +1,82 @@
+.bg-black {
+    background: #141718;
+    .map-animation {
+        height: 80vh;
+        background-color: #141718;
+        background-image: url('../images/bg-map.svg');
+        background-size: cover;
+        background-blend-mode: hard-light;
+    }
+    .telecom {
+        .bdg {
+            padding-bottom: 90px;
+            border-bottom: 3px solid #554d4d;
+        }
+        padding: 100px 0;
+        .title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 150%;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: #F8F6F6;
+        }
+        .description {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 40px;
+            color: #F8F6F6;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+            width: 60%;
+        }
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                img {
+                    margin-right: 10px;
+                }
+                margin-bottom: 22px;
+                p {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 157.3%;
+                    /* identical to box height, or 38px */
+                    display: flex;
+                    align-items: flex-end;
+                    text-transform: uppercase;
+                    color: #F8F6F6;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .global {
+        padding-top: 210px;
+        background-color: #141718;
+        position: relative;
+        padding-bottom: 422px;
+        p {
+            font-family: PF_BeauSans_Pro;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 38px;
+            line-height: 150%;
+            /* or 57px */
+            text-align: center;
+            text-transform: uppercase;
+            color: #F8F6F6;
+        }
+        img {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 40%);
+        }
+    }
+}

@@ -1,0 +1,142 @@
+.telecom {
+    padding: 150px 0 0 0;
+    background: #F2F3F3;
+    .heading {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 150%;
+        /* identical to box height, or 42px */
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        color: #010B12;
+    }
+    .subheading {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        color: #010B12;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        margin: 16px 0 70px 0;
+        width: 30%;
+    }
+    .list-service {
+        padding-bottom: 380px;
+        position: relative;
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 44px;
+            p {
+                font-family: Sarabun;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 157.3%;
+                /* or 22px */
+                display: flex;
+                align-items: flex-end;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                color: #010B12;
+                margin-left: 15px;
+            }
+        }
+        .ab-img {
+            position: absolute;
+            top: 35%;
+            width: 100%;
+        }
+    }
+    .back-red {
+        height: 50vh;
+        background-color: #EE0033;
+        .slide {
+            background-color: white;
+            width: 366px;
+            height: 366px;
+        }
+        .po {
+            position: relative;
+            .slide {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding: 40px;
+                .top {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 20px;
+                        }
+                    }
+                    p {
+                        font-family: Sarabun;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 157.3%;
+                        /* identical to box height, or 19px */
+                        display: flex;
+                        align-items: flex-end;
+                        text-align: right;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        color: #010B12;
+                    }
+                }
+                .bottom {
+                    width: 100%;
+                    font-family: Sarabun;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 123.3%;
+                    /* or 22px */
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: #010B12;
+                    p {
+                        font-family: Sarabun;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 123.3%;
+                        /* or 22px */
+                        display: flex;
+                        align-items: flex-end;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        color: #010B12;
+                        margin: 0;
+                        margin-right: 50px;
+                    }
+                    .under {
+                        width: 55px;
+                        height: 3px;
+                        background: #ED2C34;
+                    }
+                }
+            }
+            .right {
+                position: absolute;
+                top: 60%;
+                right: 0;
+            }
+        }
+    }
+}

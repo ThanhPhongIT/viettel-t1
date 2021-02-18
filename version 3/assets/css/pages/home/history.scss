@@ -1,0 +1,27 @@
+.history {
+    padding: 120px;
+    background-color: #F2F3F3;
+    .heading {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 150%;
+        /* identical to box height, or 42px */
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .des {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        color: #1A1A1A;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        padding-top: 12px;
+        width: 22%;
+    }
+}

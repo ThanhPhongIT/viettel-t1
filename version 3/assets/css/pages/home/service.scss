@@ -1,0 +1,118 @@
+.service {
+    padding-top: 240px;
+    .heading {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 150%;
+        /* or 42px */
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        color: #010B12;
+    }
+    .list-service {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 50px;
+        .list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-right: 100px;
+            li {
+                margin-bottom: 50px;
+                display: flex;
+                .nummber {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 124.3%;
+                    /* or 17px */
+                    text-transform: uppercase;
+                    color: #000000;
+                    opacity: 0.3;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 157.3%;
+                    /* or 22px */
+                    display: flex;
+                    align-items: flex-end;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: #010B12;
+                    margin: 0;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .des {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        color: #010B12;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .seemore {
+        display: flex;
+        align-items: center;
+        margin-bottom: 150px;
+        p {
+            margin: 0;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 116.3%;
+            /* identical to box height, or 16px */
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #ED2C34;
+            margin-right: 10px;
+        }
+    }
+    .grid-layout {
+        display: flex;
+        .item1 {
+            position: relative;
+            margin-left: 20px;
+            .contain1 {
+                margin-top: 270px;
+            }
+        }
+        .item2 {
+            margin-left: 20px;
+            .contain2 {
+                margin-top: 100px;
+                img {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .item3 {
+            margin-left: 20px;
+            margin-right: 20px;
+            .contain3 {
+                img {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .item4 {
+            .contain4 {
+                margin-top: 50px;
+            }
+        }
+    }
+}
