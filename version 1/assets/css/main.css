@@ -873,11 +873,16 @@ div {
 .news .list-service #owl-carousel {
   display: flex;
 }
+.news .list-service .owl-carousel.owl-drag .owl-item {
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
 .news .list-service p {
   font-family: Sarabun;
   font-style: normal;
   font-weight: 500;
-  font-size: 33.5614px;
+  font-size: 25px;
   line-height: 133%;
   /* identical to box height, or 45px */
   letter-spacing: -0.035em;
@@ -900,6 +905,8 @@ div {
   transform: translate(80%, -70%);
   opacity: 0;
   transition: ease-in-out 0.5s;
+  height: 69px;
+  width: 69px;
 }
 
 /*# sourceMappingURL=main.css.map */

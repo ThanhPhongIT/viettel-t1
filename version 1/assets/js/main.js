@@ -47,11 +47,38 @@ var owl = $('#owl-carousel');
 owl.owlCarousel({
     items: 8,
     loop: true,
-    margin: 10,
+    margin: 0,
     autoplay: true,
+    smartSpeed: 250,
     autoplayTimeout: 500,
     autoplayHoverPause: true
 });
+var owlTop = $('#owl-carousel-top');
+owlTop.owlCarousel({
+    items: 8,
+    loop: true,
+    margin: 0,
+    autoplay: false
+});
+console.log(owlTop);
+
+function next() {
+    owlTop.trigger('prev.owl.carousel');
+}
+var co = true;
+if (co) {
+    setInterval(() => {
+        next();
+    }, 500);
+}
+$(".ptext").hover(function() {
+    co = false;
+    console.log(co);
+
+});
+
+
+
 // $('.play').on('click',function(){
 //     owl.trigger('play.owl.autoplay',[1000])
 // })
