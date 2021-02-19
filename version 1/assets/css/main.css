@@ -867,6 +867,7 @@ div {
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .news .list-service p {
   font-family: Sarabun;
