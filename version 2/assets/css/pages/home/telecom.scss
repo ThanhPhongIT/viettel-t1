@@ -3,10 +3,9 @@
     .heading {
         font-family: "BeauSansPro";
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 28px;
-        line-height: 150%;
-        /* identical to box height, or 42px */
+        line-height: 42px;
         text-transform: uppercase;
         color: #222222;
     }
@@ -16,10 +15,8 @@
         font-weight: 300;
         font-size: 18px;
         line-height: 29px;
-        /* or 161% */
         color: #010b12;
         mix-blend-mode: normal;
-        opacity: 0.8;
         width: 65%;
         margin-bottom: 50px;
     }
@@ -33,14 +30,10 @@
             p {
                 margin: 0;
                 margin-left: 20px;
-                font-family: Sarabun;
                 font-style: normal;
                 font-weight: 600;
                 font-size: 18px;
-                line-height: 157.3%;
-                /* identical to box height, or 28px */
-                display: flex;
-                align-items: flex-end;
+                line-height: 28.31px;
                 text-transform: uppercase;
                 color: #010b12;
             }
@@ -56,14 +49,10 @@
     flex-direction: column;
     align-items: center;
     .about {
-        font-family: Sarabun;
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
-        line-height: 157.3%;
-        /* or 28px */
-        display: flex;
-        align-items: flex-end;
+        line-height: 28.31px;
         text-transform: uppercase;
         color: #010b12;
         text-align: center;
@@ -71,12 +60,10 @@
         padding-top: 100px;
     }
     .subtitle {
-        font-family: Sarabun;
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 28px;
-        line-height: 150%;
-        /* identical to box height, or 42px */
+        line-height: 42px;
         text-transform: uppercase;
         color: #222222;
     }
@@ -89,9 +76,8 @@
         padding: 0 100px;
     }
     .heading {
-        font-family: Sarabun;
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 28px;
         line-height: 150%;
         /* or 42px */
@@ -107,6 +93,5 @@
         /* or 171% */
         color: #f8f6f6;
         mix-blend-mode: normal;
-        opacity: 0.8;
     }
 }

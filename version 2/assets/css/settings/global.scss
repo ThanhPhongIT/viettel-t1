@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: "BeauSansPro";
     src: url("../font/PFBeauSansPro-Regular.ttf");
 }
+
+@font-face {
+    font-family: "PF BeauSans Pro";
+    src: url("../font/PFBeauSansPro-Bold.ttf");
+}
+
 body {
     font-family: "Sarabun", sans-serif;
 }
@@ -18,8 +25,13 @@ li {
 
 ul {
     margin: 0;
+    margin-bottom: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
