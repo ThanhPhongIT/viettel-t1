@@ -1,16 +1,18 @@
 .service {
-    margin: 20px 0;
+    background: #f9f6f8;
+    .container {
+        border-top: 2px solid #A9A9A9;
+    }
     .heading {
         font-style: normal;
-        font-weight: 800;
-        font-size: 42px;
-        line-height: 150%;
-        /* or 63px */
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
         font-family: "BeauSansPro";
         text-transform: uppercase;
         margin: 100px 0;
         color: #222222;
-        width: 80%;
+        width: 50%;
     }
     .service__item {
         display: flex;
@@ -22,16 +24,14 @@
         }
         .title {
             font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 157.3%;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28.31px;
             /* identical to box height, or 38px */
-
             display: flex;
             align-items: flex-end;
-            letter-spacing: -0.005em;
+            letter-spacing: -0.5%;
             text-transform: uppercase;
-
             color: #010b12;
         }
         .description {
@@ -41,7 +41,6 @@
             line-height: 24px;
             color: #010b12;
             mix-blend-mode: normal;
-            opacity: 0.8;
             width: 60%;
             margin-bottom: 100px;
             margin-top: 15px;

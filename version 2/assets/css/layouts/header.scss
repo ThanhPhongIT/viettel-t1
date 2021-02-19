@@ -1,12 +1,21 @@
 .header {
     height: 100px;
-    background: #ffffff;
+    background: #f9f6f8;
+    >div {
+        height: 60px;
+        background-color: #fff;
+    }
+    .logo {
+        img {
+            width: 88px;
+        }
+    }
     .menu {
         .menu__item {
             a {
                 font-style: normal;
-                font-weight: bold;
-                font-size: 13px;
+                font-weight: 700;
+                font-size: 12px;
                 line-height: 116.3%;
                 text-align: center;
                 text-transform: uppercase;
@@ -20,6 +29,32 @@
             img {
                 margin-right: 25px;
             }
+            .btn-group {
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: none;
+                    transition: none !important;
+                    border-radius: 0 !important;
+                    outline: none;
+                    border: none;
+                    padding: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+                >ul {
+                    right: 0 !important;
+                }
+            }
+        }
+        .space {
+            width: 2px;
+            height: 20px;
+            margin-right: 40px;
+            margin-left: 20px;
+            background-color: rgba(0, 0, 0, .2);
         }
     }
 }

@@ -4,27 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
-
+    <!-- Owl -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Viettel</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="header d-flex align-items-center">
+        <header class="header d-flex align-items-center">
             <div class="container d-flex align-items-center justify-content-between">
                 <a href="#" class="logo">
                     <img src="assets/images/logo-footer.svg" alt="">
@@ -33,35 +31,54 @@
                     <li class="menu__item"><a href="#">Về Viettel</a></li>
                     <li class="menu__item"><a href="#">Kiến tạo xã hội số</a></li>
                     <li class="menu__item"><a href="#">Đối tác & đầu tư</a></li>
+                    <li class="menu__item"><a href="#">Tin tức & sự kiện</a></li>
+                    <div class="space"></div>
                     <li class="menu__item">
-                        <img src="assets/images/search.svg" alt="">
+                        <img src="assets/images/icon-search.svg" alt="">
                     </li>
                     <li class="menu__item">
-                        <select id="language">
-                            <option value="volvo">Việt Nam</option>
-                            <option value="saab">EngLish</option>
-                        </select>
+                        <div class="dropdown btn-group ">
+                            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/icon-global.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+                                <li><a class="dropdown-item" href="#">EngLish</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
+
             </div>
-        </div>
+        </header>
         <div class="banner d-flex align-items-center">
-            <div class="banner-left animate__animated wow animate__fadeInLeft">
-                <img src="assets/images/banner3.png" alt="">
+            <div class="video">
+                <video autoplay muted id="myVideo">
+                    <source src="assets/video/video-banner.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="banner__right  animate__animated wow animate__fadeInRight">
-                <div class="slogan">VIETTEL YOUR WAY</div>
-                <div class="heading">
-                    <p>Tiên phong</p>
-                    <p>kiến tạo xã hội số</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                    </div>
+                    <div class="col-6 overflow-hidden">
+                        <div class="banner__right  animate__animated wow animate__fadeInRight " data-wow-delay="8s">
+                            <div class="slogan">VIETTEL YOUR WAY</div>
+                            <div class="heading">
+                                <p>Tiên phong</p>
+                                <p>kiến tạo xã hội số</p>
+                            </div>
+                            <div class="subheading">
+                                Tập đoàn công nghệ kinh doanh toàn cầu: Không ngừng dịch chuyển - Tiên phong đón đầu - Khai phá tiềm năng
+                            </div>
+                            <div class="button-seemore">
+                                <button>Tìm hiểu thêm</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="subheading">
-                    Tập đoàn công nghệ kinh doanh toàn cầu: <br> Không ngừng dịch chuyển - Tiên phong đón đầu - Khai phá
-                    tiềm năng
-                </div>
-                <div class="button-seemore">
-                    <button>Tìm hiểu thêm</button>
-                </div>
+
+
             </div>
         </div>
         <div class="service">
@@ -103,10 +120,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div>
-            <img class="animate__animated wow animate__fadeInUp" src="assets/images/sleep.svg" style="width: 100%"
-                alt="">
-        </div> -->
         <div class="telecom">
             <div class="container">
                 <div class="row">
@@ -143,9 +156,11 @@
             </div>
         </div>
         <div class="corporation animate__animated wow animate__fadeInUp">
-            <div class="about animate__animated wow animate__fadeInUp">Về chúng tôi</div>
-            <div class="subtitle animate__animated wow animate__fadeInUp">
-                Tập đoàn Công nghệ kinh doanh toàn cầu
+            <div class="container">
+                <div class="about animate__animated wow animate__fadeInUp">Về chúng tôi</div>
+                <div class="subtitle animate__animated wow animate__fadeInUp">
+                    Tập đoàn Công nghệ kinh doanh toàn cầu
+                </div>
             </div>
         </div>
         <div class="mission">
@@ -157,9 +172,7 @@
                     <div class="col-md-6 col-12 d-flex flex-column align-items-start justify-content-center wbl">
                         <div class="heading animate__animated wow animate__fadeInUp">Sứ mệnh sáng tạo vì con người
                         </div>
-                        <div class="des animate__animated wow animate__fadeInUp">Triết lý kinh doanh: Mỗi khách hàng là
-                            một cá thể riêng biệt Kinh doanh gắn liền với trách nhiệm xã hội Con người là nhân tố quan
-                            trọng nhất</div>
+                        <div class="des animate__animated wow animate__fadeInUp">Triết lý kinh doanh: Mỗi khách hàng là một cá thể riêng biệt Kinh doanh gắn liền với trách nhiệm xã hội Con người là nhân tố quan trọng nhất</div>
                     </div>
 
                 </div>
@@ -169,8 +182,7 @@
         <div class="history">
             <div class="container">
                 <div class="heading animate__animated wow animate__fadeInUp">Lịch sử </div>
-                <div class="title animate__animated wow animate__fadeInUp">Từ một Công ty xây lắp tới Tập <br> đoàn kinh
-                    doanh toàn cầu </div>
+                <div class="title animate__animated wow animate__fadeInUp">Từ một Công ty xây lắp tới Tập <br> đoàn kinh doanh toàn cầu </div>
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="history-left">
@@ -183,14 +195,10 @@
                                 </div>
                             </div>
 
-                            <p class="history-tim animate__animated wow animate__fadeInUpe"> <span
-                                    class="history-time-red">|</span> | | | | | | | | | | | | | |
-                                | | | | | | | | | | | | | | | | | | | | | | | | | | |</p>
+                            <p class="history-tim animate__animated wow animate__fadeInUpe"> <span class="history-time-red">|</span> | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |</p>
 
                             <p class="history-des animate__animated wow animate__fadeInUp">
-                                - Chính thức kinh doanh tại Peru (Bitel), Cameroon (Nexttel), Burundi (Lumitel),
-                                Tanzania (Halotel)
-                                - Mua lại Beeline tại Campuchia.
+                                - Chính thức kinh doanh tại Peru (Bitel), Cameroon (Nexttel), Burundi (Lumitel), Tanzania (Halotel) - Mua lại Beeline tại Campuchia.
                             </p>
                         </div>
                     </div>
@@ -216,12 +224,9 @@
                         <div class="content">
                             <div class="number animate__animated wow animate__fadeInUp">3.500+
                             </div>
-                            <div class="des animate__animated wow animate__fadeInUp">tỷ đồng đóng góp thực hiện các
-                                chương trình xã hội</div>
+                            <div class="des animate__animated wow animate__fadeInUp">tỷ đồng đóng góp thực hiện các chương trình xã hội</div>
                             <div class="content-des animate__animated wow animate__fadeInUp">
-                                Viettel luôn coi nền tảng cho một doanh nghiệp phát triển là xã hội phát triển, các
-                                chương trình an sinh xã hội tập trung các các lĩnh vực giáo dục, y tế và giúp người
-                                nghèo thoát nghèo bền vững"
+                                Viettel luôn coi nền tảng cho một doanh nghiệp phát triển là xã hội phát triển, các chương trình an sinh xã hội tập trung các các lĩnh vực giáo dục, y tế và giúp người nghèo thoát nghèo bền vững"
                             </div>
                         </div>
                     </div>
@@ -233,8 +238,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-12">
-                        <div class="heading animate__animated wow animate__fadeInUp">Viettel kinh doanh trên 10 quốc
-                            gia, phục vụ 254 triệu dân.</div>
+                        <div class="heading animate__animated wow animate__fadeInUp">Viettel kinh doanh trên 10 quốc gia, phục vụ 254 triệu dân.</div>
                         <button class=" animate__animated wow animate__fadeInUp">Tìm hiểu thêm</button>
                     </div>
                     <div class="col-md-6 col-12">
@@ -267,14 +271,12 @@
                     <li class="item">
                         <img src="assets/images/Background.svg" alt="">
                         <div class="num  animate__animated wow animate__fadeInUp">01</div>
-                        <div class="title  animate__animated wow animate__fadeInUp">Cài Bluezone để chung tay đồng lòng
-                            chiến đấu chống COVID-19</div>
+                        <div class="title  animate__animated wow animate__fadeInUp">Cài Bluezone để chung tay đồng lòng chiến đấu chống COVID-19</div>
                     </li>
                     <li class="item">
                         <img src="assets/images/banner2.svg" alt="">
                         <div class="num  animate__animated wow animate__fadeInUp">02</div>
-                        <div class="title  animate__animated wow animate__fadeInUp">Viettel trở thành nhà mạng đầu tiên
-                            tại Việt Nam đạt chứng nhận của 2 tổ chức uy tín nhất thế giới về trung tâm dữ liệu.</div>
+                        <div class="title  animate__animated wow animate__fadeInUp">Viettel trở thành nhà mạng đầu tiên tại Việt Nam đạt chứng nhận của 2 tổ chức uy tín nhất thế giới về trung tâm dữ liệu.</div>
                     </li>
                 </ul>
                 <div class="list-brand">
@@ -343,12 +345,17 @@
         </div>
     </div>
 </body>
-<script src="./assets/js/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
+<!-- Juery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- Bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<!-- Wow -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- Owl -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Main.js -->
 <script src="./assets/js/main.js"></script>
+
 
 </html>
