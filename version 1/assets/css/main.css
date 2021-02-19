@@ -495,7 +495,32 @@ div {
   color: #FFFFFF;
   padding: 100px 0;
 }
-.business img {
+.business .item.customer svg path {
+  stroke-dasharray: 70;
+  stroke-dashoffset: 70;
+  animation: draw 3s forwards;
+}
+.business .item.customer svg circle {
+  stroke-dasharray: 370;
+  stroke-dashoffset: 370;
+  animation: draw 3s forwards;
+}
+.business .item.social svg path {
+  stroke-dasharray: 190;
+  stroke-dashoffset: 190;
+  animation: draw 3s forwards;
+}
+.business .item.people svg path {
+  stroke-dasharray: 90;
+  stroke-dashoffset: 90;
+  animation: draw 3s forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.business svg {
   margin-bottom: 50px;
 }
 .business .content {
@@ -507,6 +532,7 @@ div {
   width: 70%;
   color: #F8F6F6;
   padding-bottom: 150px;
+  text-align: center;
 }
 
 .history {
@@ -884,6 +910,7 @@ div {
   font-weight: 500;
   font-size: 25px;
   line-height: 133%;
+  margin: 0 !important;
   /* identical to box height, or 45px */
   letter-spacing: -0.035em;
   color: #D6D6D6;
@@ -891,6 +918,11 @@ div {
   cursor: pointer;
   position: relative;
   transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1441px) {
+  .news .list-service p {
+    font-size: 20px;
+  }
 }
 .news .list-service p:hover {
   color: #E70031;

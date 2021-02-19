@@ -151,6 +151,10 @@
             font-weight: 500;
             font-size: 25px;
             line-height: 133%;
+            margin: 0 !important;
+            @media screen and (max-width: 1441px) {
+                font-size: 20px;
+            }
             /* identical to box height, or 45px */
             letter-spacing: -0.035em;
             color: #D6D6D6;

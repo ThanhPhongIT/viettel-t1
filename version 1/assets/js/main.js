@@ -1,9 +1,10 @@
 new WOW().init();
 var animateHTML = function() {
-    var elems, windowHeight;
+    var elems, windowHeight, svg;
     var flag = false;
     var init = function() {
         elems = document.getElementsByClassName('achievement');
+        svg = document.getElementsByClassName('business');
         windowHeight = window.innerHeight;
         _addEventHandlers();
     };
@@ -14,6 +15,10 @@ var animateHTML = function() {
 
     };
     var _checkPosition = function() {
+        var pos = svg[0].getBoundingClientRect().top;
+        if (pos - windowHeight <= 0) {
+            $('.svg').addClass('item');
+        }
 
         if (!flag) {
             var posFromTop = elems[0].getBoundingClientRect().top;
@@ -49,7 +54,7 @@ owl.owlCarousel({
     loop: true,
     margin: 0,
     autoplay: true,
-    smartSpeed: 250,
+    smartSpeed: 1000,
     autoplayTimeout: 500,
     autoplayHoverPause: true
 });
@@ -58,24 +63,29 @@ owlTop.owlCarousel({
     items: 8,
     loop: true,
     margin: 0,
-    autoplay: false
+    autoplay: true,
+    slideBy: -1,
+    smartSpeed: 1000,
+    autoplayTimeout: 500,
+    autoplayHoverPause: true
 });
-console.log(owlTop);
 
 function next() {
     owlTop.trigger('prev.owl.carousel');
 }
-var co = true;
-if (co) {
+
+let text = document.getElementsByClassName("ptext");
+text.addEventListener("mouseenter", function(event) {
+
+}, false);
+
+// This handler will be executed every time the cursor
+// is moved over a different list item
+text.addEventListener("mouseover", function(event) {
     setInterval(() => {
         next();
     }, 500);
-}
-$(".ptext").hover(function() {
-    co = false;
-    console.log(co);
-
-});
+}, false);
 
 
 
