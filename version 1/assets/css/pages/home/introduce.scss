@@ -2,6 +2,9 @@
     z-index: 100;
     position: relative;
     height: 100vh;
+    @media screen and (max-width: 1440px) {
+        height: 80vh;
+    }
     img {
         position: absolute;
         top: 0;

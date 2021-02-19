@@ -41,6 +41,9 @@
     }
     .item {
         margin-right: 50px;
+        @media screen and (max-width: 1281px) {
+            margin-right: 20px;
+        }
         img {
             width: 100%;
         }
@@ -147,8 +150,21 @@
             color: #D6D6D6;
             margin-left: 30px;
             cursor: pointer;
+            position: relative;
+            transition: ease-in-out 0.5s;
             &:hover {
                 color: #E70031;
+                img {
+                    opacity: 1;
+                }
+            }
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(80%, -70%);
+                opacity: 0;
+                transition: ease-in-out 0.5s;
             }
         }
     }

@@ -6,9 +6,11 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -30%);
+        overflow: hidden;
         .mask {
             position: absolute;
             left: 0;
+            top: -50%;
         }
     }
     .heading-top {

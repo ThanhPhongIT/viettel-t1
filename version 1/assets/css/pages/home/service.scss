@@ -1,14 +1,19 @@
 .service {
     padding: 160px 0;
     position: relative;
+    background-color: #faf6f8;
+    overflow: hidden;
     img {
         margin-top: 60px;
     }
-    .img {
+    video {
         position: absolute;
-        top: 55%;
-        right: 0;
+        top: 20%;
+        right: -30%;
         transform: translateY(-50%);
+        width: 70%;
+        height: 70%;
+        transform: rotate(20deg);
     }
     .heading {
         font-style: normal;

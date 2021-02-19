@@ -1,7 +1,17 @@
 .bg-black {
-    background: #141718;
+    .sticky {
+        position: sticky;
+        top: 50px;
+        z-index: -1;
+    }
     .map-animation {
-        height: 80vh;
+        height: 120vh;
+        @media screen and (max-width: 1440px) {
+            height: 95vh;
+        }
+        canvas {
+            width: 100%;
+        }
     }
     .telecom {
         .bdg {
@@ -17,6 +27,7 @@
             margin-bottom: 30px;
             text-transform: uppercase;
             color: #F8F6F6;
+            z-index: 1000;
         }
         .description {
             font-style: normal;
@@ -54,9 +65,8 @@
     }
     .global {
         padding-top: 210px;
-        background-color: #141718;
         position: relative;
-        padding-bottom: 422px;
+        padding-bottom: 600px;
         p {
             font-family: PF BeauSans Pro;
             font-style: normal;

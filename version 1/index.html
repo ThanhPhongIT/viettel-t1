@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <!-- <div class="preload">
+        <img src="http://i.imgur.com/KUJoe.gif">
+    </div> -->
+
     <div class="wrapper">
         <div class="header d-flex align-items-center">
             <div class="container d-flex align-items-center justify-content-between bdw">
@@ -48,16 +52,19 @@
             </div>
         </div>
         <div class="banner d-flex align-items-center">
+            <video autoplay loop muted>
+                <source type="video/mp4" src="assets/images/banner.mp4">
+            </video>
             <div class="container">
                 <div class="banner__left">
-                    <div class="heading animate__animated wow animate__fadeInUp " data-wow-offset="1">
+                    <div class="heading animate__animated wow animate__fadeInUp ">
                         <p>Tiên phong</p>
                         <p>kiến tạo xã hội số</p>
                     </div>
                     <div class="subheading animate__animated wow animate__fadeInUp">
                         Tập đoàn công nghệ kinh doanh toàn cầu: <br> Không ngừng dịch chuyển - Tiên phong đón đầu - Khai phá tiềm năng
                     </div>
-                    <div class="button-seemore wow">
+                    <div class="button-seemore animate__animated wow animate__fadeInUp">
                         <button>Tìm hiểu thêm</button>
                     </div>
                 </div>
@@ -104,16 +111,18 @@
 
                 </div>
             </div>
-            <img class="img animate__animated wow animate__fadeInUp" src="assets/images/Globe.svg" alt="">
+            <video autoplay loop muted>
+                <source type="video/mp4" src="assets/images/global.mp4">
+            </video>
         </div>
         <div class="bg-black">
-            <div class="map-animation" id="animation-container">
-
+            <div class="sticky">
+                <div class="map-animation" id="animation-container"></div>
             </div>
             <div class="telecom ">
                 <div class="container bdg">
                     <div class="row">
-                        <div class="col-md-6 col-12 animate__animated wow animate__fadeInUp">
+                        <div class="col-md-6 col-12 ">
                             <div class="title">
                                 Viễn Thông
                             </div>
@@ -121,41 +130,41 @@
                                 Nhà cung cấp dịch vụ viễn thông, internet, truyền hình và giải pháp CNTT lớn nhất Việt Nam
                             </div>
                         </div>
-                        <ul class="col-md-6 col-12 animate__animated wow animate__fadeInUp">
-                            <li>
-                                <img src="assets/images/tele-icon.svg" alt="">
-                                <p>Dịch Vụ Viễn Thông</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/internet.svg" alt="">
-                                <p>Internet</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/tvicon.svg" alt="">
-                                <p>Truyền HÌNH</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/iticon.svg" alt="">
-                                <p>Công nghệ thông tin</p>
-                            </li>
-                        </ul>
+                        <div class="col-md-6 col-12">
+                            <ul>
+                                <li>
+                                    <img src="assets/images/tele-icon.svg" alt="">
+                                    <p>Dịch Vụ Viễn Thông</p>
+                                </li>
+                                <li>
+                                    <img src="assets/images/internet.svg" alt="">
+                                    <p>Internet</p>
+                                </li>
+                                <li>
+                                    <img src="assets/images/tvicon.svg" alt="">
+                                    <p>Truyền HÌNH</p>
+                                </li>
+                                <li>
+                                    <img src="assets/images/iticon.svg" alt="">
+                                    <p>Công nghệ thông tin</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="global">
-                <p class=" animate__animated wow animate__fadeInUp">Tập đoàn Công nghệ<br> kinh doanh toàn cầu</p>
+                <p>Tập đoàn Công nghệ<br> kinh doanh toàn cầu</p>
             </div>
         </div>
         <div class="slogan">
-            <img class="animate__animated wow animate__fadeInUp" src="assets/images/bg.svg" alt="">
+            <img src="assets/images/bg.svg" alt="">
             <div class="container re">
                 <div class="con animate__animated wow animate__fadeInUp">
                     <p class="ti">VIETTEL YOUR WAY</p>
                     <p>SỨ MỆNH SÁNG TẠO <br> VÌ CON NGƯỜI</p>
                 </div>
-
             </div>
-
         </div>
         <div class="business">
             <div class="container">
@@ -182,24 +191,24 @@
             <div class="container">
                 <div class="his">
                     <img src="assets/images/history.svg" alt="">
-                    <img class="mask" src="assets/images/mask.svg" alt="">
+                    <img class="mask  animate__animated wow animate__zoomIn animate__infinite	infinite animate__slow	2s" src="assets/images/mask.svg" alt="">
                 </div>
 
                 <p class="heading-top animate__animated wow animate__fadeInUp">Lịch sử</p>
                 <p class="content animate__animated wow animate__fadeInUp">
                     Từ một Công ty xây lắp tới Tập đoàn kinh doanh toàn cầu
                 </p>
-                <div class="carousel animate__animated wow animate__fadeInUp">
+                <div class="carousel">
                     <div class="row">
                         <div class="col-4 d-flex justify-content-start align-items-center">
                             <img src="assets/images/prev.svg" alt="" style="margin-right: 20px;">
                             <img src="assets/images/next.svg" alt="">
                         </div>
-                        <div class="col-8 d-flex align-items-center">
+                        <div class="col-8 d-flex align-items-center animate__animated wow animate__zoomIn">
                             <div class="item1"></div>
                             <div class="item2">
-                                <img src="assets/images/Unionw.svg" alt="">
-                                <p>2014-2015</p>
+                                <img src="assets/images/Unionw.svg" class=" animate__animated wow animate__fadeInDown" alt="">
+                                <p class=" animate__animated wow animate__fadeInDown">2014-2015</p>
                             </div>
                             <div class="item3"></div>
                             <div class="item4"></div>
@@ -244,20 +253,20 @@
                 <div class="heading animate__animated wow animate__fadeInUp">Thành tựu</div>
                 <div class="sub-heading animate__animated wow animate__fadeInUp">Viettel kinh doanh trên 10 quốc gia, phục vụ 254 triệu dân. </div>
                 <div class="row">
-                    <div class="col-md-4 col-12 item animate__animated wow animate__fadeInUp">
-                        <img src="assets/images/img-1.svg" alt="">
+                    <div class="col-md-4 col-12 item ">
+                        <img src="assets/images/img-1.svg" alt="" class="animate__rotateIn  animate__animated wow ">
                         <div class="total">9</div>
-                        <p class="title">Châu á</p>
+                        <p class="title animate__animated wow animate__fadeInUp">Châu á</p>
                     </div>
-                    <div class="col-md-4 col-12 item animate__animated wow animate__fadeInUp">
-                        <img src="assets/images/img-2.svg" alt="">
+                    <div class="col-md-4 col-12 item ">
+                        <img src="assets/images/img-2.svg" alt="" class="animate__rotateIn  animate__animated wow ">
                         <div class="total">1</div>
-                        <p class="title">ĐÔNG NAM Á <br> Về giá trị thương hiệu</p>
+                        <p class="title animate__animated wow animate__fadeInUp">ĐÔNG NAM Á <br> Về giá trị thương hiệu</p>
                     </div>
-                    <div class="col-md-4 col-12 item animate__animated wow animate__fadeInUp">
-                        <img src="assets/images/img-3.svg" alt="">
+                    <div class="col-md-4 col-12 item">
+                        <img src="assets/images/img-3.svg" alt="" class="animate__rotateIn  animate__animated wow ">
                         <div class="total">28</div>
-                        <p class="title">Thế giới</p>
+                        <p class="title animate__animated wow animate__fadeInUp">Thế giới</p>
                     </div>
                 </div>
             </div>
@@ -323,21 +332,51 @@
 
             </div>
             <div class="list-service animate__animated wow animate__fadeInUp">
-                <p>VIETTEL POST</p>
-                <p>VIETTEL PAY</p>
-                <p>VOSO.VN</p>
-                <p>VIETTEL TELECOM</p>
-                <p>VIETTEL STORE</p>
-                <p>VIETTEL POST</p>
-                <p>VIETTEL PAY</p>
-                <p>VOSO.VN</p>
-                <p>VIETTEL TELECOM</p>
-                <p>VIETTEL STORE</p>
-                <p>VIETTEL TELECOM</p>
-                <p>VIETTEL STORE</p>
-                <p>VIETTEL POST</p>
-                <p>VIETTEL PAY</p>
-                <p>VIETTEL TELECOM</p>
+                <p>VIETTEL POST
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL PAY
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VOSO.VN
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL TELECOM
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL STORE
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL POST
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL PAY
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VOSO.VN
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL TELECOM
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL STORE
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL TELECOM
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL STORE
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL POST
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL PAY
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
+                <p>VIETTEL TELECOM
+                    <img src="assets/images/icon-hover.svg" alt="">
+                </p>
             </div>
         </div>
         <div class="footer">
@@ -391,14 +430,14 @@
     var $aContainer = document.getElementById("animation-container");
     var aContainerRect = $aContainer.getBoundingClientRect();
     var start = aContainerRect.top;
-    var length = aContainerRect.height + 100; //Height of the container plus a offset for better presentation
+    var length = aContainerRect.height + 270; //Height of the container plus a offset for better presentation
     scrollAnimate({
         frames: {
             path: "assets/frames/",
-            prefix: "RENDER - Vienthong",
+            prefix: "frame_",
             extension: "png",
             amount: 60,
-            pad: "000"
+            pad: "00"
         },
         parent: $aContainer,
         scroll: {

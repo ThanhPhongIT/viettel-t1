@@ -1,26 +1,41 @@
 new WOW().init();
 var animateHTML = function() {
     var elems, windowHeight;
-
+    var flag = false;
     var init = function() {
-        elems = document.getElementsByClassName('hidden');
+        elems = document.getElementsByClassName('achievement');
         windowHeight = window.innerHeight;
         _addEventHandlers();
     };
-
     var _addEventHandlers = function() {
+
         window.addEventListener('scroll', _checkPosition);
-        window.addEventListener('resize', init);
+
+
     };
     var _checkPosition = function() {
-        for (var i = 0; i < elems.length; i++) {
-            var posFromTop = elems[i].getBoundingClientRect().top;
-            if (posFromTop - windowHeight <= 0) {
-                elems[i].className = elems[i].className.replace('hidden', 'fade-in');
-            }
-        }
-    };
 
+        if (!flag) {
+            var posFromTop = elems[0].getBoundingClientRect().top;
+        } else {
+            posFromTop = 100000000000000;
+        }
+        if (posFromTop - windowHeight <= 0) {
+            $('.total').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+            flag = true;
+        }
+
+    };
     return {
         init: init,
     };
