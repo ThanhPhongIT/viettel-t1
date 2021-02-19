@@ -46,4 +46,34 @@
         border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
         padding-bottom: 130px;
     }
+    .banner5 {
+        position: absolute;
+        width: 800px;
+        z-index: 1000;
+    }
+    .banner6 {
+        position: relative;
+        margin-left: 150px;
+        margin-top: 60px;
+        z-index: 1;
+    }
+    .banner-item {
+        display: flex;
+        flex-direction: column;
+        .banner-item1 {
+            height: 50px;
+            margin-right: 233px;
+        }
+        .banner-item2 {
+            width: 70px;
+            height: 70px;
+            margin-left: 270px;
+        }
+        .banner-item3 {
+            width: 70px;
+            height: 70px;
+            margin-left: 180px;
+            margin-top: 190px;
+        }
+    }
 }
