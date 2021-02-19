@@ -519,11 +519,15 @@ div {
   left: 50%;
   transform: translate(-50%, -30%);
   overflow: hidden;
+  width: 1060px;
+  height: 543px;
 }
 .history .his .mask {
   position: absolute;
   left: 0;
-  top: -50%;
+  top: 0;
+  width: 1060px;
+  height: 543px;
 }
 .history .heading-top {
   padding-top: 550px;
@@ -865,9 +869,9 @@ div {
 .news .list-service {
   padding-top: 150px;
   padding-bottom: 50px;
+}
+.news .list-service #owl-carousel {
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
 }
 .news .list-service p {
   font-family: Sarabun;

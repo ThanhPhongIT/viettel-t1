@@ -137,9 +137,9 @@
     .list-service {
         padding-top: 150px;
         padding-bottom: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
+        #owl-carousel {
+            display: flex;
+        }
         p {
             font-family: Sarabun;
             font-style: normal;
