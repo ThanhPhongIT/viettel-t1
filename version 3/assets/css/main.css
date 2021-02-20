@@ -781,6 +781,27 @@ p {
   margin-top: 80px;
   position: absolute;
 }
+.service .grid-layout .img-grid1 {
+  position: relative;
+}
+.service .grid-layout .img-grid1::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 20px;
+  left: 0;
+  bottom: 50%;
+  background: #fff;
+}
+.service .grid-layout .img-grid1.animate::after {
+  animation: scrollTop 1s linear forwards;
+}
+@keyframes scrollTop {
+  to {
+    bottom: 100%;
+  }
+}
 @media (min-width: 1440px) and (max-width: 1600px) {
   .service .grid-layout {
     margin-left: -20%;

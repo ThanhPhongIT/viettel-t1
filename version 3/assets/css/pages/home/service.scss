@@ -97,6 +97,27 @@
         margin-left: 20%;
         margin-top: 80px;
         position: absolute;
+        .img-grid1 {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                top: 0px;
+                right: 20px;
+                left: 0;
+                bottom: 50%;
+                background: #fff;
+            }
+        }
+        .img-grid1.animate::after {
+            animation: scrollTop 1s linear forwards;
+        }
+        @keyframes scrollTop {
+            to {
+                bottom: 100%;
+            }
+        }
         @media (min-width: 1440px) and (max-width: 1600px) {
             margin-left: -20%;
         }
