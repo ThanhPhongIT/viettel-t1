@@ -458,7 +458,6 @@ div {
 }
 .history .title {
   font-style: normal;
-  font-family: Sarabun;
   font-size: 24px;
   line-height: 29px;
   /* or 121% */
@@ -502,11 +501,9 @@ div {
   width: 70%;
   font-size: 14px;
   line-height: 24px;
-  font-family: Sarabun;
 }
 .history .history-item {
   width: 70%;
-  font-family: Sarabun;
   font-size: 36px;
   line-height: 54px;
 }
@@ -654,7 +651,6 @@ div {
 }
 .news ul li .title {
   z-index: 2;
-  font-family: Sarabun;
   bottom: 20px;
   left: 20px;
   position: absolute;
