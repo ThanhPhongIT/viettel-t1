@@ -216,6 +216,7 @@ p {
   position: absolute;
   width: 800px;
   z-index: 1000;
+  right: 0;
 }
 .banner .banner6 {
   position: relative;
@@ -377,6 +378,7 @@ p {
 }
 .history .bottom .line-time {
   display: flex;
+  align-items: center;
 }
 .history .bottom .line-time i {
   margin: 0 20px;
@@ -756,7 +758,7 @@ p {
 }
 .service .grid-layout {
   display: flex;
-  margin-left: 22%;
+  margin-left: 20%;
   margin-top: 80px;
   position: absolute;
 }
