@@ -4,6 +4,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    video {
+        width: 70%;
+        padding: 70px 0;
+    }
     .bb {
         padding-bottom: 80px;
         border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);

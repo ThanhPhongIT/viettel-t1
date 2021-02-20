@@ -1,19 +1,61 @@
-new WOW().init();
-$(document).ready(function () {
-    $('.banner__carousel').owlCarousel({
-        loop: true,
-        items: 1,
-        dots: true,
-        mouseDrag: false,
-        touchDrag: false,
+$(document).ready(function() {
+    var owl = $('#owl-carousel');
+    owl.owlCarousel({
+        loop: true
+    });
+
+    $('.news-left').click(function() {
+            owl.trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+    $('.news-right').click(function() {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger('prev.owl.carousel', [300]);
     })
-    var selector = $('.banner__carousel');
+});
+new WOW().init();
+var animateHTML = function() {
+    var elems, windowHeight;
+    var flag = false;
+    var init = function() {
+        elems = document.getElementsByClassName('total');
+        windowHeight = window.innerHeight;
+        _addEventHandlers();
+    };
+    var _addEventHandlers = function() {
 
-    $('.my-next-button').click(function () {
-        selector.trigger('next.owl.carousel');
-    });
+        window.addEventListener('scroll', _checkPosition);
 
-    $('.my-prev-button').click(function () {
-        selector.trigger('prev.owl.carousel');
-    });
-})
+
+    };
+    var _checkPosition = function() {
+
+
+        if (!flag) {
+            var posFromTop = elems[0].getBoundingClientRect().top;
+        } else {
+            posFromTop = 100000000000000;
+        }
+        if (posFromTop - windowHeight <= 0) {
+            $('.total').each(function() {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function(now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+            flag = true;
+        }
+
+    };
+    return {
+        init: init,
+    };
+};
+
+animateHTML().init();

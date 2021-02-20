@@ -599,7 +599,7 @@ div {
   width: 40%;
 }
 .history .carousel {
-  height: 70vh;
+  height: 600px;
 }
 .history .carousel .item1 {
   width: 86px;
@@ -914,19 +914,20 @@ div {
   mix-blend-mode: normal;
 }
 .news .list-service {
+  cursor: url("../images/icon-hover.svg"), auto;
   padding-top: 150px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .news .list-service #owl-carousel {
   display: flex;
 }
 .news .list-service .owl-carousel.owl-drag .owl-item {
-  height: 100px;
+  height: 40px;
   display: flex;
   align-items: flex-end;
 }
 .news .list-service p {
-  font-family: Sarabun;
+  font-family: PF BeauSans Pro;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -936,9 +937,9 @@ div {
   letter-spacing: -0.035em;
   color: #D6D6D6;
   margin-left: 30px;
-  cursor: pointer;
   position: relative;
   transition: ease-in-out 0.5s;
+  cursor: url("../images/icon-hover.svg"), auto;
 }
 @media screen and (max-width: 1441px) {
   .news .list-service p {
@@ -947,19 +948,7 @@ div {
 }
 .news .list-service p:hover {
   color: #E70031;
-}
-.news .list-service p:hover img {
-  opacity: 1;
-}
-.news .list-service p img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(80%, -70%);
-  opacity: 0;
-  transition: ease-in-out 0.5s;
-  height: 69px;
-  width: 69px;
+  cursor: url("../images/icon-hover.svg"), auto;
 }
 
 /*# sourceMappingURL=main.css.map */

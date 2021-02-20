@@ -169,6 +169,16 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 300px;
+}
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
 .banner .heading {
   font-family: "BeauSansPro";
@@ -180,6 +190,8 @@ p {
   letter-spacing: -2.40869px;
   text-transform: uppercase;
   color: #000000;
+  width: 250px;
+  margin-top: 100px;
 }
 .banner .des {
   font-family: "BeauSansPro";
@@ -190,6 +202,7 @@ p {
   /* or 171% */
   color: #010b12;
   margin: 40px 0 50px 0;
+  width: 280px;
 }
 .banner button {
   border: none;
@@ -487,6 +500,12 @@ p {
   color: #010b12;
   padding-right: 20px;
 }
+.news .line-time {
+  margin-top: 200px;
+}
+.news .line-time .news-left {
+  margin-right: 50px;
+}
 .news .list-post {
   display: flex;
   align-items: center;
@@ -608,7 +627,7 @@ p {
   align-items: center;
   justify-content: center;
 }
-.rank .rank-list .item .content .number {
+.rank .rank-list .item .content .total {
   font-family: Sarabun;
   font-style: normal;
   font-weight: 300;
@@ -659,9 +678,9 @@ p {
   padding-top: 120px;
   height: 74vh;
 }
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1281px) {
   .service {
-    padding-top: 132px;
+    padding-top: 50px;
   }
 }
 .service .heading {
@@ -772,9 +791,10 @@ p {
     margin-left: -27%;
   }
 }
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1290px) {
   .service .grid-layout {
-    margin-left: -18%;
+    margin-left: 6%;
+    margin-top: 120px;
   }
 }
 .service .grid-layout .item1 {
@@ -787,9 +807,10 @@ p {
 .service .grid-layout .item1 .contain1 img {
   margin-bottom: 20px;
 }
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1290px) {
   .service .grid-layout .item1 .contain1 img {
     width: 125px;
+    margin-bottom: 0;
   }
 }
 .service .grid-layout .item2 {
@@ -798,10 +819,16 @@ p {
 .service .grid-layout .item2 .contain2 {
   margin-top: 100px;
 }
+@media (min-width: 1024px) and (max-width: 1290px) {
+  .service .grid-layout .item2 .contain2 {
+    width: 125px;
+    margin-top: 120px;
+  }
+}
 .service .grid-layout .item2 .contain2 img {
   margin-bottom: 20px;
 }
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1290px) {
   .service .grid-layout .item2 .contain2 img {
     width: 125px;
   }
@@ -810,10 +837,15 @@ p {
   margin-left: 20px;
   margin-right: 20px;
 }
+@media (min-width: 1024px) and (max-width: 1290px) {
+  .service .grid-layout .item3 .contain3 {
+    width: 125px;
+  }
+}
 .service .grid-layout .item3 .contain3 img {
   margin-bottom: 20px;
 }
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1290px) {
   .service .grid-layout .item3 .contain3 img {
     width: 125px;
   }
@@ -824,7 +856,7 @@ p {
 .service .grid-layout .item4 .contain4 img {
   margin-bottom: 20px;
 }
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1290px) {
   .service .grid-layout .item4 .contain4 img {
     width: 125px;
   }
@@ -836,6 +868,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.social video {
+  width: 70%;
+  padding: 70px 0;
 }
 .social .bb {
   padding-bottom: 80px;

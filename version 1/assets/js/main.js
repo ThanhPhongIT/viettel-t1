@@ -5,7 +5,7 @@ window.onload = function() {
         var elems, windowHeight, svg;
         var flag = false;
         var init = function() {
-            elems = document.getElementsByClassName('achievement');
+            elems = document.getElementsByClassName('total');
             svg = document.getElementsByClassName('business');
             windowHeight = window.innerHeight;
             _addEventHandlers();
@@ -57,8 +57,8 @@ window.onload = function() {
         loop: true,
         margin: 0,
         autoplay: true,
-        smartSpeed: 1000,
-        autoplayTimeout: 500,
+        smartSpeed: 1500,
+        autoplayTimeout: 1000,
         autoplayHoverPause: true
     });
     var owlTop = $('#owl-carousel-top');
@@ -68,8 +68,8 @@ window.onload = function() {
         margin: 0,
         autoplay: true,
         slideBy: -1,
-        smartSpeed: 1000,
-        autoplayTimeout: 500,
+        smartSpeed: 1500,
+        autoplayTimeout: 1000,
         autoplayHoverPause: true
     });
 };

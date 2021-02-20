@@ -135,18 +135,19 @@
         }
     }
     .list-service {
+        cursor: url('../images/icon-hover.svg'), auto;
         padding-top: 150px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         #owl-carousel {
             display: flex;
         }
         .owl-carousel.owl-drag .owl-item {
-            height: 100px;
+            height: 40px;
             display: flex;
             align-items: flex-end;
         }
         p {
-            font-family: Sarabun;
+            font-family: PF BeauSans Pro;
             font-style: normal;
             font-weight: 500;
             font-size: 25px;
@@ -159,24 +160,13 @@
             letter-spacing: -0.035em;
             color: #D6D6D6;
             margin-left: 30px;
-            cursor: pointer;
             position: relative;
             transition: ease-in-out 0.5s;
+            cursor: url('../images/icon-hover.svg'),
+            auto;
             &:hover {
                 color: #E70031;
-                img {
-                    opacity: 1;
-                }
-            }
-            img {
-                position: absolute;
-                top: 0;
-                right: 0;
-                transform: translate(80%, -70%);
-                opacity: 0;
-                transition: ease-in-out 0.5s;
-                height: 69px;
-                width: 69px;
+                cursor: url('../images/icon-hover.svg'), auto;
             }
         }
     }
