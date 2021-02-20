@@ -15,6 +15,7 @@ var animateHTML = function() {
 
     };
     var _checkPosition = function() {
+        console.log($('.total'));
         var pos = svg[0].getBoundingClientRect().top;
         if (pos - windowHeight <= 0) {
             $('.svg').addClass('item');
@@ -69,29 +70,3 @@ owlTop.owlCarousel({
     autoplayTimeout: 500,
     autoplayHoverPause: true
 });
-
-function next() {
-    owlTop.trigger('prev.owl.carousel');
-}
-
-let text = document.getElementsByClassName("ptext");
-text.addEventListener("mouseenter", function(event) {
-
-}, false);
-
-// This handler will be executed every time the cursor
-// is moved over a different list item
-text.addEventListener("mouseover", function(event) {
-    setInterval(() => {
-        next();
-    }, 500);
-}, false);
-
-
-
-// $('.play').on('click',function(){
-//     owl.trigger('play.owl.autoplay',[1000])
-// })
-// $('.stop').on('click',function(){
-//     owl.trigger('stop.owl.autoplay')
-// })
