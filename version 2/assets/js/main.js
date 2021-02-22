@@ -57,7 +57,7 @@ function scrollShowImg(elmHover, elmShow) {
 }
 scrollShowImg('.social', '.img-social');
 $('.carousel-history').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 10,
     nav: true,
     dots: false,
@@ -76,53 +76,62 @@ $('.carousel-history').owlCarousel({
     }
 })
 $('.carousel-history-image').owlCarousel({
-    loop: false,
+    loop: true,
     nav: false,
     margin: 10,
     dots: false,
     itemClass: 'owl-item card',
     stageClass: 'owl-stage card-group',
-    slideSpeed: 1000,
-    // animateOut: "slideOutDown",
-    // animateIn: "slideInDown",
-
     responsive: {
         0: {
-            items: 1.3
+            items: 2
         },
         600: {
-            items: 1.3
+            items: 2
         },
         1000: {
-            items: 1.3
+            items: 2
         }
     }
+
 })
 var owlImg = $('.carousel-history-image');
-
-// owlImg.on('changed.owl.carousel', function(event) {
-//     var total = $('.carousel-history-image .owl-stage .owl-item.active').length;
-
-//     $('.carousel-history-image .owl-stage .owl-item').removeClass('animation');
-
-//     $('.carousel-history-image .owl-stage .owl-item.active').each(function(index) {
-//         if (index === 0) {
-//             // this is the first one
-//             $(this).addClass('animation');
-//         }
-//         // if (index === total - 1 && total > 1) {
-//         //     // this is the last one
-//         //     $(this).addClass('animation');
-//         // }
-//     });
-// });
-var owl = $('.carousel-history');
-
 $('.customNextBtn').click(function() {
     owlImg.trigger('next.owl.carousel', [300]);
-    $('.carousel-history-image .owl-item.active:first-child').addClass('animation');
+    $('.card.active').first().siblings().removeClass('animation-next', 'animation-prev')
+    $('.card.active').first().addClass('animation-next').removeClass('animation-prev')
 })
 $('.customPrevBtn').click(function() {
-
     owlImg.trigger('prev.owl.carousel', [300]);
+    $('.card.active').first().siblings().removeClass('animation-next', 'animation-prev')
+    $('.card.active').first().addClass('animation-prev').removeClass('animation-next')
 })
+
+//
+var video = document.getElementById('myVideo');
+console.log(video);
+console.log(video.duration);
+
+var textHeading = $('#text-heading').text();
+console.log(textHeading);
+var i = 0;
+$('#text-heading').text('')
+
+function typeWriter() {
+    if (i < textHeading.length) {
+        document.getElementById("text-heading").innerHTML += textHeading.charAt(i);
+        i++;
+        setTimeout(typeWriter, 700);
+    } else {
+        $('.banner__right').addClass('active');
+        $('.slogan,#text-des').addClass('animate__animated wow animate__fadeInUp');
+    }
+}
+
+
+video.ontimeupdate = function() {
+    if (video.currentTime >= video.duration - 2) {
+        typeWriter()
+        return;
+    }
+};

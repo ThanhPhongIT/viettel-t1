@@ -22,15 +22,22 @@
     .banner__right {
         position: relative;
         z-index: 2;
+        &.active {
+            #text-des {
+                display: block;
+            }
+            .slogan {
+                display: block;
+            }
+        }
         .slogan {
-            position: absolute;
-            top: -25px;
             font-style: normal;
             font-weight: 700;
             font-size: 12px;
             line-height: 24px;
             color: #A6A6A6;
-            mix-blend-mode: normal;
+            margin-bottom: 10px;
+            display: none;
         }
         .heading {
             p {
@@ -44,41 +51,44 @@
                 font-family: "PF BeauSans Pro";
             }
         }
-        .subheading {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 24px;
-            color: #0c0c0c;
-            mix-blend-mode: normal;
-            width: 60%;
-            padding-bottom: 50px;
-        }
-        .button-seemore {
-            button {
-                color: #ee0033;
-                border: none;
-                border-bottom: 3px solid #ee0033;
+        #text-des {
+            display: none;
+            .subheading {
                 font-style: normal;
-                font-weight: 700;
-                font-size: 14px;
+                font-weight: normal;
+                font-size: 18px;
                 line-height: 24px;
-                text-transform: uppercase;
-                padding-bottom: 10px;
-                background: none;
-                &:focus {
-                    outline: none;
-                }
+                color: #0c0c0c;
+                mix-blend-mode: normal;
+                width: 60%;
+                padding-bottom: 50px;
             }
-            .play {
-                cursor: pointer;
-                width: 42px;
-                height: 42px;
-                border-radius: 50%;
-                background: #f8f6f6;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            .button-seemore {
+                button {
+                    color: #ee0033;
+                    border: none;
+                    border-bottom: 3px solid #ee0033;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    padding-bottom: 10px;
+                    background: none;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .play {
+                    cursor: pointer;
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                    background: #f8f6f6;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
