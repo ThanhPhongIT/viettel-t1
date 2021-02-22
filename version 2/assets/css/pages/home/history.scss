@@ -66,18 +66,61 @@
         .owl-item {
             border: none;
             background: none;
-        }
-        .owl-item.active:first-child {
-            animation: fadeInBottomRight 1s .4s both;
-            .item {
-                // position: absolute;
-                // bottom: 0;
+            position: relative;
+            >div {
+                height: 100%;
             }
+        }
+        .active.animation-prev {
             img {
-                // width: 17%;
-                // transition: ease;
-                animation: fadeInBottomRight 1s .4s both;
+                bottom: 0;
+                left: 0;
+                width: 30%;
+                animation: ZoomPrev forwards;
+                animation-duration: .5s;
+                position: absolute;
             }
         }
+        .active.animation-next {
+            img {
+                bottom: 0;
+                right: 0;
+                width: 30%;
+                animation: Zoom forwards;
+                animation-duration: .5s;
+                position: absolute;
+            }
+        }
+        .active {
+            color: red;
+            img {
+                // transition: ease 1s;
+                width: 100%;
+                transition: .3s;
+            }
+            ~.active {
+                color: blue;
+                img {
+                    animation: none;
+                    transition: 0s;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 35%;
+                }
+            }
+        }
+    }
+}
+
+@keyframes Zoom {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes ZoomPrev {
+    to {
+        width: 100%;
     }
 }

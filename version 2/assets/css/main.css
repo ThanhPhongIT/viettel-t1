@@ -171,15 +171,18 @@ div {
   .banner .banner__right {
     position: relative;
     z-index: 2; }
+    .banner .banner__right.active #text-des {
+      display: block; }
+    .banner .banner__right.active .slogan {
+      display: block; }
     .banner .banner__right .slogan {
-      position: absolute;
-      top: -25px;
       font-style: normal;
       font-weight: 700;
       font-size: 12px;
       line-height: 24px;
       color: #A6A6A6;
-      mix-blend-mode: normal; }
+      margin-bottom: 10px;
+      display: none; }
     .banner .banner__right .heading p {
       font-style: normal;
       font-weight: 700;
@@ -189,37 +192,39 @@ div {
       text-transform: uppercase;
       color: #0c0c0c;
       font-family: "PF BeauSans Pro"; }
-    .banner .banner__right .subheading {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 24px;
-      color: #0c0c0c;
-      mix-blend-mode: normal;
-      width: 60%;
-      padding-bottom: 50px; }
-    .banner .banner__right .button-seemore button {
-      color: #ee0033;
-      border: none;
-      border-bottom: 3px solid #ee0033;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 24px;
-      text-transform: uppercase;
-      padding-bottom: 10px;
-      background: none; }
-      .banner .banner__right .button-seemore button:focus {
-        outline: none; }
-    .banner .banner__right .button-seemore .play {
-      cursor: pointer;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: #f8f6f6;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+    .banner .banner__right #text-des {
+      display: none; }
+      .banner .banner__right #text-des .subheading {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: #0c0c0c;
+        mix-blend-mode: normal;
+        width: 60%;
+        padding-bottom: 50px; }
+      .banner .banner__right #text-des .button-seemore button {
+        color: #ee0033;
+        border: none;
+        border-bottom: 3px solid #ee0033;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        background: none; }
+        .banner .banner__right #text-des .button-seemore button:focus {
+          outline: none; }
+      .banner .banner__right #text-des .button-seemore .play {
+        cursor: pointer;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: #f8f6f6;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
 
 .service {
   background: #f9f6f8; }
@@ -448,12 +453,45 @@ div {
     line-height: 53px; }
   .history .carousel-history-image .owl-item {
     border: none;
-    background: none; }
-  .history .carousel-history-image .owl-item.active:first-child {
-    animation: fadeInBottomRight 1s .4s both; }
-    .history .carousel-history-image .owl-item.active:first-child img {
-      animation: fadeInBottomRight 1s .4s both; }
+    background: none;
+    position: relative; }
+    .history .carousel-history-image .owl-item > div {
+      height: 100%; }
+  .history .carousel-history-image .active.animation-prev img {
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    animation: ZoomPrev forwards;
+    animation-duration: .5s;
+    position: absolute; }
+  .history .carousel-history-image .active.animation-next img {
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    animation: Zoom forwards;
+    animation-duration: .5s;
+    position: absolute; }
+  .history .carousel-history-image .active {
+    color: red; }
+    .history .carousel-history-image .active img {
+      width: 100%;
+      transition: .3s; }
+    .history .carousel-history-image .active ~ .active {
+      color: blue; }
+      .history .carousel-history-image .active ~ .active img {
+        animation: none;
+        transition: 0s;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 35%; }
 
+@keyframes Zoom {
+  to {
+    width: 100%; } }
+@keyframes ZoomPrev {
+  to {
+    width: 100%; } }
 .telecom {
   padding: 60px 0; }
   .telecom .heading {
