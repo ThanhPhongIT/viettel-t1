@@ -62,6 +62,13 @@
         font-size: 36px;
         line-height: 53px;
     }
+    .owl-carousel {
+        .owl-nav {
+            position: absolute;
+            top: 28px;
+            right: 34px;
+        }
+    }
     .carousel-history-image {
         .owl-item {
             border: none;

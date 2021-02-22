@@ -7,7 +7,7 @@ var animateHTML = function() {
     var elems, windowHeight;
     var flag = false;
     var init = function() {
-        elems = document.getElementsByClassName('thanhtuu');
+        elems = document.getElementsByClassName('total');
         windowHeight = window.innerHeight;
         _addEventHandlers();
     };
@@ -28,7 +28,7 @@ var animateHTML = function() {
                 $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
-                    duration: 2000,
+                    duration: 4000,
                     easing: 'swing',
                     step: function(now) {
                         $(this).text(Math.ceil(now));
@@ -121,7 +121,7 @@ function typeWriter() {
             document.getElementById("text-heading").innerHTML += textHeading.charAt(i);
         }
         i++;
-        setTimeout(typeWriter, 100);
+        setTimeout(typeWriter, 700);
     } else {
         $('.banner__right').addClass('active');
         $('.slogan,#text-des').addClass('animate__animated wow animate__fadeInUp');

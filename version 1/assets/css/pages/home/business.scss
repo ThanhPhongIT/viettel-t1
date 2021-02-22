@@ -15,22 +15,22 @@
     .item.customer svg path {
         stroke-dasharray: 70;
         stroke-dashoffset: 70;
-        animation: draw 3s forwards;
+        animation: draw 5s forwards;
     }
     .item.customer svg circle {
         stroke-dasharray: 370;
         stroke-dashoffset: 370;
-        animation: draw 3s forwards;
+        animation: draw 5s forwards;
     }
     .item.social svg path {
         stroke-dasharray: 190;
         stroke-dashoffset: 190;
-        animation: draw 3s forwards;
+        animation: draw 5s forwards;
     }
     .item.people svg path {
         stroke-dasharray: 90;
         stroke-dashoffset: 90;
-        animation: draw 3s forwards;
+        animation: draw 5s forwards;
     }
     @keyframes draw {
         to {
