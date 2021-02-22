@@ -12,9 +12,7 @@ var animateHTML = function() {
         _addEventHandlers();
     };
     var _addEventHandlers = function() {
-
         window.addEventListener('scroll', _checkPosition);
-
 
     };
     var _checkPosition = function() {
@@ -109,26 +107,26 @@ $('.customPrevBtn').click(function() {
 
 //
 var video = document.getElementById('myVideo');
-console.log(video);
-console.log(video.duration);
-
-var textHeading = $('#text-heading').text();
+var textHeading = $('#text-heading').html();
 console.log(textHeading);
 var i = 0;
 $('#text-heading').text('')
 
 function typeWriter() {
     if (i < textHeading.length) {
-        document.getElementById("text-heading").innerHTML += textHeading.charAt(i);
+        if (textHeading.charAt(i) == '/') {
+            console.log('br');
+            document.getElementById("text-heading").innerHTML += "<br>"
+        } else {
+            document.getElementById("text-heading").innerHTML += textHeading.charAt(i);
+        }
         i++;
-        setTimeout(typeWriter, 700);
+        setTimeout(typeWriter, 100);
     } else {
         $('.banner__right').addClass('active');
         $('.slogan,#text-des').addClass('animate__animated wow animate__fadeInUp');
     }
 }
-
-
 video.ontimeupdate = function() {
     if (video.currentTime >= video.duration - 2) {
         typeWriter()

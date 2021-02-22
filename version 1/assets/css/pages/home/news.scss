@@ -135,7 +135,6 @@
         }
     }
     .list-service {
-        cursor: url('../images/icon-hover.svg'), auto;
         padding-top: 150px;
         padding-bottom: 20px;
         #owl-carousel {
@@ -166,7 +165,8 @@
             auto;
             &:hover {
                 color: #E70031;
-                cursor: url('../images/icon-hover.svg'), bottom;
+                cursor: auto;
+                cursor: url('../images/icon-hover.svg') 0 80, pointer;
             }
         }
     }
