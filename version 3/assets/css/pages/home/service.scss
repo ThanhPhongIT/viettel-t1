@@ -97,27 +97,6 @@
         margin-left: 20%;
         margin-top: 80px;
         position: absolute;
-        .img-grid1 {
-            position: relative;
-            &::after {
-                position: absolute;
-                content: "";
-                display: block;
-                top: 0px;
-                right: 20px;
-                left: 0;
-                bottom: 50%;
-                background: #fff;
-            }
-        }
-        .img-grid1.animate::after {
-            animation: scrollTop 1s linear forwards;
-        }
-        @keyframes scrollTop {
-            to {
-                bottom: 100%;
-            }
-        }
         @media (min-width: 1440px) and (max-width: 1600px) {
             margin-left: -20%;
         }
@@ -131,8 +110,27 @@
         .item1 {
             position: relative;
             margin-left: 20px;
+            .contain1.animate::after {
+                animation: scrollTop 1s linear forwards;
+            }
+            @keyframes scrollTop {
+                to {
+                    bottom: 100%;
+                }
+            }
             .contain1 {
                 margin-top: 270px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 0px;
+                    right: 0;
+                    left: 0;
+                    bottom: 50%;
+                    background: #fff;
+                }
                 img {
                     margin-bottom: 20px;
                     @media (min-width: 1024px) and (max-width: 1290px) {
@@ -144,8 +142,22 @@
         }
         .item2 {
             margin-left: 20px;
+            .contain2.animate::after {
+                animation: scrollTop 1s linear forwards;
+            }
             .contain2 {
                 margin-top: 100px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 0px;
+                    right: 0;
+                    left: 0;
+                    bottom: 50%;
+                    background: #fff;
+                }
                 @media (min-width: 1024px) and (max-width: 1290px) {
                     width: 125px;
                     margin-top: 120px;
@@ -161,7 +173,21 @@
         .item3 {
             margin-left: 20px;
             margin-right: 20px;
+            .contain3.animate::after {
+                animation: scrollTop 1s linear forwards;
+            }
             .contain3 {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 0px;
+                    right: 0;
+                    left: 0;
+                    bottom: 50%;
+                    background: #fff;
+                }
                 @media (min-width: 1024px) and (max-width: 1290px) {
                     width: 125px;
                 }
@@ -174,8 +200,22 @@
             }
         }
         .item4 {
+            .contain4.animate::after {
+                animation: scrollTop 1s linear forwards;
+            }
             .contain4 {
                 margin-top: 50px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    top: 0px;
+                    right: 0;
+                    left: 0;
+                    bottom: 50%;
+                    background: #fff;
+                }
                 img {
                     margin-bottom: 20px;
                     @media (min-width: 1024px) and (max-width: 1290px) {

@@ -67,6 +67,9 @@
         padding-top: 210px;
         position: relative;
         padding-bottom: 600px;
+        @media screen and (max-width: 1440px) {
+            padding-bottom: 450px;
+        }
         p {
             font-family: PF BeauSans Pro;
             font-style: normal;

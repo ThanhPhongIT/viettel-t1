@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: "BeauSansPro";
-    src: url("../font/PFBeauSansPro-Regular.ttf");
+    src: url('../font/FS PFBeauSansPro-Regular.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Bbook.ttf') format('truetype'), url('../font/FS PFBeauSansPro-BbookItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Black.ttf') format('truetype'), url('../font/FS PFBeauSansPro-BlackItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Bold.ttf') format('truetype'), url('../font/FS PFBeauSansPro-BoldItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Italic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Light.ttf') format('truetype'), url('../font/FS PFBeauSansPro-LightItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-SemiBold.ttf') format('truetype'), url('../font/FS PFBeauSansPro-SemiBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "PF BeauSans Pro";
-    src: url("../font/PFBeauSansPro-Bold.ttf");
+    src: url("../font/FS PFBeauSansPro-Bold.ttf");
 }
 
 body {

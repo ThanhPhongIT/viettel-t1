@@ -1,4 +1,6 @@
-$(document).ready(function() {
+window.onload = function() {
+    $('#overlay').addClass("hidden");
+    $('#overlay').addClass("hidden");
     var owl = $('#owl-carousel');
     owl.owlCarousel({
         loop: true
@@ -21,7 +23,13 @@ $(document).ready(function() {
             }
         })
     }
-    scrollShowImg('.service', '.img-grid1');
+    scrollShowImg('.service', '.contain1');
+    scrollShowImg('.service', '.contain4');
+    scrollShowImg('.service', '.contain3');
+    scrollShowImg('.service', '.contain2');
+    scrollShowImg('.tech', '.img-tech-two');
+    scrollShowImg('.tech', '.img-tech-one');
+    scrollShowImg('.mission', '.mission-img');
 
     new WOW().init();
     var animateHTML = function() {
@@ -68,4 +76,4 @@ $(document).ready(function() {
     };
 
     animateHTML().init();
-});
+};

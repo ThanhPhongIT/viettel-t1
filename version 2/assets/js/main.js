@@ -1,3 +1,6 @@
+window.onload = function() {
+    $('#overlay').addClass("hidden");
+}
 new WOW().init();
 
 var animateHTML = function() {

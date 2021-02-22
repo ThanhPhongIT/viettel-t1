@@ -13,7 +13,7 @@
         width: 25%;
         margin-bottom: 35px;
     }
-    .des {
+    .des-tech {
         font-family: "BeauSansPro";
         font-style: normal;
         font-weight: 300;
@@ -26,8 +26,38 @@
         margin-bottom: 142px;
         width: 75%;
     }
-    .img-tech2 {
+    .img-tech-one {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0px;
+            right: 0;
+            left: 0;
+            bottom: 50%;
+            background: #fff;
+        }
+    }
+    .img-tech-one.animate::after {
+        animation: scrollTop 1s linear forwards;
+    }
+    .img-tech-two {
         width: 80%;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0px;
+            right: 0;
+            left: 0;
+            bottom: 50%;
+            background: #fff;
+        }
+    }
+    .img-tech-two.animate::after {
+        animation: scrollTop 1s linear forwards;
     }
     p {
         margin: 0;

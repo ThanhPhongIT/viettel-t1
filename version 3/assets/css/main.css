@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "BeauSansPro";
-  src: url("../font/PFBeauSansPro-Regular.ttf");
+  src: url("../font/FS PFBeauSansPro-Regular.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Bbook.ttf") format("truetype"), url("../font/FS PFBeauSansPro-BbookItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Black.ttf") format("truetype"), url("../font/FS PFBeauSansPro-BlackItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Bold.ttf") format("truetype"), url("../font/FS PFBeauSansPro-BoldItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Italic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Light.ttf") format("truetype"), url("../font/FS PFBeauSansPro-LightItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-SemiBold.ttf") format("truetype"), url("../font/FS PFBeauSansPro-SemiBoldItalic.ttf") format("truetype");
 }
 body {
   font-family: "Sarabun", sans-serif;
@@ -40,14 +40,35 @@ p {
 }
 
 /* ===== Usage ===== */
+#overlay {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: white;
+  transition: 1s 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#overlay img {
+  width: 100;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .header {
   height: 100px;
   background: #ffffff;
 }
 .header .menu .menu__item a {
   font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 12px;
   line-height: 116.3%;
   text-align: center;
   text-transform: uppercase;
@@ -60,6 +81,30 @@ p {
 .header .menu .menu__item select,
 .header .menu .menu__item img {
   margin-right: 25px;
+}
+.header .menu .menu__item .btn-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  transition: none !important;
+  border-radius: 0 !important;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+.header .menu .menu__item .btn-group button:focus {
+  box-shadow: none;
+}
+.header .menu .menu__item .btn-group > ul {
+  right: 0 !important;
+}
+.header .menu .space {
+  width: 2px;
+  height: 20px;
+  margin-right: 40px;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .footer {
@@ -452,6 +497,27 @@ p {
   background-color: #f2f3f3;
   padding-top: 175px;
 }
+.mission .mission-img.animate::after {
+  animation: scrollTop 1s linear forwards;
+}
+@keyframes scrollTop {
+  to {
+    bottom: 100%;
+  }
+}
+.mission .mission-img {
+  position: relative;
+}
+.mission .mission-img::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 15px;
+  left: 15px;
+  bottom: 50%;
+  background: #f2f3f3;
+}
 .mission .bb {
   padding-bottom: 193px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -781,27 +847,6 @@ p {
   margin-top: 80px;
   position: absolute;
 }
-.service .grid-layout .img-grid1 {
-  position: relative;
-}
-.service .grid-layout .img-grid1::after {
-  position: absolute;
-  content: "";
-  display: block;
-  top: 0px;
-  right: 20px;
-  left: 0;
-  bottom: 50%;
-  background: #fff;
-}
-.service .grid-layout .img-grid1.animate::after {
-  animation: scrollTop 1s linear forwards;
-}
-@keyframes scrollTop {
-  to {
-    bottom: 100%;
-  }
-}
 @media (min-width: 1440px) and (max-width: 1600px) {
   .service .grid-layout {
     margin-left: -20%;
@@ -822,8 +867,27 @@ p {
   position: relative;
   margin-left: 20px;
 }
+.service .grid-layout .item1 .contain1.animate::after {
+  animation: scrollTop 1s linear forwards;
+}
+@keyframes scrollTop {
+  to {
+    bottom: 100%;
+  }
+}
 .service .grid-layout .item1 .contain1 {
   margin-top: 270px;
+  position: relative;
+}
+.service .grid-layout .item1 .contain1::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background: #fff;
 }
 .service .grid-layout .item1 .contain1 img {
   margin-bottom: 20px;
@@ -837,8 +901,22 @@ p {
 .service .grid-layout .item2 {
   margin-left: 20px;
 }
+.service .grid-layout .item2 .contain2.animate::after {
+  animation: scrollTop 1s linear forwards;
+}
 .service .grid-layout .item2 .contain2 {
   margin-top: 100px;
+  position: relative;
+}
+.service .grid-layout .item2 .contain2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background: #fff;
 }
 @media (min-width: 1024px) and (max-width: 1290px) {
   .service .grid-layout .item2 .contain2 {
@@ -858,6 +936,22 @@ p {
   margin-left: 20px;
   margin-right: 20px;
 }
+.service .grid-layout .item3 .contain3.animate::after {
+  animation: scrollTop 1s linear forwards;
+}
+.service .grid-layout .item3 .contain3 {
+  position: relative;
+}
+.service .grid-layout .item3 .contain3::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background: #fff;
+}
 @media (min-width: 1024px) and (max-width: 1290px) {
   .service .grid-layout .item3 .contain3 {
     width: 125px;
@@ -871,8 +965,22 @@ p {
     width: 125px;
   }
 }
+.service .grid-layout .item4 .contain4.animate::after {
+  animation: scrollTop 1s linear forwards;
+}
 .service .grid-layout .item4 .contain4 {
   margin-top: 50px;
+  position: relative;
+}
+.service .grid-layout .item4 .contain4::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background: #fff;
 }
 .service .grid-layout .item4 .contain4 img {
   margin-bottom: 20px;
@@ -972,7 +1080,7 @@ p {
   width: 25%;
   margin-bottom: 35px;
 }
-.tech .des {
+.tech .des-tech {
   font-family: "BeauSansPro";
   font-style: normal;
   font-weight: 300;
@@ -985,8 +1093,38 @@ p {
   margin-bottom: 142px;
   width: 75%;
 }
-.tech .img-tech2 {
+.tech .img-tech-one {
+  position: relative;
+}
+.tech .img-tech-one::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background: #fff;
+}
+.tech .img-tech-one.animate::after {
+  animation: scrollTop 1s linear forwards;
+}
+.tech .img-tech-two {
   width: 80%;
+  position: relative;
+}
+.tech .img-tech-two::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 50%;
+  background: #fff;
+}
+.tech .img-tech-two.animate::after {
+  animation: scrollTop 1s linear forwards;
 }
 .tech p {
   margin: 0;

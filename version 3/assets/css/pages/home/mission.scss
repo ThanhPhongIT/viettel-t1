@@ -1,6 +1,27 @@
 .mission {
     background-color: #f2f3f3;
     padding-top: 175px;
+    .mission-img.animate::after {
+        animation: scrollTop 1s linear forwards;
+    }
+    @keyframes scrollTop {
+        to {
+            bottom: 100%;
+        }
+    }
+    .mission-img {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0px;
+            right: 15px;
+            left: 15px;
+            bottom: 50%;
+            background: #f2f3f3;
+        }
+    }
     .bb {
         padding-bottom: 193px;
         border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);

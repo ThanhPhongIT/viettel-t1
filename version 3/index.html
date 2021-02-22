@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div id="overlay">
+        <img src="assets/images/Spinner-1s-200px.svg" alt="Loading" />
+    </div>
     <div class="wrapper">
         <div class="header d-flex align-items-center">
             <div class="container d-flex align-items-center justify-content-between">
@@ -29,11 +32,21 @@
                     <li class="menu__item"><a href="#">Về Viettel</a></li>
                     <li class="menu__item"><a href="#">Kiến tạo xã hội số</a></li>
                     <li class="menu__item"><a href="#">Đối tác & đầu tư</a></li>
+                    <li class="menu__item"><a href="#">Tin tức & sự kiện</a></li>
+                    <div class="space"></div>
                     <li class="menu__item">
-                        <img src="assets/images/search.svg" alt="">
+                        <img src="assets/images/icon-search.svg" alt="">
                     </li>
                     <li class="menu__item">
-                        <img src="assets/images/bar.svg" alt="">
+                        <div class="dropdown btn-group ">
+                            <button class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/icon-global.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Tiếng Việt</a></li>
+                                <li><a class="dropdown-item" href="#">EngLish</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -109,7 +122,7 @@
                         <div class="grid-layout">
                             <div class="item1 e">
                                 <div class="contain1">
-                                    <img class="img-grid1" src="assets/images/anh3.svg" alt="">
+                                    <img src="assets/images/anh3.svg" alt="">
                                 </div>
                             </div>
                             <div class="item2">
@@ -189,15 +202,20 @@
             <div class="container">
                 <div class="heading animate__animated wow animate__fadeInUp" style="animation-delay: 0.5s">Công nghiệp công nghệ cao </div>
                 <div class="row">
-                    <div class="col-md-4 col-12 animate__animated wow animate__fadeInUp" style="animation-delay: 1s">
-                        <div class="des">Nghiên cứu sản xuất chủ lực trong lĩnh vực quân sự và dân dụng, làm chủ toàn trình từ nghiên cứu, thiết kế, chế tạo, sản xuất, kinh doanh, bảo trì sản phẩm.</div>
-                        <img src="assets/images/img-tech1.svg" style="animation-delay: 1.8s" alt="">
+                    <div class="col-md-4 col-12 ">
+                        <div class="des-tech animate__animated wow animate__fadeInUp" style="animation-delay: 1s">Nghiên cứu sản xuất chủ lực trong lĩnh vực quân sự và dân dụng, làm chủ toàn trình từ nghiên cứu, thiết kế, chế tạo, sản xuất, kinh doanh, bảo trì sản phẩm.</div>
+                        <div class="img-tech-one">
+                            <img src="assets/images/img-tech1.svg" alt="">
+                        </div>
                     </div>
-                    <div class="col-md-8 col-12 d-flex flex-column align-items-start justify-content-between animate__animated wow animate__fadeInUp" style="animation-delay: 1.5s">
-                        <img class="img-tech2" src="assets/images/img-tech2.svg" alt="">
-                        <div class="bottom animate__animated wow animate__slideInLeft" style="animation-delay: 2s">
+                    <div class="col-md-8 col-12 d-flex flex-column align-items-start justify-content-between ">
+                        <div class="img-tech-two">
+                            <img class="img-tech2" src="assets/images/img-tech2.svg" alt="">
+                        </div>
+
+                        <div class="bottom animate__animated wow animate__fadeInUp" style="animation-delay: 1.5s">
                             <p>2020</p>
-                            <div class="d-flex">
+                            <div class="d-flex ">
                                 <div class="under"></div>
                                 <div class="under-grey"></div>
                             </div>
@@ -238,7 +256,7 @@
     <div class="mission">
         <div class="container">
             <div class="row bb">
-                <div class="col-md-6 col-12 animate__animated wow animate__fadeInUp">
+                <div class="col-md-6 col-12 animate__animated wow animate__fadeInUp mission-img">
                     <img src="assets/images/mision.svg" alt="">
                 </div>
                 <div class="col-md-6 col-12 d-flex flex-column align-items-start justify-content-center pl animate__animated wow animate__fadeInUp">

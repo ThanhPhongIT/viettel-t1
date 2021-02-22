@@ -32,6 +32,10 @@
         justify-content: center;
         margin-top: 100px;
         position: relative;
+        img {
+            --animate-duration: 2s;
+            --animate-repeat: infinite;
+        }
         .total {
             position: absolute;
             top: 35%;

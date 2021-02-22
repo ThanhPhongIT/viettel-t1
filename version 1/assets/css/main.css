@@ -23,7 +23,7 @@ a {
 
 @font-face {
   font-family: "PF BeauSans Pro";
-  src: url("../font/PFBeauSansPro-Regular.ttf") format("truetype"), url("../font/PFBeauSansPro-Bbook.ttf"), url("../font/PFBeauSansPro-BbookItalic.ttf"), url("../font/PFBeauSansPro-Black.ttf"), url("../font/PFBeauSansPro-BlackItalic.ttf"), url("../font/PFBeauSansPro-Bold.ttf"), url("../font/PFBeauSansPro-BoldItalic.ttf"), url("../font/PFBeauSansPro-Italic.ttf"), url("../font/PFBeauSansPro-Light.ttf"), url("../font/PFBeauSansPro-LightItalic.ttf"), url("../font/PFBeauSansPro-SemiBold.ttf"), url("../font/PFBeauSansPro-SemiBoldItalic.ttf");
+  src: url("../font/FS PFBeauSansPro-Regular.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Bbook.ttf") format("truetype"), url("../font/FS PFBeauSansPro-BbookItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Black.ttf") format("truetype"), url("../font/FS PFBeauSansPro-BlackItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Bold.ttf") format("truetype"), url("../font/FS PFBeauSansPro-BoldItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Italic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-Light.ttf") format("truetype"), url("../font/FS PFBeauSansPro-LightItalic.ttf") format("truetype"), url("../font/FS PFBeauSansPro-SemiBold.ttf") format("truetype"), url("../font/FS PFBeauSansPro-SemiBoldItalic.ttf") format("truetype");
 }
 /**
    * @param $direction: horizontal vertical both
@@ -327,9 +327,9 @@ div {
 .service video {
   position: absolute;
   top: 20%;
-  right: -30%;
+  right: -45%;
   transform: translateY(-50%);
-  width: 70%;
+  width: 100%;
   height: 70%;
   transform: rotate(20deg);
 }
@@ -483,6 +483,11 @@ div {
   position: relative;
   padding-bottom: 600px;
 }
+@media screen and (max-width: 1440px) {
+  .bg-black .global {
+    padding-bottom: 450px;
+  }
+}
 .bg-black .global p {
   font-family: PF BeauSans Pro;
   font-style: normal;
@@ -550,7 +555,7 @@ div {
   font-size: 22px;
   line-height: 155.5%;
   text-transform: uppercase;
-  width: 70%;
+  width: 80%;
   color: #F8F6F6;
   padding-bottom: 150px;
   text-align: center;
@@ -748,6 +753,10 @@ div {
   justify-content: center;
   margin-top: 100px;
   position: relative;
+}
+.achievement .item img {
+  --animate-duration: 2s;
+  --animate-repeat: infinite;
 }
 .achievement .item .total {
   position: absolute;
@@ -948,7 +957,7 @@ div {
 }
 .news .list-service p:hover {
   color: #E70031;
-  cursor: url("../images/icon-hover.svg"), auto;
+  cursor: url("../images/icon-hover.svg"), bottom;
 }
 
 /*# sourceMappingURL=main.css.map */
