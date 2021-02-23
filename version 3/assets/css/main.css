@@ -65,6 +65,12 @@ p {
   height: 100px;
   background: #ffffff;
 }
+.header .logo {
+  width: 90px;
+}
+.header .logo img {
+  width: 100%;
+}
 .header .menu .menu__item a {
   font-style: normal;
   font-weight: 700;
@@ -179,6 +185,24 @@ p {
   align-items: center;
   padding-top: 50px;
 }
+.footer .footer-bottom .copyright .socialf {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+.footer .footer-bottom .copyright .socialf img {
+  background-color: #67686c;
+  width: 42px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.footer .footer-bottom .copyright .socialf img:hover {
+  background-color: #E70031;
+}
 .footer .footer-bottom .copyright p:first-child {
   border: none;
   padding-left: 20px;
@@ -206,6 +230,7 @@ p {
   color: #010B12;
   padding: 0 20px;
   border-left: 1px solid #010B12;
+  margin: 0;
 }
 
 .banner {

@@ -80,6 +80,12 @@ div {
   border-bottom: 2px solid #F8F6F6;
   padding: 20px 0;
 }
+.header .logo {
+  width: 90px;
+}
+.header .logo img {
+  width: 100%;
+}
 .header .menu .space {
   width: 2px;
   height: 20px;
@@ -223,6 +229,23 @@ div {
   color: #2C2C2C;
   padding: 0 20px;
   border-left: 2px solid #E70031;
+}
+.footer .foot-right .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer .foot-right .social img {
+  background-color: #67686c;
+  width: 42px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.footer .foot-right .social img:hover {
+  background-color: #E70031;
 }
 .footer .foot-right p {
   font-family: Sarabun;

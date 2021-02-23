@@ -63,6 +63,23 @@
         }
     }
     .foot-right {
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+                background-color: #67686c;
+                width: 42px;
+                height: 40px;
+                margin-right: 20px;
+                border-radius: 50%;
+                padding: 10px;
+                margin-bottom: 20px;
+                &:hover {
+                    background-color: #E70031;
+                }
+            }
+        }
         p {
             font-family: Sarabun;
             font-style: normal;

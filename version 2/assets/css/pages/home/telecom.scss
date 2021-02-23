@@ -41,7 +41,19 @@
     }
     .image-telecom {
         position: absolute;
-        right: 10%;
+        right: -40%;
+        width: 700px;
+        top: 0;
+        @media screen and (max-width: 1441px) {
+            right: -22%;
+        }
+        @media screen and (max-width: 1281px) {
+            right: -10%;
+        }
+        @media screen and (max-width: 1025px) {
+            right: -7%;
+            width: 600px;
+        }
     }
 }
 
@@ -51,6 +63,7 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-position: center;
     align-items: center;
     .about {
         font-style: normal;

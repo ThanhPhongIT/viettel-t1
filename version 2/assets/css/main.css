@@ -185,14 +185,35 @@ p {
 .footer .foot {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 50px;
 }
-.footer .foot p {
+.footer .foot .text {
+  display: flex;
+}
+.footer .foot .text p {
   padding: 0 20px;
 }
-.footer .foot p:first-child {
+.footer .foot .text p:first-child {
   border-right: 1px solid #F8F6F6;
   padding-left: 0;
+}
+.footer .foot .socialf {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer .foot .socialf img {
+  background-color: #67686c;
+  width: 42px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.footer .foot .socialf img:hover {
+  background-color: #E70031;
 }
 
 .banner {
@@ -647,7 +668,25 @@ p {
 }
 .telecom .image-telecom {
   position: absolute;
-  right: 10%;
+  right: -40%;
+  width: 700px;
+  top: 0;
+}
+@media screen and (max-width: 1441px) {
+  .telecom .image-telecom {
+    right: -22%;
+  }
+}
+@media screen and (max-width: 1281px) {
+  .telecom .image-telecom {
+    right: -10%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .telecom .image-telecom {
+    right: -7%;
+    width: 600px;
+  }
 }
 
 .corporation {
@@ -656,6 +695,7 @@ p {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  background-position: center;
   align-items: center;
 }
 .corporation .about {
