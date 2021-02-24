@@ -124,7 +124,7 @@ function typeWriter() {
         setTimeout(typeWriter, 700);
     } else {
         $('.banner__right').addClass('active');
-        $('.slogan,#text-des').addClass('animate__animated wow animate__fadeInUp');
+        $('.slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
     }
 }
 video.ontimeupdate = function() {
