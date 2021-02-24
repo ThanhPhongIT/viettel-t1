@@ -1,133 +1,131 @@
-.history {
-    padding: 160px 0;
-    background: #f9f6f8;
-    .heading {
-        font-family: "BeauSansPro";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 150%;
-        /* identical to box height, or 42px */
-        text-transform: uppercase;
-        color: #222222;
-    }
-    .title {
-        font-style: normal;
-        font-size: 24px;
-        line-height: 29px;
-        /* or 121% */
-        color: #1a1a1a;
-        mix-blend-mode: normal;
-        margin-top: 20px;
-    }
-    .history-left {
-        margin-top: 150px;
-    }
-    .history-img {
-        margin-top: 70px;
-    }
-    .history-text {
-        font-size: 36px;
-        color: #ec2c34;
-    }
-    .history-sub {
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 24px;
-        color: #1a1a1a;
-    }
-    .history-icon {
-        margin-right: 20px;
-        width: 17%;
-        justify-content: space-between;
-        img {
-            width: 9px;
+    .history {
+        padding: 160px 0;
+        background: #f9f6f8;
+        .heading {
+            font-family: "BeauSansPro";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 150%;
+            /* identical to box height, or 42px */
+            text-transform: uppercase;
+            color: #222222;
         }
-    }
-    .history-time {
-        width: 70%;
-        .history-time-red {
-            font-size: 18px;
+        .title {
+            font-style: normal;
+            font-size: 24px;
+            line-height: 29px;
+            /* or 121% */
+            color: #1a1a1a;
+            mix-blend-mode: normal;
+            margin-top: 20px;
+        }
+        .history-left {
+            margin-top: 150px;
+        }
+        .history-img {}
+        .history-text {
+            font-size: 36px;
             color: #ec2c34;
-            font-weight: 500;
         }
-    }
-    .history-des {
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 0;
-    }
-    .history-item {
-        width: 70%;
-        font-size: 36px;
-        line-height: 53px;
-    }
-    .owl-carousel {
-        .owl-nav {
-            position: absolute;
-            top: 28px;
-            right: 34px;
+        .history-sub {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1a1a1a;
         }
-    }
-    .carousel-history-image {
-        .owl-item {
-            border: none;
-            background: none;
-            position: relative;
-            >div {
-                height: 100%;
+        .history-icon {
+            margin-right: 20px;
+            width: 17%;
+            justify-content: space-between;
+            img {
+                width: 9px;
             }
         }
-        .active.animation-prev {
-            img {
-                bottom: 0;
-                left: 0;
-                width: 30%;
-                animation: ZoomPrev forwards;
-                animation-duration: .5s;
+        .history-time {
+            width: 70%;
+            .history-time-red {
+                font-size: 18px;
+                color: #ec2c34;
+                font-weight: 500;
+            }
+        }
+        .history-des {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+        .history-item {
+            width: 70%;
+            font-size: 36px;
+            line-height: 53px;
+        }
+        .owl-carousel {
+            .owl-nav {
                 position: absolute;
+                top: 28px;
+                right: 34px;
             }
         }
-        .active.animation-next {
-            img {
-                bottom: 0;
-                right: 0;
-                width: 30%;
-                animation: Zoom forwards;
-                animation-duration: .5s;
-                position: absolute;
+        .carousel-history-image {
+            .owl-item {
+                border: none;
+                background: none;
+                position: relative;
+                >div {
+                    height: 100%;
+                }
             }
-        }
-        .active {
-            color: red;
-            img {
-                // transition: ease 1s;
-                width: 100%;
-                transition: .3s;
-            }
-            ~.active {
-                color: blue;
+            .active.animation-prev {
                 img {
-                    animation: none;
-                    transition: 0s;
-                    position: absolute;
                     bottom: 0;
                     left: 0;
-                    width: 35%;
+                    width: 30%;
+                    animation: ZoomPrev forwards;
+                    animation-duration: .5s;
+                    position: absolute;
+                }
+            }
+            .active.animation-next {
+                img {
+                    bottom: 0;
+                    right: 0;
+                    width: 30%;
+                    animation: Zoom forwards;
+                    animation-duration: .5s;
+                    position: absolute;
+                }
+            }
+            .active {
+                color: red;
+                img {
+                    // transition: ease 1s;
+                    width: 100%;
+                    transition: .3s;
+                }
+                ~.active {
+                    color: blue;
+                    img {
+                        animation: none;
+                        transition: 0s;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 35%;
+                    }
                 }
             }
         }
     }
-}
-
-@keyframes Zoom {
-    to {
-        width: 100%;
+    
+    @keyframes Zoom {
+        to {
+            width: 100%;
+        }
     }
-}
-
-@keyframes ZoomPrev {
-    to {
-        width: 100%;
+    
+    @keyframes ZoomPrev {
+        to {
+            width: 100%;
+        }
     }
-}

@@ -98,13 +98,13 @@ $('.carousel-history-image').owlCarousel({
     stageClass: 'owl-stage card-group',
     responsive: {
         0: {
-            items: 2
+            items: 1.2
         },
         600: {
-            items: 2
+            items: 1.2
         },
         1000: {
-            items: 2
+            items: 1.2
         }
     }
 
