@@ -451,7 +451,7 @@
     var $aContainer = document.getElementById("animation-container");
     var aContainerRect = $aContainer.getBoundingClientRect();
     var start = aContainerRect.top;
-    var length = aContainerRect.height + 270; //Height of the container plus a offset for better presentation
+    var length = aContainerRect.height; //Height of the container plus a offset for better presentation
     scrollAnimate({
         frames: {
             path: "assets/frames/",
