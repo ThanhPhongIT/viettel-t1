@@ -172,6 +172,10 @@ div {
 }
 .footer .logo-footer {
   padding-bottom: 50px;
+  width: 160px;
+}
+.footer .logo-footer img {
+  width: 100%;
 }
 .footer .foot-left .email {
   font-family: Sarabun;
@@ -336,6 +340,10 @@ div {
 }
 .banner .banner__left .button-seemore button:focus {
   outline: none;
+}
+.banner .banner__left .button-seemore button:hover {
+  background-color: antiquewhite;
+  transition: ease-in-out 0.3s;
 }
 
 .service {
@@ -704,7 +712,6 @@ div {
 }
 .his__develop .right {
   width: 90%;
-  margin: 50px 0;
 }
 .his__develop .pl {
   padding-left: 100px;
@@ -778,7 +785,7 @@ div {
   position: relative;
 }
 .achievement .item img {
-  --animate-duration: 2s;
+  --animate-duration: 1s;
   --animate-repeat: infinite;
 }
 .achievement .item .total {
