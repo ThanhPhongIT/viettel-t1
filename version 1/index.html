@@ -52,19 +52,19 @@
 
             </div>
         </header>
-        <div class="banner d-flex align-items-center">
-            <div class="video">
-                <video autoplay muted id="myVideo">
-                    <source src="assets/video/video-banner.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="container">
-                <div class="row">
+        <div class="banner-container">
+            <div class="banner container">
+                <div class="video">
+                    <video autoplay muted id="myVideo">
+                        <source src="assets/video/video-banner.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="row w-100">
                     <div class="col-6">
                     </div>
                     <div class="col-6 overflow-hidden">
                         <div class="banner__right">
-                            <div class="slogan">VIETTEL YOUR WAY</div>
+                            <div class="banner-slogan">VIETTEL YOUR WAY</div>
                             <div class="heading">
                                 <p id="text-heading">Tiên phong/kiến tạo xã hội số </p>
                             </div>
@@ -80,9 +80,8 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
         </div>
         <div class="service">
             <div class="container">
@@ -574,7 +573,11 @@
         centeredSlides: true,
         slidesPerView: '3',
         spaceBetween: 20,
-
+        navigation: {
+            nextEl: '.his-next',
+            prevEl: '.his-prev'
+        },
+        
         // loop:true,
         //  autoplay: {
         //   delay: 1000,

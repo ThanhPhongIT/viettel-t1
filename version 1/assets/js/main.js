@@ -126,11 +126,11 @@ window.onload = function() {
             setTimeout(typeWriter, 400);
         } else {
             $('.banner__right').addClass('active');
-            $('.slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
+            $('.banner-slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
         }
     }
     video.ontimeupdate = function() {
-        if (video.currentTime >= video.duration - 2) {
+        if (video.currentTime >= video.duration) {
             typeWriter()
             source.src = "assets/video/video-banner-loop.mp4";
             video.load();
