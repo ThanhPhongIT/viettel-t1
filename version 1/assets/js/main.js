@@ -135,9 +135,9 @@ $(document).ready(function() {
         if (video.currentTime >= video.duration) {
             typeWriter()
             source.src = "assets/video/video-banner-loop.mp4";
+            video.loop = true;
             video.load();
             video.play();
-            video.loop = true;
             return;
         }
     };
@@ -145,7 +145,8 @@ $(document).ready(function() {
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: '3',
-        spaceBetween: 10,
+        spaceBetween: 0,
+        speed: 1000,
         navigation: {
             nextEl: '.his-next',
             prevEl: '.his-prev'
@@ -159,5 +160,5 @@ $(document).ready(function() {
             modifier: 4,
             slideShadows: false,
         },
-    }).activeIndex = 1;
+    }).activeIndex = 0;
 })
