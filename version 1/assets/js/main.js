@@ -34,7 +34,6 @@ window.onload = function() {
 
         };
         var _checkPosition = function() {
-            console.log($('.total'));
             var pos = svg[0].getBoundingClientRect().top;
             if (pos - windowHeight <= 0) {
                 $('.svg').addClass('item');
@@ -111,21 +110,20 @@ window.onload = function() {
         autoplayHoverPause: true
     });
     var video = document.getElementById('myVideo');
+    var source = document.querySelector('source');
     var textHeading = $('#text-heading').html();
-    console.log(textHeading);
     var i = 0;
     $('#text-heading').text('')
 
     function typeWriter() {
         if (i < textHeading.length) {
             if (textHeading.charAt(i) == '/') {
-                console.log('br');
                 document.getElementById("text-heading").innerHTML += "<br>"
             } else {
                 document.getElementById("text-heading").innerHTML += textHeading.charAt(i);
             }
             i++;
-            setTimeout(typeWriter, 700);
+            setTimeout(typeWriter, 400);
         } else {
             $('.banner__right').addClass('active');
             $('.slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
@@ -134,7 +132,12 @@ window.onload = function() {
     video.ontimeupdate = function() {
         if (video.currentTime >= video.duration - 2) {
             typeWriter()
+            source.src = "assets/video/video-banner-loop.mp4";
+            video.load();
+            video.play();
+            video.loop = true;
             return;
         }
     };
+    console.log(source);
 };
