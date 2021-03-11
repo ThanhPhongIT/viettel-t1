@@ -1,5 +1,7 @@
 window.onload = function() {
     $('#overlay').addClass("hidden");
+}
+$(document).ready(function() {
     WOW.prototype.addBox = function(element) {
         this.boxes.push(element);
     };
@@ -139,5 +141,23 @@ window.onload = function() {
             return;
         }
     };
-    console.log(source);
-};
+    var swiperZoom = new Swiper('.swiper-container', {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: '3',
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.his-next',
+            prevEl: '.his-prev'
+        },
+        effect: 'coverflow',
+        keyboard: true,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 4,
+            slideShadows: false,
+        },
+    }).activeIndex = 1;
+})
