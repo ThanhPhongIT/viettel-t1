@@ -1,6 +1,32 @@
 .news {
     background: #E9E9E9;
     padding-top: 132px;
+    .seemore {
+        display: flex;
+        width: 150px;
+        height: 48px;
+        background-color: #E70031;
+        color: white;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 116.3%;
+        /* identical to box height, or 16px */
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &:hover {
+            background-color: #eb1644;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
     .title {
         font-style: normal;
         font-weight: bold;
@@ -40,10 +66,7 @@
         background-color: #FFFFFF;
     }
     .item {
-        margin-right: 50px;
-        @media screen and (max-width: 1281px) {
-            margin-right: 20px;
-        }
+        margin-bottom: 20px;
         img {
             width: 100%;
         }
@@ -80,57 +103,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
-        }
-    }
-    .most-view {
-        padding-left: 70px;
-        .title-most {
-            font-family: Sarabun;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 17px;
-            /* identical to box height, or 94% */
-            text-transform: uppercase;
-            color: #1A1A1A;
-            mix-blend-mode: normal;
-        }
-        .list {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 0;
-            .post {
-                margin-bottom: 20px;
-                margin-top: 20px;
-                img {
-                    float: left;
-                    margin-right: 20px;
-                }
-                .title-post {
-                    font-family: Sarabun;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 12px;
-                    line-height: 17px;
-                    /* or 142% */
-                    text-transform: uppercase;
-                    color: #1A1A1A;
-                    mix-blend-mode: normal;
-                }
-                .date-post {
-                    font-family: Sarabun;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 24px;
-                    /* identical to box height, or 200% */
-                    text-transform: uppercase;
-                    color: #787878;
-                    mix-blend-mode: normal;
-                }
             }
         }
     }

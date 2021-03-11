@@ -47,6 +47,13 @@
             background: #E4E4E4;
             border-radius: 50%;
         }
+        .owl-carousel {
+            width: 346px;
+        }
+        .owl-carousel .owl-item img {
+            display: block;
+            width: auto;
+        }
         .item2 {
             width: 346px;
             height: 346px;

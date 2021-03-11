@@ -1,6 +1,23 @@
 window.onload = function() {
     $('#overlay').addClass("hidden");
-    new WOW().init();
+    WOW.prototype.addBox = function(element) {
+        this.boxes.push(element);
+    };
+
+    // Init WOW.js and get instance
+    var wow = new WOW();
+    wow.init();
+
+    // Attach scrollSpy to .wow elements for detect view exit events,
+    // then reset elements and add again for animation
+    $('.wow').on('scrollSpy:exit', function() {
+        $(this).css({
+            'visibility': 'hidden',
+            'animation-name': 'none'
+        }).removeClass('animated');
+        wow.addBox(this);
+    }).scrollSpy();
+
     var animateHTML = function() {
         var elems, windowHeight, svg;
         var flag = false;
@@ -52,6 +69,27 @@ window.onload = function() {
     animateHTML().init();
 
     var owl = $('#owl-carousel');
+    var owlHis = $('#his-owl');
+    owlHis.owlCarousel({
+        center: true,
+        items: 1,
+        animateOut: 'animate__zoomIn',
+        loop: true,
+        margin: 10,
+        mouseDrag: false,
+        touchDrag: false,
+        responsive: {
+            600: {
+                items: 1
+            }
+        }
+    });
+    $('.his-next').click(function() {
+        owlHis.trigger('next.owl.carousel');
+    })
+    $('.his-prev').click(function() {
+        owlHis.trigger('prev.owl.carousel');
+    })
     owl.owlCarousel({
         items: 8,
         loop: true,
@@ -72,4 +110,31 @@ window.onload = function() {
         autoplayTimeout: 1000,
         autoplayHoverPause: true
     });
+    var video = document.getElementById('myVideo');
+    var textHeading = $('#text-heading').html();
+    console.log(textHeading);
+    var i = 0;
+    $('#text-heading').text('')
+
+    function typeWriter() {
+        if (i < textHeading.length) {
+            if (textHeading.charAt(i) == '/') {
+                console.log('br');
+                document.getElementById("text-heading").innerHTML += "<br>"
+            } else {
+                document.getElementById("text-heading").innerHTML += textHeading.charAt(i);
+            }
+            i++;
+            setTimeout(typeWriter, 700);
+        } else {
+            $('.banner__right').addClass('active');
+            $('.slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
+        }
+    }
+    video.ontimeupdate = function() {
+        if (video.currentTime >= video.duration - 2) {
+            typeWriter()
+            return;
+        }
+    };
 };

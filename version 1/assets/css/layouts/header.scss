@@ -20,95 +20,28 @@
 }
 
 .header {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
     height: 100px;
-    .bdw {
-        border-bottom: 2px solid #F8F6F6;
-        padding: 20px 0;
+    background: #f9f6f8;
+    z-index: 99;
+    >div {
+        height: 60px;
+        background-color: #fff;
     }
     .logo {
-        width: 90px;
         img {
-            width: 100%;
+            width: 88px;
         }
     }
     .menu {
-        .space {
-            width: 2px;
-            height: 20px;
-            margin-right: 40px;
-            margin-left: 20px;
-            background-color: #F8F6F6;
-        }
         .menu__item {
-            .btn-group {
-                background-color: none;
-                &:focus {
-                    border: none !important;
-                    background-color: none;
-                }
-                button {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: none;
-                    transition: none !important;
-                    border-radius: 0 !important;
-                    outline: none;
-                    border: none;
-                    &:focus {
-                        border: none !important;
-                        background-color: none;
-                    }
-                }
-                .dropdown-menu {
-                    background: #F5F5F5;
-                    li {
-                        margin: 0 !important;
-                        height: 50px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background: #F5F5F5;
-                        a {
-                            width: 100%;
-                            background: #F5F5F5;
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 12px;
-                            line-height: 116.3%;
-                            /* identical to box height, or 14px */
-                            text-align: center;
-                            text-transform: uppercase;
-                            color: #151515;
-                            margin: 0 !important;
-                            &:hover {
-                                font-style: normal;
-                                font-weight: bold;
-                                font-size: 12px;
-                                line-height: 116.3%;
-                                /* identical to box height, or 14px */
-                                text-align: center;
-                                text-transform: uppercase;
-                                color: #E70031;
-                                background-color: #F8F6F6;
-                            }
-                        }
-                    }
-                }
-            }
             a {
                 font-style: normal;
-                font-weight: bold;
-                font-size: 13px;
+                font-weight: 700;
+                font-size: 12px;
                 line-height: 116.3%;
                 text-align: center;
                 text-transform: uppercase;
-                color: #F8F6F6;
+                color: #080808;
                 margin-right: 25px;
                 &:hover {
                     text-decoration: none;
@@ -118,6 +51,32 @@
             img {
                 margin-right: 25px;
             }
+            .btn-group {
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: none;
+                    transition: none !important;
+                    border-radius: 0 !important;
+                    outline: none;
+                    border: none;
+                    padding: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+                >ul {
+                    right: 0 !important;
+                }
+            }
+        }
+        .space {
+            width: 2px;
+            height: 20px;
+            margin-right: 40px;
+            margin-left: 20px;
+            background-color: rgba(0, 0, 0, .2);
         }
     }
 }
