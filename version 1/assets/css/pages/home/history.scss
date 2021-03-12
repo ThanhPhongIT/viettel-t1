@@ -43,7 +43,7 @@
         .swiper-slide {
             width: 300px !important;
             height: 300px !important;
-            .item2 {
+            .item-slider {
                 width: 100%;
                 height: 100%;
                 background: #9e9698;
@@ -61,7 +61,7 @@
             }
         }
         .swiper-slide-active {
-            .item2 {
+            .item-slider {
                 background: #E70031;
                 transform: scale(1);
                 p {
@@ -81,7 +81,7 @@
             }
         }
         .swiper-slide-next {
-            .item2 {
+            .item-slider {
                 transform: scale(0.7);
             }
         }
