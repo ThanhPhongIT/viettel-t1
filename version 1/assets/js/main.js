@@ -1,5 +1,7 @@
 window.onload = function() {
     $('#overlay').addClass("hidden");
+}
+$(document).ready(function() {
     WOW.prototype.addBox = function(element) {
         this.boxes.push(element);
     };
@@ -126,18 +128,37 @@ window.onload = function() {
             setTimeout(typeWriter, 400);
         } else {
             $('.banner__right').addClass('active');
-            $('.slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
+            $('.banner-slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
         }
     }
     video.ontimeupdate = function() {
-        if (video.currentTime >= video.duration - 2) {
+        if (video.currentTime >= video.duration) {
             typeWriter()
             source.src = "assets/video/video-banner-loop.mp4";
+            video.loop = true;
             video.load();
             video.play();
-            video.loop = true;
             return;
         }
     };
-    console.log(source);
-};
+    var swiperZoom = new Swiper('.swiper-container', {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: '3',
+        spaceBetween: 0,
+        speed: 1000,
+        navigation: {
+            nextEl: '.his-next',
+            prevEl: '.his-prev'
+        },
+        effect: 'coverflow',
+        keyboard: true,
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 4,
+            slideShadows: false,
+        },
+    }).activeIndex = 0;
+})
