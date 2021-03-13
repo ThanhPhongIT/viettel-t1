@@ -39,13 +39,11 @@
         opacity: 0.8;
         width: 40%;
     }
-    .swiper-slider {
+    .swiper-slider-his {
         .swiper-slide {
-            width: 300px !important;
-            height: 300px !important;
-            .item-slider {
-                width: 100%;
-                height: 100%;
+            .item-year {
+                width: 300px;
+                height: 300px;
                 background: #9e9698;
                 border-radius: 50%;
                 display: flex;
@@ -53,17 +51,43 @@
                 align-items: center;
                 justify-content: center;
                 transition: all .3s ease;
-                transform: scale(0.5);
                 p,
                 img {
                     display: none;
                 }
             }
+            .item-content {
+                min-width: 300px;
+                padding-top: 100px;
+                margin-bottom: 30px;
+                left: 50%;
+                transform: translateX(5%);
+                position: relative;
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 1px;
+                    background-color: #9e9698;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    transition: all .3s ease;
+                }
+                p {
+                    display: none;
+                    margin-bottom: 0;
+                    padding-left: 25px;
+                    min-width: 400px;
+                }
+                >p {
+                    margin-bottom: 5px;
+                }
+            }
         }
         .swiper-slide-active {
-            .item-slider {
+            .item-year {
                 background: #E70031;
-                transform: scale(1);
                 p {
                     display: block;
                     font-family: PF BeauSans Pro;
@@ -79,10 +103,19 @@
                     display: block;
                 }
             }
+            .item-content {
+                &::after {
+                    background: #E70031;
+                }
+                position: relative;
+                p {
+                    display: block;
+                }
+            }
         }
         .swiper-slide-next {
-            .item-slider {
-                transform: scale(0.7);
+            .item-year {
+                // transform: scale(0.7);
             }
         }
         .his-next,

@@ -5,13 +5,8 @@ $(document).ready(function() {
     WOW.prototype.addBox = function(element) {
         this.boxes.push(element);
     };
-
-    // Init WOW.js and get instance
     var wow = new WOW();
     wow.init();
-
-    // Attach scrollSpy to .wow elements for detect view exit events,
-    // then reset elements and add again for animation
     $('.wow').on('scrollSpy:exit', function() {
         $(this).css({
             'visibility': 'hidden',
@@ -19,7 +14,6 @@ $(document).ready(function() {
         }).removeClass('animated');
         wow.addBox(this);
     }).scrollSpy();
-
     var animateHTML = function() {
         var elems, windowHeight, svg;
         var flag = false;
@@ -66,51 +60,8 @@ $(document).ready(function() {
             init: init,
         };
     };
-
     animateHTML().init();
-
-    var owl = $('#owl-carousel');
-    var owlHis = $('#his-owl');
-    owlHis.owlCarousel({
-        center: true,
-        items: 1,
-        animateOut: 'animate__zoomIn',
-        loop: true,
-        margin: 10,
-        mouseDrag: false,
-        touchDrag: false,
-        responsive: {
-            600: {
-                items: 1
-            }
-        }
-    });
-    $('.his-next').click(function() {
-        owlHis.trigger('next.owl.carousel');
-    })
-    $('.his-prev').click(function() {
-        owlHis.trigger('prev.owl.carousel');
-    })
-    owl.owlCarousel({
-        items: 8,
-        loop: true,
-        margin: 0,
-        autoplay: true,
-        smartSpeed: 1500,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true
-    });
-    var owlTop = $('#owl-carousel-top');
-    owlTop.owlCarousel({
-        items: 8,
-        loop: true,
-        margin: 0,
-        autoplay: true,
-        slideBy: -1,
-        smartSpeed: 1500,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: true
-    });
+    // Video banner show Text
     var video = document.getElementById('myVideo');
     var source = document.querySelector('source');
     var textHeading = $('#text-heading').html();
@@ -125,28 +76,29 @@ $(document).ready(function() {
                 document.getElementById("text-heading").innerHTML += textHeading.charAt(i);
             }
             i++;
-            setTimeout(typeWriter, 400);
+            setTimeout(typeWriter, 100);
         } else {
             $('.banner__right').addClass('active');
             $('.banner-slogan,#text-des').addClass('animate__animated wow animate__fadeIn');
         }
     }
     video.ontimeupdate = function() {
-        if (video.currentTime >= video.duration) {
+        if (video.ended) {
             typeWriter()
             source.src = "assets/video/video-banner-loop.mp4";
             video.loop = true;
             video.load();
             video.play();
-            return;
         }
     };
-    var swiperZoom = new Swiper('.swiper-container', {
+    // end video banner
+    // swipe slider history 
+    var swiperZoom = new Swiper('.swipe-history', {
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: '3',
-        spaceBetween: 0,
-        speed: 1000,
+        spaceBetween: 100,
+        speed: 1500,
         navigation: {
             nextEl: '.his-next',
             prevEl: '.his-prev'
@@ -161,4 +113,28 @@ $(document).ready(function() {
             slideShadows: false,
         },
     }).activeIndex = 0;
+    // carousel viettel service
+    var owl_viettel = $('#carousel-viettel');
+    owl_viettel.owlCarousel({
+        items: 8,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        smartSpeed: 1500,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true
+    });
+    // carousel viettel service left to right
+    var owl_viettel_ltr = $('#carousel-viettel-ltr');
+    owl_viettel_ltr.owlCarousel({
+        items: 8,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        slideBy: -1,
+        smartSpeed: 1500,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true
+    });
+
 })
