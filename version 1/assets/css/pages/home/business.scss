@@ -4,12 +4,13 @@
     .heading {
         font-family: PF BeauSans Pro;
         font-style: normal;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 38px;
-        line-height: 150%;
-        /* or 57px */
+        line-height: 140%;
+        /* or 53px */
+        letter-spacing: -0.05em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #F8F6F6;
         padding: 100px 0;
     }
     .item.customer svg path {

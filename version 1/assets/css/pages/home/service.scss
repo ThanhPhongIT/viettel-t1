@@ -16,11 +16,13 @@
         transform: rotate(20deg);
     }
     .heading {
+        font-family: PF BeauSans Pro;
         font-style: normal;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 38px;
         line-height: 150%;
         /* or 57px */
+        letter-spacing: -0.05em;
         text-transform: uppercase;
         color: #222222;
         width: 70%;

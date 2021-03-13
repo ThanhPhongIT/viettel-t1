@@ -20,14 +20,15 @@
             top: 50%;
             left: 0%;
             .ti {
+                font-family: PF BeauSans Pro;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 18px;
-                line-height: 155.5%;
-                /* identical to box height, or 28px */
-                letter-spacing: 0.06em;
+                font-size: 38px;
+                line-height: 140%;
+                /* or 53px */
+                letter-spacing: -0.05em;
                 text-transform: uppercase;
-                color: #E70031;
+                color: #F8F6F6;
             }
         }
         p {
