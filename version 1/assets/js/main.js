@@ -63,7 +63,7 @@ $(document).ready(function() {
     animateHTML().init();
     // Video banner show Text
     var video = document.getElementById('myVideo');
-    var source = document.querySelector('source');
+    var source = document.getElementById('source');
     var textHeading = $('#text-heading').html();
     var i = 0;
     $('#text-heading').text('')
