@@ -1,11 +1,5 @@
 @mixin cover-background {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* ===== Usage ===== */
-div {
-  background-image: url("cute-doggo.png");
-  @include cover-background;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

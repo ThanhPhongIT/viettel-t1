@@ -136,5 +136,10 @@ $(document).ready(function() {
         autoplayTimeout: 1000,
         autoplayHoverPause: true
     });
-
+    var owl_images = $('#imagesid');
+    owl_images.owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true
+    })
 })

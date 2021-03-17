@@ -29,15 +29,16 @@
         color: #222222;
     }
     .content {
+        font-family: Sarabun;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 500;
         font-size: 24px;
-        line-height: 34px;
-        /* or 144% */
+        line-height: 150%;
+        /* or 36px */
         color: #1A1A1A;
         mix-blend-mode: normal;
         opacity: 0.8;
-        width: 40%;
+        width: 65%;
     }
     .swiper-slider-his {
         .swiper-slide {
@@ -131,6 +132,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .seemore {
+        width: 105px;
+        height: 33px;
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        text-transform: uppercase;
+        color: #ED2C34;
+        mix-blend-mode: normal;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid #ED2C34;
+        margin-top: 50px;
+    }
     .bb {
         margin-top: 150px;
         width: 70%;
