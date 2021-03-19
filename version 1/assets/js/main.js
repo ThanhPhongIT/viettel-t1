@@ -136,10 +136,86 @@ $(document).ready(function() {
         autoplayTimeout: 1000,
         autoplayHoverPause: true
     });
-    var owl_images = $('#imagesid');
-    owl_images.owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true
-    })
+    //video control
+    const video_new = $('#video-new');
+    const btn_video_new =$('.content-video-new .btn-play');
+    const progressSlider = $('.progress-news');
+    const  progressFill =$('.progress-filled');
+    const time_current =$('.time-current');
+    time_current.html(`${neatTime(video_new[0].currentTime)} / ${neatTime(video_new[0].duration)}`) 
+    progressFill.width(0+"%")
+    //
+   function playvideo() {
+    video_new.trigger('play');
+    $('.content-video-new').addClass('active');
+   }
+   //
+   function pauseVideo() {
+    video_new.trigger('pause');
+    $('.content-video-new').removeClass('active');
+   }
+   //
+
+   function neatTime(time) {
+    // var hours = Math.floor((time % 86400)/3600)
+    var minutes = Math.floor((time % 3600)/60);
+    var seconds = Math.floor(time % 60);
+      seconds = seconds>9?seconds:`0${seconds}`;
+      return `${minutes}:${seconds}`;
+  }
+  //
+  function updateProgress(e) {
+      const currentTimeVideo = Math.floor(video_new[0].currentTime / video_new[0].duration * 100);
+      progressFill.width(currentTimeVideo+"%");
+      time_current.html(`${neatTime(video_new[0].currentTime)} / ${neatTime(video_new[0].duration)}`) 
+    }
+    // 
+    function setProgress(e) {
+        const newTime = e.offsetX/progressSlider.outerWidth();
+        progressFill.width(newTime*100+"%")
+        video_new[0].currentTime= newTime*video_new[0].duration
+    }
+    //
+    const volumeFill =$('.volume-filled');
+    const volumeBtn = $('.volume-btn');
+    function toggleMute() {
+        if(video_new[0].volume) {
+            lastVolume = video_new[0].volume;
+            video_new[0].volume = 0;
+            volumeBtn.addClass('muted');
+            volumeFill.width(0)
+        } else {
+            video_new[0].volume = lastVolume;
+            volumeBtn.removeClass('muted');
+            volumeFill.width(lastVolume*100+"%")
+        }
+    }
+    //
+    var lastVolume = 1;
+    const volumeSlider =$('.volume-slider')
+    function changeVolume(e) {
+		volumeBtn.removeClass('muted');
+		let volume = e.offsetX/volumeSlider.outerWidth();
+		volume<0.1 ? volume = 0 : volume=volume; 
+		volumeFill.width(`${volume*100}%`)
+		video_new[0].volume = volume;
+		if (volume == 0) {
+			volumeBtn.addClass('muted');
+		}
+		lastVolume = volume;
+}
+    //play video
+    video_new.on('canplay', updateProgress);
+    //play video
+    btn_video_new.on('click',playvideo)
+    //video pause
+    video_new.on('click', pauseVideo);
+    //update progress
+    video_new.on('timeupdate', updateProgress);
+    //change progress
+    progressSlider.on('click', setProgress);
+    //togglevolume
+    volumeBtn.on('click', toggleMute);
+    volumeSlider.on('click', changeVolume);
 })
+//
