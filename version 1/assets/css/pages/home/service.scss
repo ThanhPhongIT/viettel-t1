@@ -22,10 +22,21 @@
         font-size: 38px;
         line-height: 150%;
         /* or 57px */
-        letter-spacing: -0.05em;
+        display: flex;
+        align-items: center;
         text-transform: uppercase;
-        color: #222222;
-        width: 70%;
+        color: #15181A;
+    }
+    .dest {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+        color: #010B12;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        width: 44%;
     }
     .title {
         font-family: Sarabun;
