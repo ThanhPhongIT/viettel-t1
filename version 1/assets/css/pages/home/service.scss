@@ -1,64 +1,70 @@
 .service {
-    padding: 160px 0;
-    position: relative;
-    background-color: #faf6f8;
-    overflow: hidden;
-    img {
-        margin-top: 60px;
-    }
-    video {
-        position: absolute;
-        top: 20%;
-        right: -45%;
-        transform: translateY(-50%);
-        width: 100%;
-        height: 70%;
-        transform: rotate(20deg);
-    }
-    .heading {
-        font-family: PF BeauSans Pro;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 38px;
-        line-height: 150%;
-        /* or 57px */
-        display: flex;
-        align-items: center;
-        text-transform: uppercase;
-        color: #15181A;
-    }
-    .dest {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        /* or 171% */
-        color: #010B12;
-        mix-blend-mode: normal;
-        opacity: 0.8;
-        width: 44%;
-    }
-    .title {
-        font-family: Sarabun;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 157.3%;
-        /* identical to box height, or 28px */
-        display: flex;
-        align-items: flex-end;
-        text-transform: uppercase;
-        color: #010B12;
-    }
-    .des {
-        font-family: Sarabun;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        /* or 171% */
-        color: #010B12;
-        mix-blend-mode: normal;
-        width: 70%;
-    }
+  padding: 160px 0;
+  position: relative;
+  background-color: #faf6f8;
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 20%;
+    right: -45%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 70%;
+    transform: rotate(20deg);
+  }
+  .heading {
+    font-family: PF BeauSans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 150%;
+    /* or 57px */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #15181a;
+  }
+  .dest {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    color: #010b12;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 44%;
+  }
+  .title {
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 157.3%;
+    /* identical to box height, or 28px */
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: #010b12;
+  }
+  .des {
+    font-family: Sarabun;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    color: #010b12;
+    mix-blend-mode: normal;
+    width: 70%;
+  }
+  .button-seemore {
+    margin-bottom: 20px;
+  }
+  .image-circle {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
 }

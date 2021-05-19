@@ -1,45 +1,40 @@
 .slogan {
-    z-index: 100;
+  position: relative;
+  background-color: #e70031;
+  .image-block {
+    width: 241px;
+    height: 241px;
+  }
+  .block1,
+  .block2,
+  .block3 {
+    .secondary {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .block1,
+  .block3 {
+    background: linear-gradient(
+      270deg,
+      #c9002b 12.89%,
+      rgba(201, 0, 43, 0) 79.61%
+    );
+  }
+  .block2 {
+    background-color: #e70031;
     position: relative;
-    height: 100vh;
-    @media screen and (max-width: 1440px) {
-        height: 80vh;
+    .primary {
     }
-    img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
+    .container {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
     }
-    .re {
-        position: relative;
-        height: 100%;
-        .con {
-            position: absolute;
-            top: 50%;
-            left: 0%;
-            .ti {
-                font-family: PF BeauSans Pro;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 38px;
-                line-height: 140%;
-                /* or 53px */
-                letter-spacing: -0.05em;
-                text-transform: uppercase;
-                color: #F8F6F6;
-            }
-        }
-        p {
-            font-family: PF BeauSans Pro;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 38px;
-            line-height: 150%;
-            /* or 57px */
-            text-transform: uppercase;
-            color: #FFFFFF;
-        }
-    }
+  }
 }
