@@ -1,0 +1,1115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BeauSansPro";
+  src: url("../font/PFBeauSansPro-Regular.ttf");
+}
+body {
+  font-family: "Sarabun", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+   * @param $direction: horizontal vertical both
+   example : @include center(both) || @include center(horizontal) || @include center(vertical)
+   */
+/* ===== Usage ===== */
+p {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+/* ===== Usage ===== */
+.header {
+  height: 100px;
+  background: #ffffff;
+}
+.header .menu .menu__item a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 116.3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #080808;
+  margin-right: 25px;
+}
+.header .menu .menu__item a:hover {
+  text-decoration: none;
+}
+.header .menu .menu__item select,
+.header .menu .menu__item img {
+  margin-right: 25px;
+}
+
+.footer {
+  background-color: #F2F2F2;
+  padding: 50px 0 30px 0;
+}
+.footer .category {
+  margin-bottom: 50px;
+}
+.footer .category ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer .category ul .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height, or 136% */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #010B12;
+  margin-bottom: 30px;
+}
+.footer .category ul li {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 116.3%;
+  /* identical to box height, or 14px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #010B12;
+  margin-bottom: 15px;
+}
+.footer .footer-bottom .email {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height, or 136% */
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #010B12;
+}
+.footer .footer-bottom .address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #010B12;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.footer .footer-bottom p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 116.3%;
+  /* identical to box height, or 14px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #010B12;
+}
+.footer .footer-bottom .copyright {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+.footer .footer-bottom .copyright p:first-child {
+  border: none;
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 25px;
+  /* identical to box height, or 208% */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #010B12;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.footer .footer-bottom .copyright p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #010B12;
+  padding: 0 20px;
+  border-left: 1px solid #010B12;
+}
+
+.banner {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 137.3%;
+  /* or 66px */
+  letter-spacing: -2.40869px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.banner .des {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #010b12;
+  margin: 40px 0 50px 0;
+}
+.banner button {
+  border: none;
+  width: 156px;
+  height: 48px;
+  background: #ed2c34;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 116.3%;
+  /* identical to box height, or 16px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.banner button:focus {
+  outline: none;
+}
+.banner .bb {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 130px;
+}
+
+.corporation .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.corporation .top .left {
+  width: 80vw;
+  background-color: black;
+}
+.corporation .top .left .about {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 157.3%;
+  /* or 25px */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 100px 0 20px 0;
+  padding-left: 375px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .corporation .top .left .about {
+    padding-left: 270px;
+  }
+}
+.corporation .top .left .heading {
+  padding-bottom: 100px;
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 133.8%;
+  /* or 48px */
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 375px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .corporation .top .left .heading {
+    padding-left: 270px;
+  }
+}
+.corporation .top .right {
+  width: 20vw;
+}
+.corporation .bottom {
+  position: relative;
+}
+.corporation .bottom img {
+  width: 100%;
+}
+.corporation .bottom .sticky {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .corporation .bottom .sticky {
+    width: 385px;
+    height: 340px;
+  }
+}
+.corporation .bottom .sticky .top {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.corporation .bottom .sticky .top p {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 157.3%;
+  /* identical to box height, or 19px */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+}
+.corporation .bottom .sticky .top .under {
+  width: 51px;
+  height: 3px;
+  background: #ed2c34;
+}
+.corporation .bottom .sticky .bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.corporation .bottom .sticky .bottom p {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 123.3%;
+  /* or 22px */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+  padding-right: 40px;
+}
+
+.history {
+  padding: 112px;
+  background-color: #f2f3f3;
+}
+.history .bottom {
+  display: flex;
+  margin-top: 150px;
+}
+.history .bottom .line-time {
+  display: flex;
+}
+.history .bottom .line-time i {
+  margin: 0 20px;
+}
+.history .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.history .des {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #1a1a1a;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  padding-top: 12px;
+  width: 22%;
+}
+.history .slider .small {
+  position: absolute;
+  left: 500px;
+  bottom: -167px;
+}
+.history .slider ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.history .slider ul li {
+  display: flex;
+  align-items: flex-start;
+}
+.history .slider ul li img {
+  margin-right: 20px;
+}
+.history .slider ul li p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  /* or 22px */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #101810;
+}
+
+.mission {
+  background-color: #f2f3f3;
+  padding-top: 175px;
+}
+.mission .bb {
+  padding-bottom: 193px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mission .pl {
+  padding-left: 126px;
+}
+.mission img {
+  width: 100%;
+}
+.mission .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #000000;
+  width: 80%;
+  margin-bottom: 26px;
+}
+.mission .des {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  width: 70%;
+}
+
+.news .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+  padding-right: 20px;
+}
+.news .list-post {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.news .list-post::-webkit-scrollbar {
+  display: none;
+}
+.news .list-post .item {
+  margin-right: 50px;
+}
+.news .list-post .item .num {
+  padding: 20px 0;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 157.3%;
+  /* identical to box height, or 38px */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010202;
+  opacity: 0.2;
+}
+.news .list-post .item .title {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 157.3%;
+  /* or 25px */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010202;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
+.news .list-post .item .des {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #1a1a1a;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  padding: 40px 0 150px 0;
+}
+
+.rank {
+  padding: 40px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.rank .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.rank .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.rank .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+  text-align: center;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  padding-top: 160px;
+}
+.rank .title {
+  font-family: Sarabun;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  text-align: center;
+  padding: 10px 0 60px 0;
+}
+.rank .rank-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.rank .rank-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rank .rank-list .item .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rank .rank-list .item .content .number {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 150%;
+  /* identical to box height, or 72px */
+  text-align: center;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #ed2c34;
+}
+.rank .rank-list .item .content p {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 157.3%;
+  /* or 28px */
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+.rank button {
+  width: 150px;
+  height: 48px;
+  border: none;
+  margin-bottom: 140px;
+  margin-top: 50px;
+  background: #ed2c34;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 116.3%;
+  /* identical to box height, or 16px */
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.rank button:focus {
+  outline: none;
+}
+
+.service {
+  padding-top: 120px;
+  height: 74vh;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service {
+    padding-top: 132px;
+  }
+}
+.service .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+}
+.service .list-service {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+.service .list-service .list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 100px;
+}
+.service .list-service .list li {
+  margin-bottom: 50px;
+  display: flex;
+}
+.service .list-service .list li .nummber {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 124.3%;
+  /* or 17px */
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+}
+.service .list-service .list li p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157.3%;
+  /* or 22px */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+  margin: 0;
+  margin-left: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .list-service .list li p {
+    white-space: nowrap;
+  }
+}
+.service .des {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #010b12;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  width: 50%;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .des {
+    margin-top: -30px;
+  }
+}
+.service .seemore {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.service .seemore p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 116.3%;
+  /* identical to box height, or 16px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ed2c34;
+  margin-right: 10px;
+}
+.service .grid-layout {
+  display: flex;
+  margin-left: 22%;
+  margin-top: 80px;
+  position: absolute;
+}
+@media (min-width: 1440px) and (max-width: 1600px) {
+  .service .grid-layout {
+    margin-left: -20%;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1400px) {
+  .service .grid-layout {
+    margin-left: -27%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout {
+    margin-left: -18%;
+  }
+}
+.service .grid-layout .item1 {
+  position: relative;
+  margin-left: 20px;
+}
+.service .grid-layout .item1 .contain1 {
+  margin-top: 270px;
+}
+.service .grid-layout .item1 .contain1 img {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item1 .contain1 img {
+    width: 125px;
+  }
+}
+.service .grid-layout .item2 {
+  margin-left: 20px;
+}
+.service .grid-layout .item2 .contain2 {
+  margin-top: 100px;
+}
+.service .grid-layout .item2 .contain2 img {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item2 .contain2 img {
+    width: 125px;
+  }
+}
+.service .grid-layout .item3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.service .grid-layout .item3 .contain3 img {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item3 .contain3 img {
+    width: 125px;
+  }
+}
+.service .grid-layout .item4 .contain4 {
+  margin-top: 50px;
+}
+.service .grid-layout .item4 .contain4 img {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .service .grid-layout .item4 .contain4 img {
+    width: 125px;
+  }
+}
+
+.social {
+  padding-top: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social .bb {
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.social .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+  text-align: center;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  width: 50%;
+}
+.social img {
+  margin: 100px 90px 80px 15px;
+}
+.social .number {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 33px;
+  /* or 82% */
+  text-align: center;
+  color: #ec2c34;
+  mix-blend-mode: normal;
+}
+.social .title {
+  margin: 20px 0;
+}
+.social .title p {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #1a1a1a;
+}
+.social .des {
+  text-align: center;
+  width: 45%;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  text-align: center;
+  color: #1a1a1a;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.tech {
+  padding: 143px 0 193px 0;
+}
+.tech .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+  width: 25%;
+  margin-bottom: 35px;
+}
+.tech .des {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #010b12;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-bottom: 142px;
+  width: 75%;
+}
+.tech .img-tech2 {
+  width: 80%;
+}
+.tech p {
+  margin: 0;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 157.3%;
+  /* identical to box height, or 19px */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+}
+.tech .bottom {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+}
+.tech .bottom .under {
+  width: 58px;
+  height: 3px;
+  background: #ed2c34;
+}
+.tech .bottom .under-grey {
+  width: 35px;
+  height: 3px;
+  background: #dadada;
+}
+.tech .bottom .seemore {
+  display: flex;
+  align-items: center;
+}
+.tech .bottom .seemore p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 116.3%;
+  /* identical to box height, or 16px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ed2c34;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.telecom {
+  padding: 150px 0 0 0;
+  background: #f2f3f3;
+}
+.telecom .heading {
+  font-family: "BeauSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 150%;
+  /* identical to box height, or 42px */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+}
+.telecom .subheading {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  color: #010b12;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin: 16px 0 70px 0;
+  width: 30%;
+}
+.telecom .list-service {
+  padding-bottom: 380px;
+  position: relative;
+}
+.telecom .list-service .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.telecom .list-service .item p {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157.3%;
+  /* or 22px */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+  margin-left: 15px;
+}
+.telecom .list-service .ab-img {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .telecom .list-service .ab-img {
+    width: 90%;
+    margin-left: 50px;
+  }
+}
+.telecom .back-red {
+  height: 50vh;
+  margin-top: -201px;
+  background-color: #ee0033;
+  z-index: -1;
+}
+.telecom .back-red .slide {
+  background-color: white;
+  width: 366px;
+  height: 366px;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .telecom .back-red .slide {
+    background-color: white;
+    width: 235px;
+    height: 235px;
+    margin-left: 50px;
+  }
+}
+.telecom .back-red .po {
+  position: relative;
+}
+.telecom .back-red .po .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
+}
+.telecom .back-red .po .slide .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.telecom .back-red .po .slide .top .icon {
+  display: flex;
+  align-items: center;
+}
+.telecom .back-red .po .slide .top .icon img {
+  margin-right: 20px;
+}
+.telecom .back-red .po .slide .top p {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 157.3%;
+  /* identical to box height, or 19px */
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+}
+.telecom .back-red .po .slide .bottom {
+  width: 100%;
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 123.3%;
+  /* or 22px */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+}
+.telecom .back-red .po .slide .bottom p {
+  font-family: Sarabun;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 123.3%;
+  /* or 22px */
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #010b12;
+  margin: 0;
+  margin-right: 50px;
+}
+.telecom .back-red .po .slide .bottom .under {
+  width: 55px;
+  height: 3px;
+  background: #ed2c34;
+}
+.telecom .back-red .po .slide .bottom .under-grey {
+  width: 55px;
+  height: 3px;
+  background: #dadada;
+}
+.telecom .back-red .po .right {
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
