@@ -1,92 +1,92 @@
 .bg-black {
-    .sticky {
-        position: sticky;
-        top: 50px;
-        z-index: -1;
+  .sticky {
+    position: sticky;
+    top: 50px;
+    z-index: -1;
+  }
+  .map-animation {
+    height: 120vh;
+    @media screen and (max-width: 1440px) {
+      height: 95vh;
     }
-    .map-animation {
-        height: 120vh;
-        @media screen and (max-width: 1440px) {
-            height: 95vh;
-        }
-        canvas {
-            width: 100%;
-        }
+    canvas {
+      width: 100%;
     }
-    .telecom {
-        .bdg {
-            padding-bottom: 90px;
-            border-bottom: 3px solid #554d4d;
-        }
-        padding: 100px 0;
-        .title {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 42px;
-            line-height: 150%;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            color: #F8F6F6;
-            z-index: 1000;
-        }
-        .description {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 40px;
-            color: #F8F6F6;
-            mix-blend-mode: normal;
-            opacity: 0.8;
-            width: 60%;
-        }
-        ul {
-            li {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                img {
-                    margin-right: 10px;
-                }
-                margin-bottom: 22px;
-                p {
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 157.3%;
-                    /* identical to box height, or 38px */
-                    display: flex;
-                    align-items: flex-end;
-                    text-transform: uppercase;
-                    color: #F8F6F6;
-                    margin: 0;
-                }
-            }
-        }
+  }
+  .telecom {
+    .bdg {
+      padding-bottom: 90px;
+      border-bottom: 3px solid #554d4d;
     }
-    .global {
-        font-family: PF BeauSans Pro;
-        padding-top: 400px;
-        position: relative;
-        padding-bottom: 600px;
-        @media screen and (max-width: 1440px) {
-            padding-bottom: 450px;
-        }
-        p {
-            font-family: PF BeauSans Pro;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 38px;
-            line-height: 150%;
-            /* or 57px */
-            text-align: center;
-            text-transform: uppercase;
-            color: #F8F6F6;
-        }
+    padding: 100px 0;
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 150%;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: #f8f6f6;
+      z-index: 1000;
+    }
+    .description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+      color: #f8f6f6;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      width: 60%;
+    }
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
         img {
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            transform: translate(-50%, 40%);
+          margin-right: 10px;
         }
+        margin-bottom: 22px;
+        p {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 157.3%;
+          /* identical to box height, or 38px */
+          display: flex;
+          align-items: flex-end;
+          text-transform: uppercase;
+          color: #f8f6f6;
+          margin: 0;
+        }
+      }
     }
+  }
+  .global {
+    font-family: PF BeauSans Pro;
+    padding-top: 400px;
+    position: relative;
+    padding-bottom: 600px;
+    @media screen and (max-width: 1440px) {
+      padding-bottom: 450px;
+    }
+    p {
+      font-family: PF BeauSans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 38px;
+      line-height: 150%;
+      /* or 57px */
+      text-align: center;
+      text-transform: uppercase;
+      color: #f8f6f6;
+    }
+    img {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 40%);
+    }
+  }
 }
