@@ -1,118 +1,118 @@
 .footer {
-    padding: 60px 0 0;
-    .logo-footer {
-        padding-bottom: 50px;
-        width: 160px;
-        img {
-            width: 100%;
-        }
+  padding: 60px 0 0;
+  .logo-footer {
+    padding-bottom: 50px;
+    width: 160px;
+    img {
+      width: 100%;
     }
-    .foot-left {
-        .email {
-            font-family: Sarabun;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 19px;
-            /* identical to box height, or 136% */
-            display: flex;
-            align-items: center;
-            text-decoration-line: underline;
-            text-transform: uppercase;
-            color: #2C2C2C;
-        }
-        .address {
-            font-family: Sarabun;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 24px;
-            /* or 171% */
-            color: #2C2C2C;
-            mix-blend-mode: normal;
-            opacity: 0.8;
-            width: 50%;
-            padding: 15px 0 50px 0;
-        }
-        .about {
-            display: flex;
-            align-items: center;
-            p {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 25px;
-                /* identical to box height, or 208% */
-                display: flex;
-                align-items: center;
-                text-transform: uppercase;
-                color: #2C2C2C;
-                mix-blend-mode: normal;
-                opacity: 0.8;
-                margin: 0 20px 0 0;
-            }
-            span {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 16px;
-                /* identical to box height, or 133% */
-                display: flex;
-                align-items: center;
-                text-transform: uppercase;
-                color: #2C2C2C;
-                padding: 0 20px;
-                border-left: 2px solid #E70031;
-            }
-        }
+  }
+  .foot-left {
+    .email {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      /* identical to box height, or 136% */
+      display: flex;
+      align-items: center;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #2c2c2c;
     }
-    .foot-right {
-        .social {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            img {
-                background-color: #67686c;
-                width: 42px;
-                height: 40px;
-                margin-right: 20px;
-                border-radius: 50%;
-                padding: 10px;
-                margin-bottom: 20px;
-                &:hover {
-                    background-color: #E70031;
-                }
-            }
-        }
-        p {
-            font-family: Sarabun;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 116.3%;
-            /* identical to box height, or 14px */
-            text-align: right;
-            text-transform: uppercase;
-            color: #2C2C2C;
-            cursor: pointer;
-        }
-        ul {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            li {
-                font-family: Sarabun;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 116.3%;
-                /* identical to box height, or 14px */
-                text-align: right;
-                text-transform: uppercase;
-                color: #2C2C2C;
-                margin-bottom: 20px;
-                cursor: pointer;
-            }
-        }
+    .address {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+      color: #2c2c2c;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      width: 50%;
+      padding: 15px 0 50px 0;
     }
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 25px;
+      /* identical to box height, or 208% */
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #2c2c2c;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+      margin: 0 20px 0 0;
+    }
+    span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      /* identical to box height, or 133% */
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #2c2c2c;
+      padding: 0 20px;
+      border-left: 2px solid #e70031;
+    }
+  }
+  .foot-right {
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      img {
+        background-color: #67686c;
+        width: 42px;
+        height: 40px;
+        margin-right: 20px;
+        border-radius: 50%;
+        padding: 10px;
+        margin-bottom: 20px;
+        &:hover {
+          background-color: #e70031;
+        }
+      }
+    }
+    p {
+      font-family: Sarabun;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 116.3%;
+      /* identical to box height, or 14px */
+      text-align: right;
+      text-transform: uppercase;
+      color: #2c2c2c;
+      cursor: pointer;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      li {
+        font-family: Sarabun;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 116.3%;
+        /* identical to box height, or 14px */
+        text-align: right;
+        text-transform: uppercase;
+        color: #2c2c2c;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+    }
+  }
 }

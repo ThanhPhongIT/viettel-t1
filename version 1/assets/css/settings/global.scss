@@ -1,27 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Sarabun', sans-serif !important;
+  font-family: "Sarabun", sans-serif !important;
 }
 
 ul,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 ul {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 @font-face {
-    font-family: "PF BeauSans Pro";
-    src: url('../font/FS PFBeauSansPro-Regular.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Bbook.ttf') format('truetype'), url('../font/FS PFBeauSansPro-BbookItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Black.ttf') format('truetype'), url('../font/FS PFBeauSansPro-BlackItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Bold.ttf') format('truetype'), url('../font/FS PFBeauSansPro-BoldItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Italic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-Light.ttf') format('truetype'), url('../font/FS PFBeauSansPro-LightItalic.ttf') format('truetype'), url('../font/FS PFBeauSansPro-SemiBold.ttf') format('truetype'), url('../font/FS PFBeauSansPro-SemiBoldItalic.ttf') format('truetype');
+  font-family: "PF BeauSans Pro";
+  src: url("../font/FS PFBeauSansPro-Regular.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-Bbook.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-BbookItalic.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-Black.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-BlackItalic.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-Bold.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-BoldItalic.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-Italic.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-Light.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-LightItalic.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-SemiBold.ttf") format("truetype"),
+    url("../font/FS PFBeauSansPro-SemiBoldItalic.ttf") format("truetype");
+}
+
+.custom-pagination {
+  background-color: #ed2c34;
 }

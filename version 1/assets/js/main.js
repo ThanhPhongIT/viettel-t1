@@ -2,6 +2,29 @@ window.onload = function () {
   $("#overlay").addClass("hidden");
 };
 $(document).ready(function () {
+  var swiperCom = new Swiper(".swiperCom", {
+    speed: 400,
+    spaceBetween: 100,
+    loop: true,
+    autoplay: true,
+    simulateTouch: true,
+    delay: 3000,
+    pagination: {
+      bulletActiveClass: "custom-pagination",
+      el: ".swiper-pagination",
+      type: "progressbar",
+    },
+  });
+  var swiper = (new Swiper(".swipe-history-text", {
+    speed: 400,
+    spaceBetween: 100,
+
+    navigation: {
+      nextEl: ".his-next",
+      prevEl: ".his-prev",
+    },
+  }).activeIndex = 2);
+
   // swipe slider history
   var swiperZoom = (new Swiper(".swipe-history", {
     grabCursor: true,
@@ -9,6 +32,7 @@ $(document).ready(function () {
     slidesPerView: "3",
     spaceBetween: 100,
     speed: 1500,
+    simulateTouch: true,
     navigation: {
       nextEl: ".his-next",
       prevEl: ".his-prev",
@@ -22,7 +46,7 @@ $(document).ready(function () {
       modifier: 4,
       slideShadows: false,
     },
-  }).activeIndex = 0);
+  }).activeIndex = 2);
   // carousel viettel service
   var owl_viettel = $("#carousel-viettel");
   owl_viettel.owlCarousel({
@@ -46,6 +70,35 @@ $(document).ready(function () {
     autoplayTimeout: 1000,
     autoplayHoverPause: true,
   });
+
+  //event
+  var eowl = $("#eventsid");
+  eowl.owlCarousel({
+    loop: true,
+    margin: 20,
+  });
+
+  $("#ev-next-button").click(function () {
+    eowl.trigger("prev.owl.carousel");
+  });
+  $("#ev-prev-button").click(function () {
+    eowl.trigger("next.owl.carousel");
+  });
+
+  //news
+  var nowl = $("#newsid");
+  nowl.owlCarousel({
+    loop: true,
+    margin: 20,
+  });
+
+  $("#ne-next-button").click(function () {
+    nowl.trigger("prev.owl.carousel");
+  });
+  $("#ne-prev-button").click(function () {
+    nowl.trigger("next.owl.carousel");
+  });
+
   var iowl = $("#imagesid");
   iowl.owlCarousel({
     loop: true,
