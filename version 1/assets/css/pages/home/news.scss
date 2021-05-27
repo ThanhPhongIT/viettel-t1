@@ -1,6 +1,58 @@
 .news {
+  background: #fff;
+  padding-top: 132px;
+
+  .nav {
+    border-bottom: 2px solid #dadada;
+    margin-bottom: 20px;
+    li {
+      button {
+        background: transparent;
+        border: none;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 58px;
+        /* identical to box height, or 207% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -2px;
+
+        color: #b9b9b9;
+        padding: 20px 30px;
+        margin: 0 20px;
+        border-radius: 0;
+        &:focus {
+          outline: none;
+        }
+      }
+      .active {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 58px;
+        /* identical to box height, or 207% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -2px;
+
+        color: #000000;
+        background: transparent;
+        border: none;
+        border-bottom: 4px solid #e70031;
+      }
+    }
+  }
   .item {
     overflow: hidden;
+  }
+  .center {
+    padding: 60px 0;
+    background-color: #f8f6f6;
   }
   img {
     transition: all 0.8s ease-in-out;
@@ -24,6 +76,9 @@
   }
   .filter {
     margin-top: 20px;
+    background-color: #f8f6f6;
+    margin-bottom: 60px;
+    padding: 15px 30px;
     span {
       font-style: normal;
       font-weight: 500;
@@ -93,8 +148,7 @@
       transform: translateY(-50%);
     }
   }
-  background: #faf6f8;
-  padding-top: 132px;
+
   .chan {
     margin-top: 50px;
     .left {
@@ -109,7 +163,7 @@
     }
   }
   .seemore {
-    width: 105px;
+    width: 85px;
     height: 33px;
     font-family: Sarabun;
     font-style: normal;
@@ -123,6 +177,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 3px solid #ed2c34;
+    margin: 0 20px;
   }
   .title {
     font-style: normal;
@@ -163,6 +218,7 @@
   }
   .item {
     margin-bottom: 20px;
+    background-color: #fff;
     img {
       width: 100%;
     }
@@ -206,6 +262,35 @@
         color: #787878;
         mix-blend-mode: normal;
       }
+      button {
+        width: 93px;
+        height: 37px;
+
+        border: 1px solid #ed2c34;
+        box-sizing: border-box;
+        border-radius: 32px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 14px;
+        /* identical to box height */
+
+        letter-spacing: 0.045em;
+        text-transform: uppercase;
+
+        color: #ed2c34;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0px 10px;
+        background-color: transparent;
+        &:focus {
+          outline: none;
+        }
+      }
       .more {
         display: flex;
         justify-content: center;
@@ -213,50 +298,9 @@
       }
     }
   }
-  .most-view {
-    ul {
-      li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        img {
-          height: 77px;
-          width: 77px;
-          margin-right: 20px;
-        }
-        .right {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-          .title {
-            font-family: Sarabun;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 22px;
-            /* or 161% */
-            text-transform: uppercase;
-            color: #1a1a1a;
-            mix-blend-mode: normal;
-          }
-          .date {
-            font-family: Sarabun;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 24px;
-            /* identical to box height, or 200% */
-            text-transform: uppercase;
-            color: #787878;
-            mix-blend-mode: normal;
-          }
-        }
-      }
-    }
-  }
+
   .list-service {
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 20px;
     cursor: url("../images/icon-hover.svg") 0 80, auto;
     #owl-carousel {
@@ -271,7 +315,7 @@
       font-family: PF BeauSans Pro;
       font-style: normal;
       font-weight: 500;
-      font-size: 25px;
+      font-size: 33.5px;
       line-height: 133%;
       margin: 0 !important;
       @media screen and (max-width: 1441px) {
@@ -546,81 +590,7 @@
   }
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  border-bottom: 1px solid grey;
-  padding-bottom: 10px;
-  input {
-    border: none;
-    background: transparent;
-    margin-left: 20px;
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 17px;
-    color: #1a1a1a;
-    mix-blend-mode: normal;
-    &:focus {
-      border: none !important;
-    }
-  }
-  ::-webkit-input-placeholder {
-    /* Edge */
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 17px;
-    /* identical to box height, or 94% */
-    text-transform: uppercase;
-    color: #1a1a1a;
-    mix-blend-mode: normal;
-  }
-  :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 17px;
-    /* identical to box height, or 94% */
-    text-transform: uppercase;
-    color: #1a1a1a;
-    mix-blend-mode: normal;
-  }
-  ::placeholder {
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 17px;
-    /* identical to box height, or 94% */
-    text-transform: uppercase;
-    color: #1a1a1a;
-    mix-blend-mode: normal;
-  }
-}
-
 .bbg {
   padding-bottom: 10px;
   border-bottom: 1px solid #858585;
-}
-
-.hastag {
-  p {
-    font-family: Sarabun;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    /* identical to box height, or 121% */
-    text-transform: uppercase;
-    color: #858585;
-    mix-blend-mode: normal;
-    margin-bottom: 0;
-    margin-top: 15px;
-  }
 }

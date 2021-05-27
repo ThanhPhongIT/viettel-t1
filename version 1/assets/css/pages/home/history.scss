@@ -70,7 +70,14 @@
     width: 80%;
   }
   .swiper-slider-his {
+    position: relative;
+    .line-his {
+      position: absolute;
+      right: -50%;
+      top: 50%;
+    }
     .swiper-slide {
+      z-index: 100000000;
       .item-year {
         // background-color: #1a1a1a;
         position: relative;
@@ -174,6 +181,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
   img {
     transition: all 0.8s ease-in-out;
     &:hover {
@@ -219,6 +227,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
+    min-height: 70px;
     /* identical to box height, or 133% */
 
     text-align: center;
@@ -229,10 +238,13 @@
 
     mix-blend-mode: normal;
   }
+  .card-body {
+    min-height: 230px;
+  }
   .card-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
     /* identical to box height, or 150% */
 
