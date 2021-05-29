@@ -36,23 +36,24 @@
 </head>
 
 <body>
-    <div id="overlay">
-        <video autoplay
+    <div id="overlay"
+         class="mode-web">
+        <!-- <video autoplay
                loop
                muted>
             <source type="video/mp4"
                     src="assets/images/Loading-Review.mp4">
-        </video>
+        </video> -->
     </div>
     <div class="wrapper">
-        <header class="header d-flex align-items-center">
+        <header class="header d-flex align-items-center mode-web">
             <div class="container d-flex align-items-center justify-content-between">
                 <a href="#"
                    class="logo">
                     <img src="assets/images/logo-viettel.png"
                          alt="">
                 </a>
-                <ul class="menu d-flex align-items-center justify-content-between">
+                <ul class="menu  d-flex align-items-center justify-content-between">
                     <li class="menu__item"><a href="#">Về Viettel</a></li>
                     <li class="menu__item"><a href="#">Kiến tạo xã hội số</a></li>
                     <li class="menu__item"><a href="#">Đối tác & đầu tư</a></li>
@@ -87,7 +88,63 @@
 
             </div>
         </header>
-        <div class="banner-container">
+        <header class="header-mobile mode-mobile d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a href="#"
+                   class="logo">
+                    <img src="assets/images/logo-viettel.png"
+                         alt="">
+                </a>
+                <div class="menu-bar"
+                     data-toggle="modal"
+                     data-target="#headerModal">
+                    <img src="assets/images/menu-bar-mb.svg"
+                         alt="">
+                </div>
+            </div>
+        </header>
+        <div class="modal fade"
+             id="headerModal"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog"
+                 role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title"
+                             id="exampleModalLabel">
+                            <img src="assets/images/logo-viettel.png"
+                                 alt="">
+                        </div>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p data-dismiss="modal"
+                           aria-label="Close">VỀ VIETTEL</p>
+                        <p data-dismiss="modal"
+                           aria-label="Close">KIẾN TẠO XÃ HỘI SỐ</p>
+                        <p data-dismiss="modal"
+                           aria-label="Close">Đối tác & Đầu tư </p>
+                        <p data-dismiss="modal"
+                           aria-label="Close">TIN TỨC & SỰ KIỆN</p>
+                    </div>
+                    <div class="modal-footer">
+                        <img src="assets/images/icon-search.svg"
+                             alt="">
+                        <img src="assets/images/icon-global.svg"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-container mode-web">
             <div class="video">
                 <video autoplay
                        muted
@@ -97,10 +154,10 @@
                             type="video/mp4">
                 </video>
             </div>
-            <div class="banner container">
+            <div class="banner container-fluid">
 
                 <div class="row w-100">
-                    <div class="col-6">
+                    <div class="col-6 ">
                     </div>
                     <div class="col-6 overflow-hidden">
                         <div class="banner__right">
@@ -111,8 +168,8 @@
 
                             <div id="text-des">
                                 <div class="subheading">
-                                    Tập đoàn công nghệ kinh doanh toàn cầu cùng BẠN tiến vào kỷ nguyên số.<br> Không
-                                    ngừng dịch chuyển -
+                                    Tập đoàn công nghệ kinh doanh toàn cầu. Không
+                                    ngừng dịch<br> chuyển -
                                     Tiên phong đón đầu - Khai phá tiềm năng
                                 </div>
                                 <button class="button-seemore">Tìm hiểu thêm</button>
@@ -122,7 +179,29 @@
                 </div>
             </div>
         </div>
-        <div class="service">
+        <div class="banner-mobile mode-mobile ">
+            <div class="video-banner-mobile">
+                <video autoplay
+                       loop
+                       muted>
+                    <source type="video/mp4"
+                            src="assets/video/banner-mobile.mp4">
+                </video>
+            </div>
+            <div class="content d-flex align-items-center flex-column justify-content-center container">
+                <p class="subtitle">
+                    VIETTEL YOUR WAY
+                </p>
+                <div class="title">Tiên phong<br>
+                    kiến tạo<br> xã hội số</div>
+                <div class="description">Tập đoàn công nghệ kinh doanh toàn cầu: Không ngừng dịch chuyển - Tiên phong
+                    đón đầu - Khai phá tiềm năng </div>
+                <button class="button-seemore">Tìm hiểu thêm</button>
+                <div class="bb"></div>
+            </div>
+
+        </div>
+        <div class="service mode-web">
             <div class="container">
                 <p class="heading animate__animated wow animate__fadeInUp">Tập đoàn đổi mới sáng<br> tạo lấy khách hàng
                     <br> làm
@@ -176,7 +255,47 @@
                         src="assets/video/global.mp4">
             </video>
         </div>
-        <div class="bg-black">
+        <div class="service-mobile mode-mobile">
+            <div class="title">
+                Tập đoàn đổi mới sáng tạo lấy khách hàng làm trọng tâm
+            </div>
+            <div class="subtitle">
+                Luôn đi đầu trong đổi mới và sáng tạo. Lắng nghe và thấu hiểu khách hàng để đem đến những dịch vụ tốt
+                nhất.
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-start"
+                         data-wow-offset="2">
+                        <img class="circle image-circle"
+                             src="assets/images/service1.jpg"
+                             alt="">
+                        <div class="des text-bold">GIẢI PHÁP CÔNG NGHỆ THÔNG TIN VÀ DỊCH VỤ SỐ</div>
+                    </div>
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-start">
+                        <img class="circle image-circle"
+                             src="assets/images/service3.jpg"
+                             alt="">
+                        <div class="des text-bold">VIỄN THÔNG </div>
+                    </div>
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-start">
+                        <img class="circle image-circle"
+                             src="assets/images/service2.jpg"
+                             alt="">
+                        <div class="des text-bold">NGHIÊN CỨU SẢN XUẤT CÔNG NGHIỆP CÔNG NGHỆ CAO</div>
+                    </div>
+
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-start">
+                        <img class="circle image-circle"
+                             src="assets/images/service4.jpg"
+                             alt="">
+                        <div class="des text-bold">LOGISTIC VÀ THƯƠNG MAI ĐIỆN TỬ</div>
+                    </div>
+                </div>
+            </div>
+            <button class="button-seemore">Tìm hiểu thêm</button>
+        </div>
+        <div class="bg-black mode-web">
             <div class="sticky">
                 <div class="map-animation"
                      id="animation-container"></div>
@@ -186,8 +305,17 @@
                 <h3>Nhà cung cấp dịch vụ viễn thông, internet, truyền <br> hình và giải pháp CNTT lớn nhất Việt Nam</h3>
             </div>
         </div>
-
-        <section class="secction-slogan">
+        <div class="global-mobile container mode-mobile">
+            <div class="title">Tập đoàn Công nghệ
+                kinh doanh toàn cầu</div>
+            <div class="des">
+                Nhà cung cấp dịch vụ viễn thông, internet, truyền hình và giải pháp CNTT lớn nhất Việt Nam
+            </div>
+            <img src="assets/images/global-mobile.png"
+                 alt=""
+                 class="global-img">
+        </div>
+        <section class="secction-slogan mode-web">
             <div class="slogan">
                 <div class="slogan-block">
                     <div class="block1">
@@ -246,8 +374,13 @@
                 </div>
             </div>
         </section>
-
-        <section class="section-core-value">
+        <div class="slogan-mobile mode-mobile">
+            <div class="title">SỨ MỆNH SÁNG TẠO <br> VÌ CON NGƯỜI</div>
+            <div class="sub">Bạn là trái tim Viettel</div>
+            <img src="assets/images/slogan.png"
+                 alt="">
+        </div>
+        <section class="section-core-value mode-web">
             <div class="container">
                 <div class="core-values">
                     <div class="text-title">GIÁ TRỊ CỐT LÕI</div>
@@ -289,28 +422,417 @@
                 </div>
             </div>
         </section>
-
-        <div class="history">
+        <div class="core-value-mobile mode-mobile">
+            <div class="title">GIÁ TRỊ CỐT LÕI</div>
             <div class="container">
-                <div class="his">
+                <div class="row pb-5">
+                    <div class="col-12 d-flex flex-column align-items-start justify-content-center">
+                        <div class="num">01.</div>
+                        <div class="head">QUAN TÂM</div>
+                        <div class="des">Mỗi khách hàng là một cá thể riêng biệt</div>
+                    </div>
+                    <div class="col-12 d-flex flex-column align-items-start justify-content-center">
+                        <div class="num">02.</div>
+                        <div class="head">Sáng tạo</div>
+                        <div class="des">Kinh doanh gắn liền với <br> trách nhiệm xã hội</div>
+                    </div>
+                    <div class="col-12 d-flex flex-column align-items-start justify-content-center">
+                        <div class="num">03.</div>
+                        <div class="head">KHÁT KHAO</div>
+                        <div class="des">Con người là nhân tố <br> quan trọng nhất</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="slide-mobile mode-mobile">
+            <div class="swiper-container swiperComM">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/img-his-top.jpg"
+                             alt=""
+                             class="mask">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/slide-com-2"
+                             alt=""
+                             class="mask">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> -->
+        <div class="history-mobile mode-mobile">
+            <div class="title">Lịch sử</div>
+            <div class="des">Từ một Công ty xây lắp tới Tập đoàn kinh doanh toàn cầu </div>
+            <div class="slide-his">
+                <div class="owl-carousel"
+                     id="slide-hism">
+                    <div class="item">
+                        <img src="assets/images/slide-his2.png"
+                             alt="">
 
-                    <div class="swiper-container swiperCom">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <img src="assets/images/img-his-top.jpg"
-                                     alt=""
-                                     class="mask"></div>
-                            <div class="swiper-slide"> <img src="assets/images/slide-com-2"
-                                     alt=""
-                                     class="mask"></div>
-
+                        <div class="date">2014-2015</div>
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis delectus eos?
+                                    Id ducimus incidunt molestiae fugit magni perferendis asperiores.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis delectus eos?
+                                    Id ducimus incidunt molestiae fugit magni perferendis asperiores.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/slider-his.png"
+                             alt="">
+                        <div class="date">2014-2015</div>
+                        <div class="text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis delectus eos?
+                                    Id ducimus incidunt molestiae fugit magni perferendis asperiores.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis delectus eos?
+                                    Id ducimus incidunt molestiae fugit magni perferendis asperiores.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/prev.svg"
+                     alt=""
+                     class="hism-prev"
+                     style="margin-right: 20px;">
+                <img class="hism-next"
+                     src="assets/images/next.svg"
+                     alt="">
+            </div>
+        </div>
+        <div class="develop-mobile mode-mobile">
+            <div class="title">
+                Doanh nghiệp <br>
+                trách nhiệm hướng <br>tới cộng đồng phát <br>triển bền vững
+            </div>
+            <div class="bt">
+                <div class="content animate__animated wow animate__fadeInUp pb-2">
+                    <span class="number">
+                        3500+
+                    </span>
+                    <span class="sub-1">
+                        tỷ đồng đóng góp thực hiện các chương trình xã hội</span>
+                </div>
+                <p class="subtitle">
+                    Viettel luôn coi nền tảng cho một doanh nghiệp phát triển là xã hội phát triển, các chương
+                    trình an sinh xã hội tập trung các các lĩnh vực giáo dục, y tế và giúp người nghèo thoát
+                    nghèo bền vững"
+                </p>
+                <div class="owl-carousel container"
+                     id="developSlide">
+                    <div class="item">
+                        <div class="card"
+                             style="width: 100%;">
+                            <div class="number">1</div>
+                            <img class="card-img-top"
+                                 src="assets/images/comuni-slide.png"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Trái tim cho em </h5>
+                                <p class="card-text text-center">GẦN 40 TỈ ĐỒNG HỖ TRỢ KHÁM VÀ PHẪU THUẬT TIM CHO TRẺ EM
+                                    TRÊN 18
+                                    TỈNH THÀNH VÙNG SÂU VÙNG XA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card"
+                             style="width: 100%;">
+                            <div class="number">2</div>
+                            <img class="card-img-top"
+                                 src="assets/images/slide-com2.png"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Bò giống giúp người
+                                    nghèo nơi biên giới </h5>
+                                <p class="card-text text-center">24.000 CON BÒ GIỐNG ĐƯỢC HỖ TRỢ CHO NHỮNG HỘ GIA ĐÌNH
+                                    NGHÈO TRÊN 11
+                                    TỈNH BIÊN GIỚI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card"
+                             style="width: 100%;">
+                            <div class="number">3</div>
+                            <img class="card-img-top"
+                                 src="assets/images/slide-com3.png"
+                                 alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Kết nối mạng giáo dục viettel</h5>
+                                <p class="card-text text-center">đồng hành cùng 25 triệu học sinh sinh viên cả nước tiếp
+                                    cận mạng
+                                    lưới internet với 46.000 cơ sở giáo dục va trường học được miễn phí băng thông rộng
+                                </p>
+                            </div>
 
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
 
                 </div>
+                <div class="container d-flex justify-content-between align-items-center chan">
+                    <div class="left"></div>
+                    <button class="seemore">Tìm hiểu thêm</button>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="news-mobile mode-mobile container">
+            <div class="head d-flex align-items-center justify-content-between">
+                <div class="title">Tin tức</div>
+                <div class="filter d-flex align-items-center justify-content-center"
+                     data-toggle="modal"
+                     data-target="#filterModalCenter">
+                    <img src="assets/images/filter.png"
+                         alt="">
+                    <p>Bộ lọc</p>
+                </div>
+            </div>
 
 
+            <div class="list-cate">
+                <ul class="nav nav-pills mb-3 d-flex"
+                    id="pills-tab"
+                    role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           id="pills-home-tab"
+                           data-toggle="pill"
+                           href="#pills-home"
+                           role="tab"
+                           aria-controls="pills-home"
+                           aria-selected="true">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           id="pills-profile-tab"
+                           data-toggle="pill"
+                           href="#pills-profile"
+                           role="tab"
+                           aria-controls="pills-profile"
+                           aria-selected="false">Sự kiện</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           id="pills-imgm-tab"
+                           data-toggle="pill"
+                           href="#pills-imgm"
+                           role="tab"
+                           aria-controls="pills-imgm"
+                           aria-selected="false">Hình ảnh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           id="pills-videom-tab"
+                           data-toggle="pill"
+                           href="#pills-videom"
+                           role="tab"
+                           aria-controls="pills-videom"
+                           aria-selected="false">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           id="pills-rp-tab"
+                           data-toggle="pill"
+                           href="#pills-rp"
+                           role="tab"
+                           aria-controls="pills-rp"
+                           aria-selected="false">Report</a>
+                    </li>
+                </ul>
+                <div class="tab-content"
+                     id="pills-tabContent">
+                    <div class="tab-pane fade show active"
+                         id="pills-home"
+                         role="tabpanel"
+                         aria-labelledby="pills-home-tab">
+                        <div class="slider-news-mb">
+                            <div class="owl-carousel"
+                                 id="newIdMobile">
+                                <div class="item">
+                                    <img src="assets/images/news-1.png"
+                                         alt="">
+                                    <div class="title">Cài Bluezone để chung tay đồng lòng chiến đấu chống COVID-19
+                                    </div>
+                                    <div class="foot">
+                                        <div class="date">THÁNG 8, 23/2020</div>
+                                        <div class="button">tải xuống</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="pills-profile"
+                         role="tabpanel"
+                         aria-labelledby="pills-profile-tab">
+                        <div class="slider-news-mb">
+                            <div class="owl-carousel"
+                                 id="eventIdMobile">
+                                <div class="item">
+                                    <img src="assets/images/news-1.png"
+                                         alt="">
+                                    <div class="title">Cài Bluezone để chung tay đồng lòng chiến đấu chống COVID-19
+                                    </div>
+                                    <div class="foot">
+                                        <div class="date">THÁNG 8, 23/2020</div>
+                                        <div class="button">tải xuống</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="pills-imgm"
+                         role="tabpanel"
+                         aria-labelledby="pills-imgm-tab">
+                        <div class="owl-carousel"
+                             id="imgMbId">
+                            <div class="item">
+                                <img src="assets/images/news-1.png"
+                                     alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/news-2.jpg"
+                                     alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/news-3.jpg"
+                                     alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="pills-videom"
+                         role="tabpanel"
+                         aria-labelledby="pills-videom-tab">
+                        <video width="100%"
+                               height="auto"
+                               controls>
+                            <source type="video/mp4"
+                                    src="assets/video/viettel-ndth.mp4">
+                        </video>
+                        <div class="bottom">
+                            <p>Viettel sẵn sàng triển khai tiền di động đáp ứng các yêu cầu của Thủ tướng Chính phủ</p>
+                            <div class="date">Aug 23/2020</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade"
+                         id="pills-rp"
+                         role="tabpanel"
+                         aria-labelledby="pills-rp-tab">...</div>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-between align-items-center chan">
+                <div class="left"></div>
+                <button class="seemore">Xem thêm</button>
+                <div class="right"></div>
+            </div>
+
+            <div class="list-company">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="item d-flex align-items-center">
+                            <img src="assets/images/right-arrow.svg"
+                                 alt="">
+                            <p class="m-0 ml-2">voso.vn</p>
+                        </div>
+                        <div class="item d-flex align-items-center">
+                            <img src="assets/images/right-arrow.svg"
+                                 alt="">
+                            <p class="m-0 ml-2">Viettel Telecom</p>
+                        </div>
+                        <div class="item d-flex align-items-center">
+                            <img src="assets/images/right-arrow.svg"
+                                 alt="">
+                            <p class="m-0 ml-2">Viettel Post</p>
+                        </div>
+                    </div>
+                    <div class="col-6  d-flex align-items-start justify-content-end flex-column">
+                        <div class="item d-flex align-items-center">
+                            <img src="assets/images/right-arrow.svg"
+                                 alt="">
+                            <p class="m-0 ml-2">Viettel Pay</p>
+                        </div>
+                        <div class="item d-flex align-items-center">
+                            <img src="assets/images/right-arrow.svg"
+                                 alt="">
+                            <p class="m-0 ml-2">Viettel Store</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade"
+             id="filterModalCenter"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="exampleModalCenterTitle"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered"
+                 role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"
+                            id="exampleModalLongTitle">Bộ lọc</h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="item"><span class="ml-0">THỜI GIAN TỪ NĂM</span>
+                            <select name="cars"
+                                    id="to">
+                                <option value="volvo">2017</option>
+                                <option value="saab">2018</option>
+                                <option value="opel">2019</option>
+                                <option value="audi">2020</option>
+                            </select>
+                        </div>
+                        <div class="item"><span>ĐẾN NĂM</span>
+                            <select name="cars"
+                                    id="from">
+                                <option value="volvo">2017</option>
+                                <option value="saab">2018</option>
+                                <option value="opel">2019</option>
+                                <option value="audi">2020</option>
+                            </select>
+                        </div>
+                        <div class="bb"></div>
+                        <div class="item"><span>CHỦ ĐỀ</span>
+                            <select name="1"
+                                    id="cars">
+                                <option value="1">Tất cả</option>
+                                <option value="volvo">Kinh doanh</option>
+                                <option value="saab">Công nghệ</option>
+                            </select>
+                        </div>
+                        <div class="item"><span>ĐỊNH DẠNG</span>
+                            <select name="1"
+                                    id="cars">
+                                <option value="1">Tất cả</option>
+                                <option value="volvo">Ảnh</option>
+                                <option value="saab">Video</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button"
+                                class="done"
+                                data-dismiss="modal">Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history mode-web">
+            <div class="container">
                 <div class="row">
                     <div class="col-6">
                         <p class="heading-top animate__animated wow animate__fadeInUp">Lịch sử</p>
@@ -369,19 +891,19 @@
 
                 <div class="swiper-slider-his">
                     <div class="row">
-                        <div class="col-2 d-flex justify-content-start align-items-center">
-                            <img src="assets/images/prev.svg"
-                                 alt=""
-                                 class="his-prev"
-                                 style="margin-right: 20px;">
-                            <img class="his-next"
-                                 src="assets/images/next.svg"
-                                 alt="">
-                        </div>
-                        <div class="col-10  animate__animated wow animate__zoomIn">
-                            <img src="assets/images/line-his.jpg"
-                                 alt=""
-                                 class="line-his">
+
+                        <div
+                             class="col-12 d-flex align-items-center justify-content-start  animate__animated wow animate__zoomIn">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img src="assets/images/prev.svg"
+                                     alt=""
+                                     class="his-prev"
+                                     style="margin-right: 20px;">
+                                <img class="his-next"
+                                     src="assets/images/next.svg"
+                                     alt="">
+                            </div>
+
                             <div class="swiper-container swipe-history  swipe-history-year">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slider-history-year">
@@ -390,7 +912,6 @@
                                                  src="assets/images/slide-his2.png"
                                                  alt="">
                                             <div class="overlay">
-
                                                 <img src="assets/images/Union-italic.svg"
                                                      class=" animate__animated  animate__fadeInDown"
                                                      alt="">
@@ -464,9 +985,12 @@
                     </div>
                 </div>
             </div>
+            <img src="assets/images/line-his.png"
+                 alt=""
+                 class="line-his">
 
         </div>
-        <div class="his__develop">
+        <div class="his__develop mode-web">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-12 d-flex">
@@ -547,7 +1071,7 @@
                 </div>
             </div>
         </div>
-        <div class="news">
+        <div class="news mode-web">
             <div class="container">
                 <div class="title animate__animated wow animate__fadeInUp text-center pb-4">
                     Tin tức
@@ -690,7 +1214,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="p-3">
-                                            <img src="assets/images/news-2.svg"
+                                            <img src="assets/images/news-2.jpg"
                                                  alt="">
                                             <div class="heading">Cài Bluezone để chung tay đồng lòng chiến đấu chống
                                                 COVID-19
@@ -707,7 +1231,7 @@
                                     </div>
                                     <div class="item">
                                         <div class="p-3">
-                                            <img src="assets/images/news-3.svg"
+                                            <img src="assets/images/news-3.jpg"
                                                  alt="">
                                             <div class="heading">Cài Bluezone để chung tay đồng lòng chiến đấu chống
                                                 COVID-19
@@ -813,9 +1337,9 @@
                                 </div>
                                 <div class="owl-carousel"
                                      id="imagesid">
-                                    <img src="assets/images/img-s-1.svg"
+                                    <img src="assets/images/img-s-1.jpg"
                                          alt="">
-                                    <img src="assets/images/img-s-2.svg"
+                                    <img src="assets/images/img-s-2.jpg"
                                          alt="">
                                     <img src="assets/images/img-s-3.png"
                                          alt="">
@@ -831,8 +1355,8 @@
                                     <div class="col-7">
                                         <div class="content-video-new">
                                             <video id="video-new">
-                                                <source src="assets/video/(26) Nhạc Truyền Động Lực Hay Nhất Mạnh Mẽ Nhất Hùng Hồn Nhất - YouTube - Google Chrome 2020-07-29 20-36-41.mp4"
-                                                        type="video/mp4">
+                                                <source type="video/mp4"
+                                                        src="assets/video/viettel-ndth.mp4">
                                             </video>
                                             <div class="overlay-video">
                                                 <div class="btn-play">
@@ -908,50 +1432,48 @@
                 </div>
             </div>
         </div>
-
         <div class="footer">
             <div class="container">
-                <div class="logo-footer animate__animated wow animate__fadeInUp">
+                <div class="logo-footer ">
                     <img src="assets/images/logo-viettel.png"
                          alt="">
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-12 foot-left animate__animated wow animate__fadeInUp">
+                    <div class="col-md-6 col-12 foot-left  order-md-1 order-2">
                         <div class="email">hotro@vietteltelecom.com</div>
                         <div class="address">Lô D26, ngõ 3, đường Tôn Thất Thuyết, phưòng Yên Hòa, quận Cầu Giấy, Hà Nội
                         </div>
 
                     </div>
-                    <div class="col-md-8 col-12 foot-right animate__animated wow animate__fadeInUp">
+                    <div class="col-md-6 col-12 foot-right  order-md-2 order-1">
                         <div class="row">
-                            <div class="col-3 d-flex flex-column align-items-start justify-content-start">
+                            <div
+                                 class="col-md-6 col-5 d-flex flex-column align-items-start justify-content-start order-md-1 order-2">
                                 <ul class="d-flex flex-column align-items-start justify-content-center">
                                     <li>VIETTEL TELECOM</li>
                                     <li>VIETTEL STORE</li>
                                     <li>VIETTEL PAY</li>
                                 </ul>
                             </div>
-                            <div class="col-5 d-flex flex-column align-items-start justify-content-between">
-                                <div class="text d-flex flex-column align-items-start justify-content-between">
-                                    <p>Tin tức cập nhật về tập đoàn</p>
-                                    <p>Tin tức cập nhật kinh doanh</p>
-                                    <p>Hỗ trợ sản phẩm</p>
-                                    <p>Dịch Vụ</p>
-                                </div>
-                            </div>
-                            <div class="col-4 d-flex flex-column align-items-start justify-content-start">
+                            <div
+                                 class="col-md-6 col-7 d-flex flex-column align-items-start justify-content-start order-md-2 order-1">
                                 <ul class="d-flex flex-column align-items-start justify-content-center">
                                     <li>Cơ hội ngề nghiệp</li>
                                     <li>Quan hệ hợp tác đầu tư</li>
                                     <li>Hồ sơ tổ chức</li>
+                                    <li>Tin tức cập nhật kinh doanh</li>
+                                    <li>Tin tức cập nhật về tập đoàn</li>
+                                    <li>Hỗ trợ sản phẩm</li>
+                                    <li class="mb-5">Dịch Vụ</li>
                                 </ul>
+
                             </div>
 
                         </div>
 
                     </div>
                 </div>
-                <div class="about ">
+                <div class="about">
                     <p>© Viettel 2021</p>
                     <span> Chính sách bảo mật</span>
                     <span>Điều khoản sử dụng</span>
@@ -962,6 +1484,7 @@
 
 </body>
 <script src="./assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
